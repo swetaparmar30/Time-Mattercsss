@@ -1,5 +1,4 @@
-@extends('layouts.backend.index')
-@section('main_content')
+<?php $__env->startSection('main_content'); ?>
 <style>
 
 .checkbox-label {
@@ -23,14 +22,14 @@
     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
         <div class="card mb-4">
             <div class="card-header">
-                {{-- <strong id="title">Add New User</strong> --}}
+                
                 <h5>Add New User</h5>
             </div>
             <div class="card-body">
                         <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
-                            <form id="adduser" action="{{ route('users.add') }}" method="POST"
+                            <form id="adduser" action="<?php echo e(route('users.add')); ?>" method="POST"
                                 data-parsley-validate="">
-                                @csrf
+                                <?php echo csrf_field(); ?>
                                 <input type="hidden" id="user_id" name="user_id">
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Full Name</label>
@@ -100,7 +99,7 @@
     <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
         <div class="card mb-4">
             <div class="card-header">
-                {{-- <strong>User List</strong> --}}
+                
                 <h5>Users List</h5>
             </div>
             <div class="card-body card-block px-0 py-3">
@@ -134,8 +133,8 @@
 </div>
 
 
-@endsection
-@section('script')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
 
 <script>
 $(document).ready(function() {
@@ -210,7 +209,7 @@ $(document).ready(function() {
            var isChecked = $(this).is(':checked');
            var status = isChecked ? 1 : 0;
            $.ajax({
-               url: "{{ route('user.change_status') }}",
+               url: "<?php echo e(route('user.change_status')); ?>",
                type: 'post',
                data: {
                    _token: token,
@@ -253,7 +252,7 @@ $(document).ready(function() {
         var token = $("meta[name='csrf-token']").attr("content");
         var id = $(this).attr("data-id");
         $.ajax({
-            url: '{{ route("users.edit") }}',
+            url: '<?php echo e(route("users.edit")); ?>',
             type: "post",
             data: {
                 _token: token,
@@ -352,4 +351,5 @@ $(document).ready(function() {
 
 
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.backend.index', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/user/add.blade.php ENDPATH**/ ?>

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Backend;
-
+ 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DataTables;
@@ -41,6 +41,7 @@ class UserController extends Controller
             'phone' => 'nullable|max:255',
             'website' => 'nullable|url|max:255',
             'role' => 'required|string|max:255',
+            'status' => 'required|in:0,1',
         ];
 
         if ($user_id === null && $user_id === '') {
@@ -91,6 +92,7 @@ class UserController extends Controller
         $counter = 1;
         $user->transform(function ($item) use (&$counter) {
             $item['ser_id'] = $counter++;
+            $item['status'] = '<input type="checkbox" data-id="' . $item['id'] . '" id="is_status" ' . ($item['status'] == 1 ? 'checked' : '') . ' class="is_featured_class">';
             $item['action'] = '<a class="label theme-bg2 text-white f-12 table-btn table-btn1 edit" data-id="' . $item['id'] . '"><i class="fa fa-edit"></i></a>';
             $item['action'] .= '<a data-href="' . route('users.delete',$item['id']) . '" data-title="testrete" data-original-title="Delete user" class="label theme-bg text-white f-12 table-btn table-btn1 delete"><i class="fa fa-trash" aria-hidden="true"></i></a>';
             return $item;
@@ -99,5 +101,19 @@ class UserController extends Controller
         return response()->json(['data' => $user]);
     }
 
+
+    public function change_status(Request $request)
+    {
+        $id = $request->id;
+        $status = $request->status;
+        $record = User::find($id);
+        if ($record) {
+            $record->status = $status;
+            $record->save();
+            $message = $status == 1 ? 'User approved successfully.' : 'User marked as pending.';
+            return response()->json(['status' => 1, 'message' => $message ]);
+        }
+        return response()->json(['status' => 0, 'message' => 'User not found.']);
+    }
 
 }

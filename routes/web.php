@@ -187,9 +187,10 @@ Route::prefix('admin')->group(function () {
     Route::post('users/edit', [UserController::class, 'edit'])->name('users.edit')->middleware(['auth', 'role:administrator']);
     Route::post('/password_generate', [UserController::class, 'generate'])->name('password_generate')->middleware(['auth', 'role:administrator']);
     Route::post('user/list', [UserController::class, 'list'])->name('user.list')->middleware(['auth', 'role:administrator']);
+    Route::post('/change_status', [UserController::class, 'change_status'])->name('user.change_status')->middleware(['auth', 'role:administrator']);
 
     //sections
-
+    
     Route::get('/sections', [App\Http\Controllers\Backend\SectionsController::class, 'index'])->name('sections')->middleware(['auth', 'role:administrator']);
     Route::post('sections/save', [App\Http\Controllers\Backend\SectionsController::class, 'save'])->name('sections.save')->middleware(['auth', 'role:administrator']);
     Route::get('sections/delete/{id}', [App\Http\Controllers\Backend\SectionsController::class, 'delete'])->name('sections.delete')->middleware(['auth', 'role:administrator']);

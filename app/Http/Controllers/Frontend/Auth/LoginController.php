@@ -37,10 +37,19 @@ class LoginController extends Controller
         ]);
 
         if (Auth::attempt($request->only('email', 'password'), $request->boolean('remember'))) {
-            
-            $request->session()->regenerate();
 
             $user = Auth::user();
+
+            // Block login if admin has not approved the account yet
+            if ($user->status == 0) {
+                Auth::logout();
+
+                return back()
+                       ->withErrors(['email' => 'Your account is pending admin approval. Please wait for activation.'])
+                       ->withInput($request->only('email'));
+            }
+
+            $request->session()->regenerate();
 
             // Redirect to Role-based Dashboard
             return $this->redirectToDashboard($user);
