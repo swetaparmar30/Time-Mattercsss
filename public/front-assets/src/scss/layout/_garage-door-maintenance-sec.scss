@@ -1,0 +1,14 @@
+.garage-door-maintenance-sec{    background: #F1F1F1;
+
+    h3{font-size: 60px; line-height: 75px; font-weight: 700; color: #002855; text-transform: capitalize;margin-bottom: 20px;}
+    h5{font-size: 45px; line-height: 55px; font-weight: 400; color: #333333; text-transform: capitalize;margin-bottom: 30px;}
+    .left-side-tab-items a.each-offer-item { background: linear-gradient(90deg, #FFFFFF 0%, rgba(243, 247, 241, 0) 100%); border: none; padding: 10px 20px 17px 20px; border-left: 2px solid #fff; border-radius: 0; color: #2B2B2B; margin-bottom: 15px; display: inline-block; }
+    .left-side-tab-items a.each-offer-item h4 {font-family: "Mulish", sans-serif; font-size: 40px; font-weight: 400; line-height: 50px;color: #333333; }
+    .left-side-tab-items a.each-offer-item.active { background: linear-gradient(90deg, rgba(21, 66, 153, 0.15) 0%, rgba(243, 247, 241, 0) 100%); border-left: 2px solid #000866; color: #000866; }
+    .left-side-tab-items a.each-offer-item:hover{ background: linear-gradient(90deg, rgba(21, 66, 153, 0.15) 0%, rgba(243, 247, 241, 0) 100%); border-left: 2px solid #000866; color: #000866;}
+    .left-side-tab-items a.each-offer-item.active h4{color: #002855;}
+    .left-side-tab-items a.each-offer-item:hover h4{color: #002855;font-weight: 600;}
+    .common-btn{margin-top: 35px;display: inline-flex; align-items: center;}
+
+    .mobile-garage-door-maintenance-sec{display: none;}
+} 

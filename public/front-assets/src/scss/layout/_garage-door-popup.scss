@@ -1,0 +1,21 @@
+.select-door-popup {
+h2{font-size: 60px; line-height: 51px; text-transform: capitalize; font-weight: 700; color: #002855;}
+.modal-header { padding: 30px 0; display: block; text-align: center; background-color: #fff; position: relative; border-bottom: 1px solid #000866;}
+.modal-content{cursor: initial;}
+.modal-dialog { max-width: 80% !important; margin: auto; }
+.modal-body {padding: 40px 40px;}
+.row { margin: 0; }
+.each-product{padding: 0;     display: flex;}
+.each-product .inner-content{border-right: 2px solid #00086673; display: flex; flex-direction: column; padding: 0 25px;}
+.each-product:last-child .inner-content{border: none;}
+.common-btn{margin-top: auto;font-size: 28px; font-weight: 500; line-height: 30px;    width: 275px;}
+.each-product h3{ font-size: 45px; line-height: 50px; font-weight: 700; color: #002855; text-transform: capitalize; margin-bottom: 5px; letter-spacing: -3.3px; }
+.each-product h4 { font-size: 32px; line-height: 40px; letter-spacing: -0.7px; font-weight: 400; color: #333333; text-transform: capitalize; margin-bottom: 30px; }
+.each-product figure { margin-bottom: 25px; }
+.each-product ul{margin-bottom: 20px;}
+.each-product ul li {font-size: 18px; font-weight: 700; line-height: 18px; margin-bottom: 17px; background-image: url(../images/list-new-door-icon.webp); background-repeat: no-repeat; background-position: 0 3px; padding-left: 20px;}
+.modal-header .btn-close { padding: 0px; background-color: transparent; opacity: 1; position: absolute; z-index: 1; top: 43px; right: 25px; width: auto; height: auto; }
+
+}
+
+.modal.select-door-popup.show { display: flex !important; justify-content: center; cursor: url(../images/circle-close-icon.webp), auto !important;     z-index: 1111;}

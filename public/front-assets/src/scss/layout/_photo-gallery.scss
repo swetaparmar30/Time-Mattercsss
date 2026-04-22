@@ -1,0 +1,15 @@
+.photo-gallery-sec{
+    figure{margin-bottom: 25px;position: relative;}
+    figure img.normal-img{width: 100%;}
+    figure a { display: flex; justify-content: center; align-items: center; }
+    figure .plus-img { position: absolute; z-index: 1; opacity: 0; }
+    figure a:hover::after { content: ''; display: block; width: 94%; height: 92%; background: #0000004d; position: absolute; }
+    figure a:hover .plus-img { opacity: 1; }
+    .view-gallery-btn{margin-top: 50px;text-align: center;}
+}
+
+.mfp-close { width: 38px !important; height: 38px !important; right: -17px !important; top: 19px; background-color: #fff !important; opacity: 1; color: #000866 !important; display: flex !important; justify-content: center; align-items: center; line-height: normal; padding: 0 !important; font-size: 43px; cursor: pointer !important; }
+
+.mfp-auto-cursor.mfp-zoom-in { cursor: url(../images/circle-close-icon.webp), auto !important; }
+
+.photo-gallery-sec.mobile{display: none;}

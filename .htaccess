@@ -1,0 +1,44 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+
+RewriteRule ^Products.cfm$ / [R=301,L]
+RewriteRule ^index.php$ / [R=301,L]
+
+#RewriteCond %{REQUEST_URI} !(/$|\.|admin\/|meeting-form|get-in-touch/store|logout)
+#RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+
+
+RewriteRule ^(.*)$ public/$1 [L]
+
+
+Redirect 301 /index.cfm /
+Redirect 301 /Service.cfm /
+Redirect 301 /RaynorProducts.cfm /
+Redirect 301 /advantage.cfm /
+Redirect 301 /directions.cfm /
+Redirect 301 /components.cfm /
+Redirect 301 /residential.cfm /
+Redirect 301 /commercial.cfm /
+Redirect 301 /contact.cfm /contact
+Redirect 301 /Contact.cfm /contact
+Redirect 301 https://sandkdoor.com/Contact.cfm https://www.sandkdoor.com/contact
+
+
+RewriteRule ^/*.cfm  /  [R,L]
+
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+Header set Cache-Control "private"
+</IfModule>
+AddHandler application/x-httpd-php83 .php .php5 .php4 .php3

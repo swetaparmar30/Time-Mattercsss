@@ -1,0 +1,165 @@
+.login-page {
+  background: var(--brand-primary);
+}
+
+.login-page .auth-card {
+  /* max-width: 470px; */
+  max-width: 690px;
+}
+
+.login-page .auth-header {
+  margin-bottom: 24px;
+}
+
+.login-page .auth-options {
+  margin-top: 12px;
+}
+
+.login-page .form-field + .form-field {
+  margin-top: 30px;
+}
+
+.auth-panel-hidden {
+  display: none;
+}
+
+.forgot-password-toggle,
+.back-to-login-btn {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  .login-page .auth-card {
+    max-width: 100%;
+  }
+
+  .login-page .form-field + .form-field {
+    margin-top: 20px;
+  }
+
+  .login-page .auth-options {
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 767.98px) and (orientation: landscape) {
+  .login-page .auth-card {
+    max-width: 100%;
+  }
+
+  .login-page .form-field + .form-field {
+    margin-top: 18px;
+  }
+}
+
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .login-page {
+    padding: 16px;
+  }
+
+  .login-page .auth-card {
+    max-width: 720px;
+    padding: 36px 30px;
+  }
+
+  .login-page .auth-logo {
+    width: 260px;
+    margin-bottom: 34px;
+  }
+
+  .login-page .auth-title {
+    font-size: 34px;
+  }
+
+  .login-page .auth-footer-text {
+    margin-top: 30px;
+  }
+}
+
+/* IPAD Pro */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .login-page {
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  .login-page .auth-card {
+    max-width: 740px;
+    padding: 28px 34px 24px;
+  }
+
+  .login-page .auth-logo {
+    width: 240px;
+    margin-bottom: 26px;
+  }
+
+  .login-page .auth-title {
+    font-size: 34px;
+  }
+
+  .login-page .auth-header {
+    margin-bottom: 16px;
+  }
+
+  .login-page .form-field + .form-field {
+    margin-top: 18px;
+  }
+
+  .login-page .auth-options {
+    margin-top: 12px;
+  }
+
+  .login-page .btn-primary {
+    margin-top: 16px;
+  }
+
+  .login-page .auth-footer-text {
+    margin-top: 18px;
+  }
+}
+
+/* Laptop 1200 to 1399 */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .login-page {
+    align-items: flex-start;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .login-page .auth-card {
+    max-width: 760px;
+    padding: 34px 38px 28px;
+  }
+
+  .login-page .auth-logo {
+    width: 250px;
+    margin-bottom: 28px;
+  }
+
+  .login-page .auth-header {
+    margin-bottom: 18px;
+  }
+
+  .login-page .form-field + .form-field {
+    margin-top: 20px;
+  }
+
+  .login-page .btn-primary {
+    margin-top: 18px;
+  }
+
+  .login-page .auth-footer-text {
+    margin-top: 20px;
+  }
+}
+

@@ -1,0 +1,1356 @@
+.inner-service-banner {
+    position: relative;
+}
+
+.inner-service-banner img.banner-img,
+.inner-service-banner video {
+    height: 100%;
+    width: 100%;
+}
+
+.inner-service-banner::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(41, 73, 133, 0.9) 100%);
+    ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+}
+
+.inner-service-banner .banner-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+}
+
+.inner-service-banner .banner-content .banner-text h1 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 68px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.inner-service-banner .banner-content .banner-text p {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.inner-service-banner .banner-content .banner-text .cmn-btn {
+    margin-inline: auto;
+    color: #fff;
+}
+
+
+
+.vendore-mange-info-sec .left-side {
+    padding-right: 60px;
+    border-right: 1px solid #00000033
+}
+
+.vendore-mange-info-sec .right-side {
+    padding-left: 60px;
+}
+
+.vendore-mange-info-sec .right-side p:not(p:last-of-type) {
+    margin-bottom: 20px;
+}
+
+/* .vendore-mange-info-sec {
+    padding-bottom: 150px;
+} */
+
+
+
+.culture-values-sec.why-choose-sec.extre-service-section{background-color: #B8995F1A;}
+
+
+.how-vendor-mage-sec {
+    background-color: #B8995F1A;
+}
+
+.how-vendor-mage-sec .row {
+    align-items: center;
+}
+
+.how-vendor-mage-sec .left-side {
+    padding: 80px 0;
+    padding-right: 40px;
+}
+
+.how-vendor-mage-sec .left-side p:not(p:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.how-vendor-mage-sec .right-side img {
+    position: relative;
+    margin: -30px 0;
+}
+
+/* .benefits-service-cmn-sec {
+    padding-top: 150px;
+} */
+
+.benefits-service-cmn-sec .row.second-row {
+    justify-content: center;
+}
+
+.benefits-service-cmn-sec .two-side-line-sec article {
+    border-left: 3px solid #284883;
+    padding-left: 20px;
+}
+
+.benefits-service-cmn-sec .two-side-line-sec article h3 {
+    color: #171717;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    margin-bottom: 14px
+}
+
+.benefits-service-cmn-sec .two-side-line-sec article p {
+    font-size: var(--fs-md);
+    line-height: var(--lh-sm);
+}
+
+.benefits-service-cmn-sec .two-side-line-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 100px;
+    width: 70%;
+    padding: 0;
+}
+
+
+
+.blue-oragnization-work-box,
+.benefits-service-cmn-sec {
+    background-color: #FBFBFB;
+}
+
+.blue-oragnization-work-box {
+    padding-top: 0;
+}
+
+.blue-oragnization-work-box .row .blue-box {
+    background: url(../images/why-organization-work-img.webp);
+    ;
+    padding: 90px 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.blue-oragnization-work-box h2 {
+    color: #fff;
+}
+
+.blue-oragnization-work-box p {
+    color: #FFFFFFCC;
+}
+
+.blue-oragnization-work-box .cmn-btn {
+    color: #fff;
+    margin-inline: auto;
+    margin-top: 50px
+}
+
+
+.after-bluebox-cta-sec{background-color: #FBFBFB; ;}
+.after-bluebox-cta-sec p{font-size: var(--fs-md);line-height: var(--lh-sm);max-width: 90%; margin-inline: auto;}
+.after-bluebox-cta-sec .cmn-btn{margin-top: 36px;}
+
+
+
+/* service page wise css */
+
+.vendore-mange-info-sec h2 { text-wrap-style: pretty !important; }
+
+.vendore-mange-info-sec.service-4 h2{text-wrap-style: balance !important;}
+.vendore-mange-info-sec.service-5 .right-side {padding-left: 40px;}
+
+
+.blue-oragnization-work-box.service-5{padding-top:120px;}
+
+
+.vendore-mange-info-sec.service-4,
+.vendore-mange-info-sec.service-3{padding-bottom: 150px;}
+
+
+.benefits-service-cmn-sec.service-4,
+.benefits-service-cmn-sec.service-3{padding-top: 150px;}
+
+
+
+
+
+/* =========================     contact page css =======================================*/
+
+.why-reach-out-sec {
+    background-color: #B8995F1A;
+}
+
+.why-reach-out-sec .row{align-items: center;}
+
+.why-reach-out-sec .left-side ul {
+    list-style: none;
+}
+
+.why-reach-out-sec .left-side ul li {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 26px;
+    color: #171717;
+    border-left: 3px solid #284883;
+    padding-left: 20px;
+}
+
+.why-reach-out-sec .additional-info {
+    background-color: #fff;
+    padding: 50px;
+    border: 1px solid #0000001A;
+    border-radius: 30px;
+}
+
+.why-reach-out-sec .additional-info h3 {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+}
+
+.why-reach-out-sec .additional-info article p:first-of-type {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: #1C1C1C;
+}
+
+.why-reach-out-sec .additional-info article p:last-of-type {
+    color: #284883;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.why-reach-out-sec .additional-info article p a {
+    text-decoration: underline;
+}
+
+.why-reach-out-sec .additional-info article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.why-reach-out-sec .additional-info article:last-of-type {
+    margin-bottom: 0;
+}
+
+
+.contact-page-form-sec .left-side {
+    padding-right: 30px;
+}
+
+.contact-page-form-sec .left-side .main-info-box {
+    background-color: #fafafa;
+    padding: 52px 40px;
+    border-radius: 20px;
+    border: 1px solid #284883
+}
+
+.contact-page-form-sec .left-side .main-info-box h2 {
+    margin-bottom: 40px;
+    line-height: normal;
+}
+
+.contact-page-form-sec .left-side .main-info-box article {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #3333331A;
+    margin-bottom: 25px;
+}
+
+.contact-page-form-sec .left-side .main-info-box article:last-of-type {
+    align-items: flex-start;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.contact-page-form-sec .left-side .main-info-box article .info p:first-of-type {
+    font-family: 'Raleway', sans-serif;
+    color: #171717;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact-page-form-sec .left-side .main-info-box article .info p:last-of-type {
+    font-family: 'Montserrat', sans-serif;
+    color: #171717;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.contact-page-form-sec .left-side .main-info-box article .info p a:hover {
+    color: #284883;
+}
+
+
+.contact-page-form {
+    background-color: #B8995F1A;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.contact-page-form h2 {
+    line-height: normal;
+}
+
+.contact-page-form form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.contact-page-form .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-page-form input,
+.contact-page-form textarea {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding: 15px 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.contact-page-form textarea {
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.contact-page-form button {
+    background-color: #B89B5F;
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    line-height: 22px;
+}
+
+.contact-page-form button:hover {
+    background-color: #B89B5F;
+}
+
+.contact-page-form input::placeholder,
+.contact-page-form textarea::placeholder {
+    color: #33333380
+}
+
+
+
+
+@media (min-width: 1401px) and (max-width: 1800px) {
+
+
+
+
+
+    .how-vendor-mage-sec .left-side {
+        padding: 50px 0;
+    }
+/* 
+    .vendore-mange-info-sec {
+        padding-bottom: 120px;
+    } */
+
+    .how-vendor-mage-sec .left-side p:not(p:last-of-type) {
+        margin-bottom: 15px;
+    }
+
+    /* .benefits-service-cmn-sec {
+        padding-top: 120px;
+    } */
+
+    .benefits-service-cmn-sec .two-side-line-sec {
+        gap: 60px 80px;
+        width: 85%;
+    }
+
+    .blue-oragnization-work-box .row .blue-box {
+        padding: 80px 85px;
+    }
+
+    .blue-oragnization-work-box .cmn-btn {
+        margin-top: 40px;
+    }
+
+    .how-vendor-mage-sec .left-side p {
+        font-size: 18px;
+    }
+
+    .vendore-mange-info-sec.service-5 .right-side {padding-left: 60px;}
+
+
+
+    /* =========================     contact page css =======================================*/
+    .contact-page-form-sec .left-side {
+        padding-left: 20px;
+        width: 38%;
+    }
+
+    .contact-page-form-sec .right-side {
+        width: 62%;
+    }
+    .contact-page-form-sec .left-side .main-info-box{pading:50px 30px}
+    .contact-page-form-sec .left-side .main-info-box article .info p:last-of-type{font-size: 17px; line-height: 26px;}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+
+
+    .inner-service-banner .banner-content .banner-text h1 {
+        font-size: 52px;
+        line-height: 60px;
+        margin-bottom: 25px;
+    }
+
+/* 
+    .vendore-mange-info-sec {
+        padding-bottom: 100px;
+    } */
+
+    .vendore-mange-info-sec .left-side {
+        padding-right: 40px;
+    }
+
+    .vendore-mange-info-sec .right-side {
+        padding-left: 40px;
+    }
+
+    .how-vendor-mage-sec .left-side {
+        padding: 30px 0;
+        padding-right: 40px;
+    }
+
+    .benefits-service-cmn-sec .row.second-row {
+        gap: 80px;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec article h3 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .benefits-service-cmn-sec .right-side.two-side-line-sec {
+        padding-right: 12px;
+        padding-left: 0;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec {
+        gap: 60px 70px;
+        width: 85%;
+    }
+
+    .blue-oragnization-work-box .row .blue-box {
+        padding: 60px 80px;
+    }
+
+    .blue-oragnization-work-box .cmn-btn {
+        margin-top: 35px;
+    }
+
+    .after-bluebox-cta-sec p{max-width: 80%; line-height: var(--lh-md);}
+        .blue-oragnization-work-box.service-5{padding-top:100px;}
+
+.vendore-mange-info-sec.service-4,
+.vendore-mange-info-sec.service-3{padding-bottom: 100px;}
+
+
+.benefits-service-cmn-sec.service-4,
+.benefits-service-cmn-sec.service-3{padding-top: 100px;}
+
+
+
+
+
+
+
+
+
+
+    /* =========================     contact page css =======================================*/
+
+    .contact-page-form-sec .left-side {
+        padding-right: 20px;
+        width: 36%;
+    }
+
+    .contact-page-form-sec .right-side {
+        width: 64%;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box {
+        padding: 44px 30px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .info p:first-of-type {
+        font-size: 16px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .info p:last-of-type {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .icon img {
+        max-width: 60px;
+        height: auto;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article {
+        gap: 15px;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+
+
+    .contact-page-form {
+        padding: 45px 40px;
+    }
+
+    .contact-page-form input::placeholder,
+    .contact-page-form textarea::placeholder {
+        font-size: 12px;
+    }
+
+    .contact-page-form input,
+    .contact-page-form textarea {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 11px 15px;
+    }
+
+    .contact-page-form button {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 16px;
+    }
+
+
+    .why-reach-out-sec .left-side ul li {
+        font-size: 20px;
+        padding-left: 15px;
+        margin-bottom: 22px;
+    }
+
+    .why-reach-out-sec .left-side {
+        width: 60%;
+    }
+
+    .why-reach-out-sec .right-side {
+        width: 40%;
+    }
+
+    .why-reach-out-sec .additional-info {
+        padding: 40px 30px;
+        border-radius: 20px;
+    }
+
+    .why-reach-out-sec .additional-info h3 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 25px;
+    }
+
+    .why-reach-out-sec .additional-info article {
+        gap: 15px;
+    }
+
+    .why-reach-out-sec .additional-info article p:first-of-type {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .why-reach-out-sec .additional-info article p:last-of-type {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    .inner-service-banner img.banner-img,
+    .inner-service-banner video {
+        height: 100%;
+    }
+
+    .inner-service-banner .banner-content .banner-text h1 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .inner-service-banner .banner-content .banner-text p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .benefits-service-cmn-sec .row.second-row {
+        column-gap: 0;
+    }
+
+    /* .vendore-mange-info-sec {
+        padding-bottom: 80px;
+    } */
+
+    .vendore-mange-info-sec .left-side {
+        padding-right: 40px;
+    }
+
+    .vendore-mange-info-sec .right-side {
+        padding-left: 40px;
+    }
+
+
+    .how-vendor-mage-sec .left-side {
+        padding: 80px 12px;
+        ;
+    }
+
+    .how-vendor-mage-sec .left-side h2 {
+        font-size: 32px;
+    }
+
+/* 
+    .benefits-service-cmn-sec {
+        padding-top: 80px;
+    } */
+
+    .benefits-service-cmn-sec .two-side-line-sec article h3 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec {
+        gap: 50px 70px;
+        width: 95%;
+    }
+
+    .benefits-service-cmn-sec .right-side.two-side-line-sec {
+        padding: 0 12px;
+    }
+
+    .blue-oragnization-work-box .row .blue-box {
+        padding: 60px 70px;
+    }
+
+    .blue-oragnization-work-box .cmn-btn {
+        margin-top: 25px;
+    }
+
+
+.after-bluebox-cta-sec p{max-width: 85%; line-height: var(--lh-md);}
+    .blue-oragnization-work-box.service-5{padding-top:80px;}
+
+
+.vendore-mange-info-sec.service-4,
+.vendore-mange-info-sec.service-3{padding-bottom: 80px;}
+
+
+.benefits-service-cmn-sec.service-4,
+.benefits-service-cmn-sec.service-3{padding-top: 80px;}
+
+
+    /* =========================     contact page css =======================================*/
+
+    .contact-page-form-sec .left-side {
+        padding-right: 12px;
+        margin-bottom: 50px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+        border-radius: 12px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article {
+        flex-direction: column;
+        align-items: center !important;
+        border-right: 1px solid #3333331A;
+        border-bottom: 0;
+        width: 33.33%;
+        text-align: center;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .info p:first-of-type {
+        font-size: 16px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .info p:last-of-type {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .contact-page-form {
+        padding: 40px 30px;
+    }
+
+
+
+    .contact-page-form p {
+        padding-right: 100px;
+    }
+
+    .contact-page-form .form-row {
+        gap: 18px;
+    }
+
+    .contact-page-form input::placeholder,
+    .contact-page-form textarea::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contact-page-form input,
+    .contact-page-form textarea {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 12px 18px;
+    }
+
+    .contact-page-form button {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 16px;
+    }
+
+
+    .why-reach-out-sec .left-side ul li {
+        font-size: 20px;
+        padding-left: 15px;
+        margin-bottom: 22px;
+    }
+
+    .why-reach-out-sec .left-side {
+        width: 58%;
+    }
+
+    .why-reach-out-sec .right-side {
+        width: 42%;
+    }
+
+    .why-reach-out-sec .additional-info {
+        padding: 30px 25px;
+        border-radius: 20px;
+    }
+
+    .why-reach-out-sec .additional-info h3 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 25px;
+    }
+
+    .why-reach-out-sec .additional-info article {
+        gap: 15px;
+    }
+
+    .why-reach-out-sec .additional-info article p:first-of-type {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .why-reach-out-sec .additional-info article p:last-of-type {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .why-reach-out-sec .left-side ul {
+        padding-right: 40px;
+    }
+
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .inner-service-banner img.banner-img,
+    .inner-service-banner video {
+        height: 100%;
+    }
+
+    .inner-service-banner .banner-content .banner-text h1 {
+        font-size: 34px;
+        line-height: 44px;
+        margin-bottom: 20px;
+    }
+
+    .inner-service-banner .banner-content .banner-text p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .vendore-mange-info-sec .left-side {
+        width: 100%;
+        padding: 0 12px 50px;
+        border-bottom: 1px solid #00000033;
+        border-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .vendore-mange-info-sec .right-side {
+        width: 100%;
+        padding: 0 12px
+    }
+
+    .vendore-mange-info-sec .left-side h2 br {
+        display: none;
+    }
+
+    .vendore-mange-info-sec h2 {
+        text-wrap-style: balance;
+    }
+
+    /* .vendore-mange-info-sec {
+        padding-bottom: 60px;
+    } */
+
+
+    .how-vendor-mage-sec .left-side {
+        padding: 0 12px;
+        width: 100%;
+    }
+
+    .how-vendor-mage-sec {
+        padding: 60px 0;
+    }
+
+    .how-vendor-mage-sec.time-matter-common h2.mrbt-20 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .how-vendor-mage-sec .left-side p {
+        text-align: center;
+    }
+
+    .how-vendor-mage-sec .left-side p:not(p:last-of-type) {
+        margin-bottom: 15px;
+    }
+
+
+    /* .benefits-service-cmn-sec {
+        padding-top: 60px;
+    } */
+
+    .blue-oragnization-work-box.service-5{padding-top:60px;}
+
+
+    .benefits-service-cmn-sec h2 {
+        text-wrap-style: balance;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec.left-side {
+        width: 100%;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 40px 0;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec article h3 {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .blue-oragnization-work-box .row .blue-box {
+        border-radius: 25px;
+        padding: 50px 40px;
+    }
+
+    .blue-oragnization-work-box .cmn-btn {
+        margin-top: 25px;
+    }
+
+.after-bluebox-cta-sec p{max-width: 90%; line-height: var(--lh-md);}
+
+
+
+
+    .vendore-mange-info-sec.service-5 .right-side {padding: 0 12px;}
+
+    
+
+.vendore-mange-info-sec.service-4,
+.vendore-mange-info-sec.service-3{padding-bottom: 60px;}
+
+
+.benefits-service-cmn-sec.service-4,
+.benefits-service-cmn-sec.service-3{padding-top: 60px;}
+
+    /* =========================     contact page css =======================================*/
+
+
+
+
+    .contact-page-form-sec .left-side {
+        padding-right: 12px;
+        margin-bottom: 50px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+        border-radius: 12px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article {
+        flex-direction: column;
+        align-items: center !important;
+        border-right: 1px solid #3333331A;
+        border-bottom: 0;
+        text-align: center;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .info p:first-of-type {
+        font-size: 14px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .info p:last-of-type {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .contact-page-form {
+        padding: 40px 30px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .icon img {
+        width: 60px;
+        height: auto;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article:nth-child(2) {
+        width: 35%;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article:nth-child(3) {
+        width: 28%;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article:nth-child(4) {
+        width: 30%;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article:not(article:last-of-type) {
+        margin-right: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-page-form p {
+        padding-right: 100px;
+    }
+
+    .contact-page-form .form-row {
+        gap: 15px;
+    }
+
+    .contact-page-form input::placeholder,
+    .contact-page-form textarea::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contact-page-form input,
+    .contact-page-form textarea {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 12px 18px;
+    }
+
+    .contact-page-form button {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 16px;
+    }
+
+    .why-reach-out-sec .left-side h2 {
+        margin-bottom: 30px;
+    }
+
+    .why-reach-out-sec .left-side ul li {
+        font-size: 18px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .why-reach-out-sec .left-side {
+        width: 100%;
+    }
+
+    .why-reach-out-sec .right-side {
+        width: 100%;
+    }
+
+    .why-reach-out-sec .additional-info {
+        padding: 30px 25px;
+        border-radius: 14px;
+        margin-top: 30px;
+    }
+
+    .why-reach-out-sec .additional-info h3 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+
+    .why-reach-out-sec .additional-info article {
+        gap: 15px;
+    }
+
+    .why-reach-out-sec .additional-info article p:first-of-type {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .why-reach-out-sec .additional-info article p:last-of-type {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+}
+
+@media (max-width:767px) {
+    .inner-service-banner .banner-content .banner-text {
+        padding: 0 20px;
+    }
+
+    .inner-service-banner .banner-content .banner-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        text-wrap-style: balance
+    }
+
+    .inner-service-banner .banner-content .banner-text p {
+        font-size: 18px;
+        line-height: 26px;
+        text-wrap-style: balance;
+    }
+
+    .inner-service-banner img.banner-img,
+    .inner-service-banner video {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .vendore-mange-info-sec .left-side {
+        border-bottom: 1px solid #00000033;
+        border-right: 0;
+        margin-bottom: 50px;
+        padding-bottom: 50px !important;
+    }
+
+
+    .how-vendor-mage-sec {
+        padding: 50px 20px;
+    }
+
+    .how-vendor-mage-sec h2 br {
+        display: none;
+    }
+
+    .how-vendor-mage-sec h2 {
+        text-align: center;
+    }
+
+    .how-vendor-mage-sec .left-side p:not(p:last-of-type) {
+        margin-bottom: 12px;
+    }
+
+
+    /* .vendore-mange-info-sec {
+        padding-bottom: 50px;
+    } */
+
+    /* .benefits-service-cmn-sec {
+        padding-top: 50px;
+    } */
+
+
+    .blue-oragnization-work-box.service-5{padding-top:60px;}
+
+
+    .benefits-service-cmn-sec .row.second-row {
+        gap: 0
+    }
+
+    .benefits-service-cmn-sec .right-side.two-side-line-sec {
+        margin-top: 40px;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec article h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec {
+        grid-template-columns: 1fr;
+        gap: 40px 0;
+        width: 100%;
+    }
+
+    .benefits-service-cmn-sec .two-side-line-sec article {
+        border-left: 2px solid #284883;
+        padding-left: 15px;
+    }
+
+
+    .blue-oragnization-work-box .row .blue-box {
+        all: unset
+    }
+
+    .blue-oragnization-work-box {
+        background: url(../images/why-organization-work-img.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-top: 50px;
+    }
+
+    .blue-oragnization-work-box .cmn-btn {
+        margin-top: 25px;
+    }
+
+
+.after-bluebox-cta-sec p{max-width: 100%; margin-inline: auto;}
+.after-bluebox-cta-sec .cmn-btn{margin-top: 30px;}
+
+
+
+
+.vendore-mange-info-sec.service-4,
+.vendore-mange-info-sec.service-3{padding-bottom: 50px;}
+
+
+.benefits-service-cmn-sec.service-4,
+.benefits-service-cmn-sec.service-3{padding-top: 50px;}
+
+
+
+
+
+    /* =========================     contact page css =======================================*/
+
+    .contact-page-form-sec .left-side {
+        padding-right: 12px;
+        margin-bottom: 50px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box {
+        padding: 40px 20px;
+        border-radius: 12px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .info p:first-of-type {
+        font-size: 14px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .info p:last-of-type {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article:last-of-type .info p:last-of-type{max-width: 250px ;}
+
+
+
+
+    .contact-page-form {
+        padding: 40px 30px;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article .icon img {
+        width: 55px;
+        height: auto;
+    }
+
+    .contact-page-form-sec .left-side .main-info-box article {
+        gap: 15px;
+    }
+
+
+
+
+    .contact-page-form {
+        padding: 40px 20px;
+        border-radius: 10px;
+    }
+
+    .contact-page-form .form-row {
+        gap: 0;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .contact-page-form input::placeholder,
+    .contact-page-form textarea::placeholder {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .contact-page-form input,
+    .contact-page-form textarea {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px 18px;
+    }
+
+    .contact-page-form button {
+        font-size: 15px;
+        line-height: 17px;
+        padding: 14px;
+    }
+
+    .why-reach-out-sec .left-side h2 {
+        margin-bottom: 30px;
+    }
+
+    .why-reach-out-sec .left-side ul li {
+        font-size: 16px;
+        padding-left: 14px;
+        margin-bottom: 18px;
+    }
+
+    .why-reach-out-sec .left-side {
+        width: 100%;
+    }
+
+    .why-reach-out-sec .right-side {
+        width: 100%;
+    }
+
+    .why-reach-out-sec .additional-info {
+        padding: 30px 20px;
+        border-radius: 12px;
+        margin-top: 30px;
+    }
+
+    .why-reach-out-sec .additional-info h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .why-reach-out-sec .additional-info article {
+        gap: 15px;
+    }
+
+    .why-reach-out-sec .additional-info article p:first-of-type {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .why-reach-out-sec .additional-info article p:last-of-type {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    /* .contact-banner-sec.inner-service-banner img.banner-img, 
+.contact-banner-sec.inner-service-banner video
+    {
+        height: 500px;
+
+    } */
+.contact-banner-sec.inner-service-banner .banner-content .banner-text p br{display: none;}
+.contact-banner-sec.inner-service-banner .banner-content .banner-text p:last-of-type{display: none;}
+
+ .blue-oragnization-work-box h2{text-wrap-style: balance;}
+}
+
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 767.98px) and (orientation: landscape) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+
+@media (max-width:420px){
+
+ .contact-page-form-sec .left-side .main-info-box{padding: 40px 14px;}
+
+}

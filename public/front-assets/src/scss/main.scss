@@ -1,0 +1,7950 @@
+@import "abstracts/fonts";
+@import "components/basic";
+@import "components/common-property";
+@import "layout/header";
+@import "layout/banner";
+@import "layout/year-of-excilence-sec";
+@import "layout/common-problems";
+@import "layout/garage-door-popup";
+@import "layout/fix-it-yourself-sec";
+@import "layout/area-we-cover-sec";
+@import "layout/get-free-quote-sec";
+@import "layout/design-center-sec";
+@import "layout/diffrent-brand-sec";
+@import "layout/new-garage-door-sec";
+@import "layout/new-testimonial-sec";
+@import "layout/faq-sec";
+@import "layout/photo-gallery";
+@import "layout/garage-door-maintenance-sec";
+@import "layout/resedential-page";
+@import "layout/contact-page";
+@import "layout/footer";
+
+@import "layout/about-page";
+@import "layout/product-page";
+
+.banner-img {
+    height: 750px !important;
+    object-fit: cover;
+}
+
+.header .navigation ul li .dropdown-menu li {
+    margin: 0 !important;
+}
+
+@media (max-width: 575.98px) {
+
+    /* ============== Navigation ====================== */
+    .header .navigation .dropdown .dropdown-menu {
+        position: relative;
+        display: none !important;
+    }
+
+    .header .navigation .dropdown:hover .dropdown-menu {
+        display: block !important;
+        position: relative !important;
+        margin: 0 !important;
+        top: 0 !important;
+        transform: unset !important;
+        inset: unset !important;
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 20px !important;
+    }
+
+    .header .navigation .dropdown .dropdown-menu.show {
+        display: block !important;
+        position: relative !important;
+        margin: 0 !important;
+        top: 0 !important;
+        transform: unset !important;
+        inset: unset !important;
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 20px !important;
+    }
+
+    .header .navigation .sub-dropdown:hover .sub-dropdown-menu {
+        display: block !important;
+        margin: 0;
+        border-top: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 0;
+    }
+
+    .header .navigation .sub-dropdown .sub-dropdown-menu {
+        display: block !important;
+        margin: 0;
+        border-top: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-menu li {
+        border-bottom: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-menu.show {
+        padding: 0;
+        border-radius: 0;
+        border: 0;
+        border-top: 3px solid #F2A900;
+    }
+
+    .header .navigation .dropdown:hover .dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-dropdown:hover .dropdown-menu.sub-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-inner-dropdown:hover .dropdown-menu.sub-inner-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-inner-to-inner-dropdown:hover .dropdown-menu.sub-inner-to-inner-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-dropdown .dropdown-menu.sub-dropdown-menu {
+        display: none !important;
+        margin-top: 0 !important;
+    }
+
+    .header .navigation .sub-inner-dropdown .dropdown-menu.sub-inner-dropdown-menu {
+        display: none !important;
+    }
+
+    .header .navigation .sub-inner-to-inner-dropdown .dropdown-menu.sub-inner-to-inner-dropdown-menu {
+        display: none !important;
+    }
+
+    .header .navigation .dropdown .dropdown-a::after {
+        padding-left: 0;
+        content: '\f054';
+        font-family: "FontAwesome";
+        margin-left: 20px;
+        display: block !important;
+        width: 0;
+        padding-right: 8px;
+        font-size: 14px;
+        line-height: 0;
+        padding-top: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .header-menu-mobile {
+        overflow: scroll !important;
+    }
+
+    .header .header-menu nav.navigation {
+        display: block !important;
+    }
+
+    .mobile-btn {
+        position: unset !important;
+        margin-bottom: 30px;
+    }
+
+    .header .navigation .sub-dropdown .sub-dropdown-menu {
+        border-top: 0 !important;
+    }
+
+    .header .navigation .dropdown .dropdown-a.show::after {
+        transform: rotate(90deg);
+    }
+
+
+    /* ============== Home page ====================== */
+    .mobile-toggle-sec {
+        display: flex;
+    }
+
+    .header .menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .navbar-toggler img {
+        width: 39px;
+        height: 39px;
+        margin-left: 20px;
+    }
+
+    .header .header-menu-mobile {
+        padding-left: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding-top: 130px;
+        transform: translateX(-101%);
+        transition: all .5s ease;
+        width: 100%;
+        z-index: 99;
+        overflow: hidden;
+    }
+
+    .header .header-menu-mobile.show {
+        transition: all .5s ease;
+        transform: translateX(0);
+        top: 0;
+    }
+
+    .header .header-right-side {
+        display: none;
+    }
+
+    .header .header-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1111;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .header nav.navigation {
+        display: block;
+    }
+
+    .header .header-menu-mobile nav.navigation ul {
+        width: 100%;
+        text-align: left;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .header-menu-mobile nav.navigation li {
+        padding: 0;
+        border-bottom: 1px solid #acabad;
+        margin: 0;
+    }
+
+    .header .header-menu-mobile nav.navigation li a {
+        display: block;
+        padding: 15px;
+    }
+
+    .header .header-menu-mobile a.header-design-center {
+        display: none;
+    }
+
+    .header .header-menu-mobile nav.navigation li::after {
+        display: none;
+    }
+
+    .header .header-menu-mobile nav.navigation li a {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+
+    .mobile-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 111111;
+        margin-top: 40px !important;
+        bottom: 40px;
+    }
+
+    .mobile-btn .header-bottom-btn {
+        padding: 8px 12px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        color: #002855;
+        text-transform: uppercase;
+        border: 2px solid #F2A900;
+        border-radius: 7px;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .sandk-common h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .sandk-common h2::after {
+        display: none;
+    }
+
+    .sandk-common-padding {
+        padding: 50px 0;
+    }
+
+    .sandk-common p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .common-btn {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+        padding: 15px 0;
+        justify-content: center;
+    }
+
+    .common-btn img {
+        width: 38px;
+    }
+
+    .banner .right-side {
+        width: 100%;
+    }
+
+    .banner .left-side {
+        width: 100%;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-image: url(../images/home-mobile-banner-image.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner .left-side h1 {
+        font-size: 50px;
+        line-height: 62px;
+        margin-bottom: 5px;
+    }
+
+    .banner .left-side h4 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .banner .banner-content {
+        position: unset;
+    }
+
+    .banner .left-side p {
+        font-size: 24px;
+        line-height: 32px;
+        padding-right: 0;
+    }
+
+    .banner .right-side .inner-sec {
+        padding: 35px 12px;
+    }
+
+    .banner .right-side h2 {
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .banner .right-side .form-btn button {
+        padding: 20px 0;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .banner .right-side .inner-sec form .form-group {
+        margin-bottom: 10px;
+    }
+
+    .year-of-excilence {
+        padding: 50px 0 50px 0;
+    }
+
+    .year-of-excilence .right-side {
+        padding-left: 12px;
+    }
+
+    .year-of-excilence .right-side h2 {
+        font-size: 70px;
+        line-height: 68px;
+        text-align: center;
+    }
+
+    .year-of-excilence .right-side h2 span {
+        font-size: 35px;
+    }
+
+    .year-of-excilence .right-side h2::after {
+        margin: 5px auto 30px auto;
+        width: 190px;
+    }
+
+    .year-of-excilence .right-side p {
+        padding-right: 0;
+    }
+
+    .year-of-excilence .center-side-list.mobile {
+        display: block;
+    }
+
+    .year-of-excilence .center-side-list.desktop {
+        display: none;
+    }
+
+    .year-of-excilence .center-side-list.mobile ul li {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 18px;
+        background-image: url(../images/red-check-Icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 3px;
+        padding-left: 28px;
+        color: #333333;
+    }
+
+    .year-of-excilence .center-side-list {
+        margin-top: 45px;
+    }
+
+    .year-of-excilence .need-new-garage-door.mobile {
+        opacity: 1;
+        background: none;
+        width: auto;
+        height: auto;
+    }
+
+    .year-of-excilence .need-new-garage-door {
+        opacity: 0;
+        display: none;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec .text-sec {
+        position: absolute;
+        top: 13px;
+        right: 0;
+        left: 69px;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec img {
+        width: 160px;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec .text-sec h3 {
+        font-size: 13px;
+    }
+
+    .garage-door-maintenance-sec .desktop-garage-door-maintenance-sec {
+        display: none;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec {
+        display: block;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec h3 {
+        font-size: 40px;
+        line-height: 41px;
+        margin-bottom: 12px;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec h5 {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+
+    .garage-door-maintenance-sec .heading-sec {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul li {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 15px;
+        background-image: url(../images/mobile-triangle-list-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+        background-size: 9px;
+        padding-left: 18px;
+        color: #333333;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul {
+        padding-top: 30px;
+        border-top: 2px solid #111111;
+    }
+
+    .common-problems-sec {
+        padding-top: 0;
+    }
+
+    .common-problems-sec::before {
+        width: 90%;
+        height: 2px;
+        margin: 0px auto 50px auto;
+    }
+
+    .common-problems-sec .right-side {
+        padding-left: 12px;
+    }
+
+    .common-problems-sec .left-side {
+        display: none;
+    }
+
+    .common-problems-sec .right-side h2 {
+        text-align: center;
+    }
+
+    .common-problems-sec .right-side li {
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 15px;
+    }
+
+    .fix-it-yourself-sec p {
+        margin-bottom: 35px;
+        padding: 0 0px;
+    }
+
+    .fix-it-yourself-sec .common-btn {
+        padding: 15px 0;
+        line-height: 46px;
+    }
+
+    .fix-it-yourself-sec .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .fix-it-yourself-sec h2 {
+        padding: 0 25px;
+    }
+
+    .new-garage-door-sec .box-sec .heading {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .new-garage-door-sec .box-sec h3 {
+        font-size: 40px;
+        line-height: 38px;
+        margin-bottom: 10px;
+        letter-spacing: 0
+    }
+
+    .new-garage-door-sec .box-sec h4 {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    .new-garage-door-sec .box-sec article {
+        padding: 0px 0px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #D7D7D7;
+    }
+
+    .new-garage-door-sec .box-sec {
+        padding: 0 12px;
+    }
+
+    .new-garage-door-sec .box-sec article:hover {
+        background: none;
+    }
+
+    .new-garage-door-sec .box-sec article p {
+        letter-spacing: 0;
+    }
+
+    .new-garage-door-sec .box-sec ul li {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .new-garage-door-sec .box-sec ul {
+        column-count: 1;
+        margin-bottom: 20px;
+    }
+
+    .new-garage-door-sec .box-sec article .common-btn {
+        width: 100%;
+    }
+
+    .new-garage-door-sec .box-sec:last-child article {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .get-free-quote-sec h3 {
+        font-size: 30px;
+        line-height: 38px;
+        padding: 0 30px;
+    }
+
+    .get-free-quote-sec .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .get-free-quote-sec .common-btn {
+        padding: 15px 0;
+        line-height: 37px;
+    }
+
+    .get-free-quote-sec .background-image {
+        display: none;
+    }
+
+    .get-free-quote-sec .get-quote-content-sec {
+        position: unset;
+        transform: unset;
+    }
+
+    .get-free-quote-sec {
+        background-image: url(../images/get-a-free-quote-bg-image.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: unset;
+        padding: 50px 0;
+    }
+
+    .get-free-quote-sec h2 {
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .get-free-quote-sec h3::after {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 2px;
+        margin: 20px auto 30px auto;
+        background-color: #fff;
+    }
+
+    .design-center-sec .right-side {
+        display: none;
+    }
+
+    .design-center-sec h2 {
+        margin-bottom: 7px;
+    }
+
+    .design-center-sec h3 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    .design-center-sec h3::after {
+        display: none;
+    }
+
+    .design-center-sec p {
+        margin-bottom: 35px;
+    }
+
+    .faq-sec .left-side-image {
+        display: none;
+    }
+
+    .faq-sec .right-faq-sec {
+        padding-left: 12px;
+    }
+
+    .faq-sec {
+        padding-bottom: 0px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button.collapsed {
+        background-image: url(../images/faq-mobile-right-arrow.png);
+        background-position-y: 1px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        background-image: url(../images/faq-mobile-down-arrow.png);
+        background-position-y: 4px;
+    }
+
+    .select-door-popup .modal-dialog {
+        max-width: 94% !important;
+    }
+
+    .select-door-popup h2 {
+        font-size: 38px;
+        line-height: 52px;
+    }
+
+    .select-door-popup .modal-header {
+        padding: 20px 0;
+    }
+
+    .select-door-popup .modal-body {
+        padding: 20px 12px;
+    }
+
+    .select-door-popup .each-product .inner-content {
+        padding: 0 0px;
+        border: none;
+    }
+
+    .select-door-popup .each-product .heading-sec {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .select-door-popup .each-product h3 {
+        font-size: 37px;
+        line-height: 33px;
+        margin-bottom: 5px;
+        letter-spacing: 0;
+    }
+
+    .select-door-popup .each-product h4 {
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    .select-door-popup .each-product article {
+        padding: 0px 0px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #D7D7D7;
+    }
+
+    .select-door-popup .each-product ul li {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 16px;
+        margin-bottom: 17px;
+        background-position: 0 4px;
+        padding-left: 20px;
+    }
+
+    .modal.select-door-popup.show {
+        cursor: unset !important;
+        top: 20px;
+    }
+
+    .select-door-popup .common-btn {
+        margin-top: auto;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        width: 100%;
+    }
+
+    .select-door-popup .each-product ul {
+        margin-bottom: 10px;
+    }
+
+    .select-door-popup .each-product {
+        border-bottom: 1px solid #D7D7D7;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .select-door-popup .each-product:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+    }
+
+    .select-door-popup .modal-header .btn-close {
+        top: 7px;
+        right: 9px;
+    }
+
+    .select-door-popup .modal-header .btn-close img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .testimonial-sec .client-comment p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 35px;
+        padding: 0 0;
+    }
+
+    .testimonial-sec .carousel-control-next,
+    .testimonial-sec .carousel-control-prev {
+        display: none;
+    }
+
+    .testimonial-sec .client-details h4 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-top: 15px;
+    }
+
+    .testimonial-sec .carousel-indicators {
+        display: block;
+        margin: 10px 0 0 0;
+        position: unset;
+    }
+
+    .testimonial-sec .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #000866;
+    }
+
+    .testimonial-sec .client-comment img {
+        margin-bottom: 30px;
+        width: 275px;
+    }
+
+    .testimonial-sec .client-details .name-first-letter {
+        width: 45px;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .testimonial-sec .client-details {
+        margin-top: 30px;
+    }
+
+    .area-we-cover-sec .right-side ul li {
+        width: 50%;
+        font-size: 18px;
+        line-height: 22px;
+        background-size: 8px;
+        padding: 0 15px 13px 15px;
+    }
+
+    .area-we-cover-sec .right-side ul li:last-child {
+        width: 50%;
+    }
+
+    .area-we-cover-sec .left-side {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .area-we-cover-sec .left-side img {
+        width: 240px;
+    }
+
+    .diffrent-brand-sec {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .diffrent-brand-sec .logo-inline-image {
+        display: none;
+    }
+
+    .diffrent-brand-sec .logo-mobile-images {
+        display: block;
+    }
+
+    .diffrent-brand-sec .logo-mobile-images.owl-carousel .owl-item img {
+        width: auto !important;
+        margin: 0 auto !important;
+    }
+
+    .diffrent-brand-sec .owl-theme .owl-dots .owl-dot.active span,
+    .diffrent-brand-sec .owl-theme .owl-dots .owl-dot:hover span {
+        background: #000866 !important;
+    }
+
+    .diffrent-brand-sec .owl-theme .owl-controls {
+        margin-top: 25px;
+    }
+
+    .area-we-cover-sec .right-side ul {
+        padding-left: 25px;
+    }
+
+    .photo-gallery-sec.mobile {
+        display: block;
+    }
+
+    .photo-gallery-sec.desktop {
+        display: none;
+    }
+
+    .photo-gallery-sec figure a:hover .plus-img {
+        width: 50px;
+    }
+
+    .photo-gallery-sec .view-gallery-btn {
+        margin-top: 30px;
+    }
+
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 4px;
+        margin: 0px 4px;
+    }
+
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot.active span,
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot:hover span {
+        background: #000866 !important;
+    }
+
+    .photo-gallery-sec figure a:hover .plus-img {
+        opacity: 0;
+    }
+
+    .mfp-close {
+        width: 25px !important;
+        height: 25px !important;
+        right: 0px !important;
+        top: 27px;
+        font-size: 37px;
+    }
+
+    .footer-sec .footer-first-sec p {
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-sec {
+        padding: 50px 0;
+    }
+
+    .footer-sec h3 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-sec .footer-second-sec {
+        padding-left: 12px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-sec ul li {
+        font-size: 18px;
+    }
+
+    .copyright-sec p {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    /* ============== Residential page ====================== */
+
+    .inner-residential-commercial-banner-section h2 {
+        font-size: 48px !important;
+        line-height: 54px !important;
+        margin-bottom: 0;
+    }
+
+    .inner-residential-commercial-banner-section {
+        padding: 50px 0;
+        border-top: 1px solid #19398a45;
+    }
+
+    .inner-residential-commercial-banner-section h2::after {
+        margin: 25px auto 0 auto !important;
+    }
+
+    .products-box-section {
+        display: block;
+    }
+
+    .products-box-section article {
+        display: block;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-inner img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content {
+        text-align: center;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h4 {
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev,
+    .inner-residential-commercial-slider-section .carousel-control-next {
+        display: none;
+    }
+
+    .inner-product-boxes-section.sandk-common-padding {
+        padding: 50px 0 0;
+    }
+
+    .products-headings-section p {
+        margin-bottom: 15px;
+        padding: 0 0px;
+    }
+
+    .products-box-section:nth-child(even) {
+        padding-left: 12px;
+    }
+
+    .products-box-section:nth-child(odd) {
+        padding-right: 12px;
+    }
+
+    .products-box-section:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .products-box-section:nth-child(4) {
+        margin-top: 0;
+    }
+
+    .products-box-section {
+        margin-top: 30px !important;
+    }
+
+    .products-box-section article h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .products-box-section article p {
+        padding: 0 15px;
+        margin-bottom: auto;
+        letter-spacing: 0;
+    }
+
+    .products-box-section article ul {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .products-box-section article ul li {
+        font-size: 13px;
+        line-height: 18px;
+        background-size: 8px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .products-box-section article .common-btn {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .products-box-section article .learn-more-btn-sec {
+        margin: 0 15px;
+    }
+
+    .products-box-section article ul li {
+        background-position: left 5px !important;
+    }
+
+    .products-full-box-section.products-box-section article {
+        flex-direction: column-reverse;
+    }
+
+    .products-full-box-section.products-box-section article img {
+        width: 100%;
+    }
+
+    .products-full-box-section.products-box-section article .full-box-sec {
+        padding: 0;
+        width: 100%;
+    }
+
+    .row-reverse .products-full-box-section.products-box-section article {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .advantage-series-sec.last-product-section h2 {
+        font-size: 39px;
+    }
+
+    .residential-garage-door-openers-section .left-side {
+        padding-right: 12px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        padding: 0 30px;
+        margin-top: 30px;
+    }
+
+    .residential-garage-door-openers-section p {
+        padding: 0 12px;
+    }
+
+    .residential-garage-door-openers-section .common-btn {
+        margin-top: 30px;
+    }
+
+    .residential-garage-door-openers-section {
+        text-align: center;
+    }
+
+    .last-product-section {
+        padding-bottom: 50px;
+    }
+
+    /* ============== Contact page ====================== */
+
+    .contact-page-banner-section .left-side {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .contact-page-banner-section .contact-info-section {
+        display: none;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section {
+        display: block;
+        padding: 0 12px;
+        margin-top: 30px;
+    }
+
+    .contact-page-banner-section .right-side {
+        padding: 0 0 50px;
+        width: 100%;
+    }
+
+    .contact-page-banner-section p {
+        padding: 0px 12px 50px;
+    }
+
+    .contact-page-banner-section h2 {
+        text-align: center;
+    }
+
+    .contact-page-banner-section h2::after {
+        margin: 20px auto;
+    }
+
+    .contact-page-banner-section .right-side .inner-sec {
+        padding: 50px 20px;
+    }
+
+    .contact-page-banner-section .right-side h2 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    .contact-page-banner-section .right-side .form-btn button {
+        padding: 15px 20px;
+        font-size: 16px;
+        line-height: 20px !important;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section h2 {
+        font-size: 36px;
+        line-height: 46px;
+        color: #002855;
+        text-align: left;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: #002855;
+        margin: 10px 0;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .contact-page-banner-section .contact-info-section h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .contact-page-banner-section .contact-info-section .location-info ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    /* ========== About page ======== */
+    .our-team-and-culture-section p {
+        padding: 0;
+    }
+
+    .our-team-and-culture-section .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .our-team-and-culture-section .common-btn {
+        padding: 15px 0;
+        line-height: 37px;
+    }
+
+    .our-team-and-culture-section .background-image {
+        display: none;
+    }
+
+    .our-team-and-culture-section .our-team-and-culture-sec {
+        position: unset;
+        transform: unset;
+    }
+
+    .our-team-and-culture-section {
+        background-image: url(../images/residential-images/our-team-and-culture.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: unset;
+        padding: 50px 0;
+    }
+
+    .our-team-and-culture-section h2 {
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .about-page-banner-section {
+        padding: 60px 0;
+    }
+
+    .mission-and-values-section p {
+        padding: 0 10px;
+    }
+
+    .our-history-section h2 {
+        text-align: center;
+    }
+
+    .our-history-section h3 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .our-history-section .left-side {
+        padding-right: 12px;
+        text-align: center;
+    }
+
+    .our-history-section p {
+        margin-bottom: 40px;
+    }
+
+    /* ========== Product page ======== */
+
+    .product-page-banner-section .right-side {
+        display: none;
+    }
+
+    .product-page-banner-section .mobile-banner-image {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section {
+        text-align: center;
+    }
+
+    .product-page-banner-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .product-page-banner-section h4:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section .common-btn {
+        margin-top: 30px;
+    }
+
+    .product-page-product-item-section .desktop-product-sec {
+        display: none;
+    }
+
+    .product-page-product-item-section .mobile-product-sec {
+        display: flex !important;
+    }
+
+    .product-page-product-item-section h3 {
+        margin-bottom: 0;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item {
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button {
+        background: transparent;
+        border: 0;
+        box-shadow: unset;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        padding: 20px 12px;
+        margin-bottom: 0;
+        border-radius: 0;
+        color: #002855;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button::after {
+        content: "\f107";
+        font-family: 'FontAwesome';
+        background-image: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed::after {
+        content: "\f107";
+        font-family: 'FontAwesome';
+        background-image: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed {
+        color: #111;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button::before {
+        content: '';
+        height: 60%;
+        width: 5px;
+        background-color: #002855;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed::before {
+        background-color: #111;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-body {
+        padding: 20px 0 30px;
+    }
+
+
+
+    .product-features-options-section p {
+        padding: 0px 10px 30px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 50%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 12px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 12px;
+    }
+
+    .product-features-options-section .product-features-options-boxes {
+        padding-top: 30px !important;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        text-align: center;
+        padding: 10px 0 0;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2::after {
+        margin: 10px 0 30px;
+        width: 100px;
+    }
+
+    .product-page-product-item-section h3 {
+        font-size: 25px;
+        line-height: 33px;
+        padding-bottom: 20px;
+    }
+
+    .product-page-product-item-section .image-and-title article {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+
+    .product-page-product-item-section h4 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    .product-page-product-item-section .accordion-header {
+        padding: 0;
+    }
+
+    .product-page-product-item-section .productdetails table tr td {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 767.98px) and (orientation: landscape) {
+
+
+    /* ============== Navigation ====================== */
+
+    .header .navigation .dropdown .dropdown-menu {
+        position: relative;
+        display: none !important;
+    }
+
+    .header .navigation .dropdown:hover .dropdown-menu {
+        display: block !important;
+        position: relative !important;
+        margin: 0 !important;
+        top: 0 !important;
+        transform: unset !important;
+        inset: unset !important;
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 20px !important;
+    }
+
+    .header .navigation .dropdown .dropdown-menu.show {
+        display: block !important;
+        position: relative !important;
+        margin: 0 !important;
+        top: 0 !important;
+        transform: unset !important;
+        inset: unset !important;
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 20px !important;
+    }
+
+    .header .navigation .sub-dropdown:hover .sub-dropdown-menu {
+        display: block !important;
+        margin: 0;
+        border-top: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 0;
+    }
+
+    .header .navigation .sub-dropdown .sub-dropdown-menu {
+        display: block !important;
+        margin: 0;
+        border-top: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-menu li {
+        border-bottom: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-menu.show {
+        padding: 0;
+        border-radius: 0;
+        border: 0;
+        border-top: 3px solid #F2A900;
+    }
+
+    .header .navigation .dropdown:hover .dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-dropdown:hover .dropdown-menu.sub-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-inner-dropdown:hover .dropdown-menu.sub-inner-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-inner-to-inner-dropdown:hover .dropdown-menu.sub-inner-to-inner-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-dropdown .dropdown-menu.sub-dropdown-menu {
+        display: none !important;
+        margin-top: 0 !important;
+    }
+
+    .header .navigation .sub-inner-dropdown .dropdown-menu.sub-inner-dropdown-menu {
+        display: none !important;
+    }
+
+    .header .navigation .sub-inner-to-inner-dropdown .dropdown-menu.sub-inner-to-inner-dropdown-menu {
+        display: none !important;
+    }
+
+    .header .navigation .dropdown .dropdown-a::after {
+        padding-left: 0;
+        content: '\f054';
+        font-family: "FontAwesome";
+        margin-left: 20px;
+        display: block !important;
+        width: 0;
+        padding-right: 8px;
+        font-size: 14px;
+        line-height: 0;
+        padding-top: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .header-menu-mobile {
+        overflow: scroll !important;
+    }
+
+    .header .header-menu nav.navigation {
+        display: block !important;
+    }
+
+    .mobile-btn {
+        position: unset !important;
+        margin-bottom: 30px;
+    }
+
+    .header .navigation .sub-dropdown .sub-dropdown-menu {
+        border-top: 0 !important;
+    }
+
+    .header .navigation .dropdown .dropdown-a.show::after {
+        transform: rotate(90deg);
+    }
+
+
+    /* ============== Home page ====================== */
+
+    .mobile-toggle-sec {
+        display: flex;
+    }
+
+    .header .menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .navbar-toggler img {
+        width: 39px;
+        height: 39px;
+        margin-left: 20px;
+    }
+
+    .header .header-menu-mobile {
+        padding-left: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding-top: 130px;
+        transform: translateX(-101%);
+        transition: all .5s ease;
+        width: 100%;
+        z-index: 99;
+        overflow: hidden;
+    }
+
+    .header .header-menu-mobile.show {
+        transition: all .5s ease;
+        transform: translateX(0);
+        top: 0;
+    }
+
+    .header .header-right-side {
+        display: none;
+    }
+
+    .header .header-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1111;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .header nav.navigation {
+        display: block;
+    }
+
+    .header .header-menu-mobile nav.navigation ul {
+        width: 100%;
+        text-align: left;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .header-menu-mobile nav.navigation li {
+        padding: 0;
+        border-bottom: 1px solid #acabad;
+        margin: 0;
+    }
+
+    .header .header-menu-mobile nav.navigation li a {
+        display: block;
+        padding: 15px;
+    }
+
+    .header .header-menu-mobile a.header-design-center {
+        display: none;
+    }
+
+    .header .header-menu-mobile nav.navigation li::after {
+        display: none;
+    }
+
+    .header .header-menu-mobile nav.navigation li a {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+
+    .mobile-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 111111;
+        margin-top: 40px !important;
+        bottom: 40px;
+    }
+
+    .mobile-btn .header-bottom-btn {
+        padding: 8px 12px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        color: #002855;
+        text-transform: uppercase;
+        border: 2px solid #F2A900;
+        border-radius: 7px;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .sandk-common h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .sandk-common h2::after {
+        display: none;
+    }
+
+    .sandk-common-padding {
+        padding: 50px 0;
+    }
+
+    .sandk-common p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .common-btn {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+        padding: 15px 0;
+        justify-content: center;
+    }
+
+    .common-btn img {
+        width: 38px;
+    }
+
+    .banner .right-side {
+        width: 100%;
+    }
+
+    .banner .left-side {
+        width: 100%;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-image: url(../images/home-mobile-banner-image.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner .left-side h1 {
+        font-size: 50px;
+        line-height: 62px;
+        margin-bottom: 5px;
+    }
+
+    .banner .left-side h4 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .banner .banner-content {
+        position: unset;
+    }
+
+    .banner .left-side p {
+        font-size: 24px;
+        line-height: 32px;
+        padding-right: 0;
+    }
+
+    .banner .right-side .inner-sec {
+        padding: 35px 12px;
+    }
+
+    .banner .right-side h2 {
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .banner .right-side .form-btn button {
+        padding: 20px 0;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .banner .right-side .inner-sec form .form-group {
+        margin-bottom: 10px;
+    }
+
+    .year-of-excilence {
+        padding: 50px 0 50px 0;
+    }
+
+    .year-of-excilence .right-side {
+        padding-left: 12px;
+    }
+
+    .year-of-excilence .right-side h2 {
+        font-size: 70px;
+        line-height: 68px;
+        text-align: center;
+    }
+
+    .year-of-excilence .right-side h2 span {
+        font-size: 35px;
+    }
+
+    .year-of-excilence .right-side h2::after {
+        margin: 5px auto 30px auto;
+        width: 190px;
+    }
+
+    .year-of-excilence .right-side p {
+        padding-right: 0;
+    }
+
+    .year-of-excilence .center-side-list.mobile {
+        display: block;
+    }
+
+    .year-of-excilence .center-side-list.desktop {
+        display: none;
+    }
+
+    .year-of-excilence .center-side-list.mobile ul li {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 18px;
+        background-image: url(../images/red-check-Icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 3px;
+        padding-left: 28px;
+        color: #333333;
+    }
+
+    .year-of-excilence .center-side-list {
+        margin-top: 45px;
+    }
+
+    .year-of-excilence .need-new-garage-door.mobile {
+        opacity: 1;
+        background: none;
+        width: auto;
+        height: auto;
+    }
+
+    .year-of-excilence .need-new-garage-door {
+        opacity: 0;
+        display: none;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec .text-sec {
+        position: absolute;
+        top: 13px;
+        right: 0;
+        left: 69px;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec img {
+        width: 160px;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec .text-sec h3 {
+        font-size: 13px;
+    }
+
+    .garage-door-maintenance-sec .desktop-garage-door-maintenance-sec {
+        display: none;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec {
+        display: block;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec h3 {
+        font-size: 40px;
+        line-height: 41px;
+        margin-bottom: 12px;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec h5 {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+
+    .garage-door-maintenance-sec .heading-sec {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul li {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 15px;
+        background-image: url(../images/mobile-triangle-list-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+        background-size: 9px;
+        padding-left: 18px;
+        color: #333333;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul {
+        padding-top: 30px;
+        border-top: 2px solid #111111;
+    }
+
+    .common-problems-sec {
+        padding-top: 0;
+    }
+
+    .common-problems-sec::before {
+        width: 90%;
+        height: 2px;
+        margin: 0px auto 50px auto;
+    }
+
+    .fix-it-yourself-sec p {
+        margin-bottom: 35px;
+        padding: 0 0px;
+    }
+
+    .fix-it-yourself-sec .common-btn {
+        padding: 15px 0;
+        line-height: 46px;
+    }
+
+    .fix-it-yourself-sec .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .fix-it-yourself-sec h2 {
+        padding: 0 25px;
+    }
+
+    .common-problems-sec .right-side {
+        padding-left: 12px;
+    }
+
+    .common-problems-sec .left-side {
+        display: none;
+    }
+
+    .common-problems-sec .right-side h2 {
+        text-align: center;
+    }
+
+    .common-problems-sec .right-side li {
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 15px;
+    }
+
+    .new-garage-door-sec .box-sec .heading {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .new-garage-door-sec .box-sec h3 {
+        font-size: 40px;
+        line-height: 38px;
+        margin-bottom: 10px;
+        letter-spacing: 0
+    }
+
+    .new-garage-door-sec .box-sec h4 {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    .new-garage-door-sec .box-sec article {
+        padding: 0px 0px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #D7D7D7;
+    }
+
+    .new-garage-door-sec .box-sec {
+        padding: 0 12px;
+    }
+
+    .new-garage-door-sec .box-sec article:hover {
+        background: none;
+    }
+
+    .new-garage-door-sec .box-sec article p {
+        letter-spacing: 0;
+    }
+
+    .new-garage-door-sec .box-sec ul li {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .new-garage-door-sec .box-sec ul {
+        column-count: 1;
+        margin-bottom: 20px;
+    }
+
+    .new-garage-door-sec .box-sec article .common-btn {
+        width: 100%;
+    }
+
+    .new-garage-door-sec .box-sec:last-child article {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .get-free-quote-sec h3 {
+        font-size: 30px;
+        line-height: 38px;
+        padding: 0 30px;
+    }
+
+    .get-free-quote-sec .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .get-free-quote-sec .common-btn {
+        padding: 15px 0;
+        line-height: 37px;
+    }
+
+    .get-free-quote-sec .background-image {
+        display: none;
+    }
+
+    .get-free-quote-sec .get-quote-content-sec {
+        position: unset;
+        transform: unset;
+    }
+
+    .get-free-quote-sec {
+        background-image: url(../images/get-a-free-quote-bg-image.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: unset;
+        padding: 50px 0;
+    }
+
+    .get-free-quote-sec h2 {
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .get-free-quote-sec h3::after {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 2px;
+        margin: 20px auto 30px auto;
+        background-color: #fff;
+    }
+
+    .design-center-sec .right-side {
+        display: none;
+    }
+
+    .design-center-sec h2 {
+        margin-bottom: 7px;
+    }
+
+    .design-center-sec h3 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    .design-center-sec h3::after {
+        display: none;
+    }
+
+    .design-center-sec p {
+        margin-bottom: 35px;
+    }
+
+    .faq-sec .left-side-image {
+        display: none;
+    }
+
+    .faq-sec .right-faq-sec {
+        padding-left: 12px;
+    }
+
+    .faq-sec {
+        padding-bottom: 0px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button.collapsed {
+        background-image: url(../images/faq-mobile-right-arrow.png);
+        background-position-y: 1px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        background-image: url(../images/faq-mobile-down-arrow.png);
+        background-position-y: 4px;
+    }
+
+    .select-door-popup .modal-dialog {
+        max-width: 94% !important;
+    }
+
+    .select-door-popup h2 {
+        font-size: 38px;
+        line-height: 52px;
+    }
+
+    .select-door-popup .modal-header {
+        padding: 20px 0;
+    }
+
+    .select-door-popup .modal-body {
+        padding: 20px 12px;
+    }
+
+    .select-door-popup .each-product .inner-content {
+        padding: 0 0px;
+        border: none;
+    }
+
+    .select-door-popup .each-product .heading-sec {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .select-door-popup .each-product h3 {
+        font-size: 37px;
+        line-height: 33px;
+        margin-bottom: 5px;
+        letter-spacing: 0;
+    }
+
+    .select-door-popup .each-product h4 {
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    .select-door-popup .each-product article {
+        padding: 0px 0px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #D7D7D7;
+    }
+
+    .select-door-popup .each-product ul li {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 16px;
+        margin-bottom: 17px;
+        background-position: 0 4px;
+        padding-left: 20px;
+    }
+
+    .modal.select-door-popup.show {
+        cursor: unset !important;
+        top: 20px;
+    }
+
+    .select-door-popup .common-btn {
+        margin-top: auto;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        width: 100%;
+    }
+
+    .select-door-popup .each-product ul {
+        margin-bottom: 10px;
+    }
+
+    .select-door-popup .each-product {
+        border-bottom: 1px solid #D7D7D7;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .select-door-popup .each-product:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+    }
+
+    .select-door-popup .modal-header .btn-close {
+        top: 7px;
+        right: 9px;
+    }
+
+    .select-door-popup .modal-header .btn-close img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .testimonial-sec .client-comment p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 35px;
+        padding: 0 0;
+    }
+
+    .testimonial-sec .carousel-control-next,
+    .testimonial-sec .carousel-control-prev {
+        display: none;
+    }
+
+    .testimonial-sec .client-details h4 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-top: 15px;
+    }
+
+    .testimonial-sec .carousel-indicators {
+        display: block;
+        margin: 10px 0 0 0;
+        position: unset;
+    }
+
+    .testimonial-sec .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #000866;
+    }
+
+    .testimonial-sec .client-comment img {
+        margin-bottom: 30px;
+        width: 275px;
+    }
+
+    .testimonial-sec .client-details .name-first-letter {
+        width: 45px;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .testimonial-sec .client-details {
+        margin-top: 30px;
+    }
+
+    .area-we-cover-sec .right-side ul li {
+        width: 50%;
+        font-size: 18px;
+        line-height: 22px;
+        background-size: 8px;
+        padding: 0 15px 13px 15px;
+    }
+
+    .area-we-cover-sec .right-side ul li:last-child {
+        width: 50%;
+    }
+
+    .area-we-cover-sec .left-side {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .area-we-cover-sec .left-side img {
+        width: 240px;
+    }
+
+    .diffrent-brand-sec {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .diffrent-brand-sec .logo-inline-image {
+        display: none;
+    }
+
+    .diffrent-brand-sec .logo-mobile-images {
+        display: block;
+    }
+
+    .diffrent-brand-sec .logo-mobile-images.owl-carousel .owl-item img {
+        width: auto !important;
+        margin: 0 auto !important;
+    }
+
+    .diffrent-brand-sec .owl-theme .owl-dots .owl-dot.active span,
+    .diffrent-brand-sec .owl-theme .owl-dots .owl-dot:hover span {
+        background: #000866 !important;
+    }
+
+    .diffrent-brand-sec .owl-theme .owl-controls {
+        margin-top: 25px;
+    }
+
+    .area-we-cover-sec .right-side ul {
+        padding-left: 25px;
+    }
+
+    .photo-gallery-sec.mobile {
+        display: block;
+    }
+
+    .photo-gallery-sec.desktop {
+        display: none;
+    }
+
+    .photo-gallery-sec figure a:hover .plus-img {
+        width: 50px;
+    }
+
+    .photo-gallery-sec .view-gallery-btn {
+        margin-top: 30px;
+    }
+
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 4px;
+        margin: 0px 4px;
+    }
+
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot.active span,
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot:hover span {
+        background: #000866 !important;
+    }
+
+    .photo-gallery-sec figure a:hover .plus-img {
+        opacity: 0;
+    }
+
+    .mfp-close {
+        width: 25px !important;
+        height: 25px !important;
+        right: 0px !important;
+        top: 27px;
+        font-size: 37px;
+    }
+
+    .footer-sec .footer-first-sec p {
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-sec {
+        padding: 50px 0;
+    }
+
+    .footer-sec h3 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-sec .footer-second-sec {
+        padding-left: 12px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-sec ul li {
+        font-size: 18px;
+    }
+
+    .copyright-sec p {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    /* ============== Residential page ====================== */
+
+    .inner-residential-commercial-banner-section h2 {
+        font-size: 48px !important;
+        line-height: 54px !important;
+        margin-bottom: 0;
+    }
+
+    .inner-residential-commercial-banner-section {
+        padding: 50px 0;
+        border-top: 1px solid #19398a45;
+    }
+
+    .inner-residential-commercial-banner-section h2::after {
+        margin: 25px auto 0 auto !important;
+    }
+
+    .products-box-section {
+        display: block;
+    }
+
+    .products-box-section article {
+        display: block;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-inner img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content {
+        text-align: center;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h4 {
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev,
+    .inner-residential-commercial-slider-section .carousel-control-next {
+        display: none;
+    }
+
+    .inner-product-boxes-section.sandk-common-padding {
+        padding: 50px 0 0;
+    }
+
+    .products-headings-section p {
+        margin-bottom: 15px;
+        padding: 0 0px;
+    }
+
+    .products-box-section:nth-child(even) {
+        padding-left: 12px;
+    }
+
+    .products-box-section:nth-child(odd) {
+        padding-right: 12px;
+    }
+
+    .products-box-section:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .products-box-section:nth-child(4) {
+        margin-top: 0;
+    }
+
+    .products-box-section {
+        margin-top: 30px !important;
+    }
+
+    .products-box-section article h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .products-box-section article p {
+        padding: 0 15px;
+        margin-bottom: auto;
+        letter-spacing: 0;
+    }
+
+    .products-box-section article ul {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .products-box-section article ul li {
+        font-size: 13px;
+        line-height: 18px;
+        background-size: 8px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .products-box-section article .common-btn {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .products-box-section article .learn-more-btn-sec {
+        margin: 0 15px;
+    }
+
+    .products-box-section article ul li {
+        background-position: left 5px !important;
+    }
+
+    .products-full-box-section.products-box-section article {
+        flex-direction: column-reverse;
+    }
+
+    .products-full-box-section.products-box-section article img {
+        width: 100%;
+    }
+
+    .products-full-box-section.products-box-section article .full-box-sec {
+        padding: 0;
+        width: 100%;
+    }
+
+    .row-reverse .products-full-box-section.products-box-section article {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .advantage-series-sec.last-product-section h2 {
+        font-size: 39px;
+    }
+
+    .residential-garage-door-openers-section .left-side {
+        padding-right: 12px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        padding: 0 30px;
+        margin-top: 30px;
+    }
+
+    .residential-garage-door-openers-section p {
+        padding: 0 12px;
+    }
+
+    .residential-garage-door-openers-section .common-btn {
+        margin-top: 30px;
+    }
+
+    .residential-garage-door-openers-section {
+        text-align: center;
+    }
+
+    .last-product-section {
+        padding-bottom: 50px;
+    }
+
+    /* ============== Contact page ====================== */
+
+    .contact-page-banner-section .left-side {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .contact-page-banner-section .contact-info-section {
+        display: none;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section {
+        display: block;
+        padding: 0 12px;
+        margin-top: 30px;
+    }
+
+    .contact-page-banner-section .right-side {
+        padding: 0 0 50px;
+        width: 100%;
+    }
+
+    .contact-page-banner-section p {
+        padding: 0px 12px 50px;
+    }
+
+    .contact-page-banner-section h2 {
+        text-align: center;
+    }
+
+    .contact-page-banner-section h2::after {
+        margin: 20px auto;
+    }
+
+    .contact-page-banner-section .right-side .inner-sec {
+        padding: 50px 20px;
+    }
+
+    .contact-page-banner-section .right-side h2 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    .contact-page-banner-section .right-side .form-btn button {
+        padding: 15px 20px;
+        font-size: 16px;
+        line-height: 20px !important;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section h2 {
+        font-size: 36px;
+        line-height: 46px;
+        color: #002855;
+        text-align: left;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: #002855;
+        margin: 10px 0;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .contact-page-banner-section .contact-info-section h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .contact-page-banner-section .contact-info-section .location-info ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+
+    /* ============== About page ====================== */
+    .our-team-and-culture-section p {
+        padding: 0;
+    }
+
+    .our-team-and-culture-section .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .our-team-and-culture-section .common-btn {
+        padding: 15px 0;
+        line-height: 37px;
+    }
+
+    .our-team-and-culture-section .background-image {
+        display: none;
+    }
+
+    .our-team-and-culture-section .our-team-and-culture-sec {
+        position: unset;
+        transform: unset;
+    }
+
+    .our-team-and-culture-section {
+        background-image: url(../images/residential-images/our-team-and-culture.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: unset;
+        padding: 50px 0;
+    }
+
+    .our-team-and-culture-section h2 {
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .about-page-banner-section {
+        padding: 60px 0;
+    }
+
+    .mission-and-values-section p {
+        padding: 0 10px;
+    }
+
+    .our-history-section h2 {
+        text-align: center;
+    }
+
+    .our-history-section h3 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .our-history-section .left-side {
+        padding-right: 12px;
+        text-align: center;
+    }
+
+    .our-history-section p {
+        margin-bottom: 40px;
+    }
+
+
+    /* ========== Product page ======== */
+
+    .product-page-banner-section .right-side {
+        display: none;
+    }
+
+    .product-page-banner-section .mobile-banner-image {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section {
+        text-align: center;
+    }
+
+    .product-page-banner-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .product-page-banner-section h4:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section .common-btn {
+        margin-top: 30px;
+    }
+
+    .product-page-product-item-section .desktop-product-sec {
+        display: none;
+    }
+
+    .product-page-product-item-section .mobile-product-sec {
+        display: flex !important;
+    }
+
+    .product-page-product-item-section h3 {
+        margin-bottom: 0;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item {
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button {
+        background: transparent;
+        border: 0;
+        box-shadow: unset;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        padding: 20px 12px;
+        margin-bottom: 0;
+        border-radius: 0;
+        color: #002855;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button::after {
+        content: "\f107";
+        font-family: 'FontAwesome';
+        background-image: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed::after {
+        content: "\f107";
+        font-family: 'FontAwesome';
+        background-image: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed {
+        color: #111;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button::before {
+        content: '';
+        height: 60%;
+        width: 5px;
+        background-color: #002855;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed::before {
+        background-color: #111;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-body {
+        padding: 20px 0 30px;
+    }
+
+
+
+    .product-features-options-section p {
+        padding: 0px 10px 30px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 50%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 12px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 12px;
+    }
+
+    .product-features-options-section .product-features-options-boxes {
+        padding-top: 30px !important;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        text-align: center;
+        padding: 10px 0 0;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2::after {
+        margin: 10px 0 30px;
+        width: 100px;
+    }
+
+    .product-page-product-item-section h3 {
+        font-size: 25px;
+        line-height: 33px;
+        padding-bottom: 20px;
+    }
+
+    .product-page-product-item-section .image-and-title article {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+
+    .product-page-product-item-section h4 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    .product-page-product-item-section .accordion-header {
+        padding: 0;
+    }
+
+    .product-page-product-item-section .productdetails table tr td {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* ============== Navigation ====================== */
+    .header .navigation .dropdown .dropdown-menu li a {
+        font-size: 6px;
+        line-height: 12px;
+        padding: 3px 8px;
+    }
+
+    .header .navigation .sub-dropdown .dropdown-sub-a::after {
+        font-size: 8px;
+        margin-left: 10px;
+    }
+
+    .header .navigation .sub-inner-dropdown .dropdown-sub-a::after {
+        font-size: 8px;
+        margin-left: 10px;
+    }
+
+    .header .navigation .sub-inner-to-inner-dropdown .dropdown-sub-a::after {
+        font-size: 8px;
+        margin-left: 10px;
+    }
+
+    .header .navigation .dropdown:hover .dropdown-menu {
+        min-width: auto;
+    }
+
+    /* ============== Home page ====================== */
+
+    .header .header-right-side p {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 0;
+    }
+
+    .header .header-right-side a.tel {
+        font-size: 14px;
+        line-height: 30px;
+        background-position: 0 6px;
+        display: inline-block;
+        padding-left: 25px;
+        background-size: 20px;
+    }
+
+    .header .header-menu nav.navigation li a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .header .header-menu nav.navigation li {
+        margin: 0 4px;
+    }
+
+    .header .header-menu a.header-design-center {
+        padding: 5px 10px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .banner img {
+        height: 390px !important;
+        object-fit: cover;
+    }
+
+    .banner .left-side h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .banner .left-side h1 br {
+        display: none;
+    }
+
+    .banner .left-side h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .banner .left-side p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 0;
+    }
+
+    .banner .right-side,
+    .banner .left-side {
+        width: 50%;
+    }
+
+    .banner .right-side .inner-sec {
+        padding: 20px;
+    }
+
+    .banner .right-side h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .banner .right-side .inner-sec form .form-group input,
+    .banner .right-side .inner-sec form .form-group textarea {
+        padding: 5px 10px;
+    }
+
+    .banner .right-side .inner-sec form .form-group {
+        margin-bottom: 10px;
+    }
+
+    .banner .right-side .form-btn button {
+        padding: 8px 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .banner .row {
+        align-items: self-start;
+    }
+
+    .banner .left-side {
+        padding-top: 80px;
+    }
+
+    .year-of-excilence .right-side h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .year-of-excilence .right-side h2 span {
+        font-size: 42px;
+    }
+
+    .year-of-excilence .right-side p {
+        padding-right: 0;
+    }
+
+    .year-of-excilence .right-side {
+        padding-left: 25px;
+    }
+
+    .year-of-excilence .right-side h2::after {
+        margin: 10px 0 30px;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li {
+        width: 23.9% !important;
+        padding: 10px;
+        font-size: 15px;
+        background-size: 40px;
+        padding-left: 47px;
+        margin-right: 10px;
+        line-height: 20px;
+        background-position: 0;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li::after {
+        left: 19px;
+        border-bottom: 64px solid #F1F1F1;
+    }
+
+    .year-of-excilence {
+        padding: 80px 0 60px 0;
+    }
+
+    .year-of-excilence .center-side-list {
+        margin-top: 30px;
+    }
+
+    .sandk-common p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .sandk-common-padding {
+        padding: 60px 0;
+    }
+
+    .sandk-common h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .sandk-common h2::after {
+        margin: 20px auto 50px;
+    }
+
+    .common-btn .hover-icon {
+        width: 25px;
+    }
+
+    .common-btn .normal-icon {
+        width: 25px;
+    }
+
+    .common-btn {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 10px 25px;
+    }
+
+    .garage-door-maintenance-sec h3 {
+        font-size: 42px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .garage-door-maintenance-sec h5 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .garage-door-maintenance-sec .left-side-tab-items a.each-offer-item h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .garage-door-maintenance-sec .left-side-tab-items a.each-offer-item {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .garage-door-maintenance-sec .common-btn {
+        margin-top: 20px;
+    }
+
+    .common-problems-sec::before {
+        margin: 0px auto 60px;
+    }
+
+    .common-problems-sec {
+        padding-top: 0;
+    }
+
+    .common-problems-sec .right-side h2::after {
+        margin: 20px 0 30px;
+    }
+
+    .common-problems-sec .row {
+        align-items: self-start !important;
+    }
+
+    .common-problems-sec .right-side {
+        padding-left: 20px;
+    }
+
+    .common-problems-sec .right-side li {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+        background-size: 12px;
+    }
+
+    .common-problems-sec .right-side p {
+        letter-spacing: -0.12px;
+        line-height: 24px;
+    }
+
+    .common-problems-sec .right-side .problem-list {
+        margin-bottom: 10px;
+    }
+
+    .fix-it-yourself-sec p {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .fix-it-yourself-sec .common-btn {
+        padding: 10px 25px;
+        line-height: 28px;
+    }
+
+    .new-garage-door-sec .box-sec article {
+        padding: 20px 10px;
+    }
+
+    .new-garage-door-sec .box-sec ul {
+        column-count: 1;
+        margin-bottom: 30px;
+    }
+
+    .new-garage-door-sec .box-sec h3 {
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0;
+    }
+
+    .new-garage-door-sec .box-sec h4 {
+        font-size: 18px;
+        line-height: 17px;
+    }
+
+    .new-garage-door-sec .box-sec article p {
+        font-size: 16px;
+        line-height: 20px
+    }
+
+    .new-garage-door-sec .box-sec ul li {
+        font-size: 14px;
+    }
+
+    .design-center-sec h3::after {
+        margin: 20px auto 30px auto;
+    }
+
+    .design-center-sec h3 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .design-center-sec p {
+        margin-bottom: 30px;
+    }
+
+    .get-free-quote-sec h3 {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 30px;
+    }
+
+    .get-free-quote-sec .common-btn {
+        padding: 10px 25px;
+        line-height: 28px;
+    }
+
+    .get-free-quote-sec h2::after {
+        margin-bottom: 30px;
+    }
+
+    .testimonial-sec .client-comment p {
+        font-size: 34px;
+        line-height: 42px;
+        padding: 0 50px;
+    }
+
+    .testimonial-sec .client-comment img {
+        margin-bottom: 20px;
+        width: 30%;
+    }
+
+    .testimonial-sec .client-details .name-first-letter {
+        width: 70px;
+        height: 70px;
+        font-size: 46px;
+    }
+
+    .testimonial-sec .client-details h4 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .area-we-cover-sec .right-side ul li {
+        width: 33.33%;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        padding: 0 0 20px 0;
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button.collapsed {
+        background-size: 20px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        background-size: 20px;
+    }
+
+    .faq-sec .right-faq-sec {
+        padding-left: 30px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .diffrent-brand-sec {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .diffrent-brand-sec figure {
+        width: 10%;
+    }
+
+    .footer-sec ul li {
+        font-size: 16px;
+    }
+
+    .footer-sec h3 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .footer-sec .footer-first-sec p {
+        font-size: 17px;
+        line-height: 22px;
+        padding-right: 0px;
+    }
+
+    .footer-sec .footer-first-sec .social ul li {
+        margin-right: 12px;
+    }
+
+    .footer-sec .footer-third-sec ul li:nth-child(3) {
+        background-position: 0 7px;
+    }
+
+    .footer-sec .footer-third-sec ul li:nth-child(2) {
+        background-position: 0 4px;
+    }
+
+    .footer-sec .footer-content {
+        width: 50%;
+    }
+
+    .footer-sec {
+        padding: 50px 0;
+    }
+
+    .footer-sec .footer-third-sec,
+    .footer-sec .footer-four-sec {
+        padding-top: 50px;
+    }
+
+    /* ============== Residential page ====================== */
+
+    .inner-residential-commercial-banner-section {
+        padding: 50px 0 60px 0;
+    }
+
+    .inner-residential-commercial-banner-section h2 {
+        font-size: 52px !important;
+        line-height: 60px !important;
+    }
+
+    .inner-residential-commercial-banner-section h2::after {
+        margin: 30px auto 0 auto !important;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-inner img {
+        width: 100%;
+        /*height: 29vh;*/
+        object-fit: cover;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev {
+        left: 1%;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-next {
+        right: 1%;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h4 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 5px;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev img,
+    .inner-residential-commercial-slider-section .carousel-control-next img {
+        width: 60%;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content .common-btn {
+        font-size: 20px;
+        line-height: 23px;
+        padding: 10px 20px;
+    }
+
+    .products-headings-section p {
+        margin-bottom: 40px;
+        padding: 0 0px;
+    }
+
+    .products-box-section article h3 {
+        padding: 0 15px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .products-box-section article p {
+        padding: 0 15px;
+    }
+
+    .products-box-section article ul li {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        background-size: 8px;
+    }
+
+    .products-box-section article ul {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .products-box-section:nth-child(odd) {
+        padding-right: 20px;
+    }
+
+    .products-box-section:nth-child(even) {
+        padding-left: 20px;
+    }
+
+    .inner-product-boxes-section.sandk-common-padding {
+        padding: 60px 0 0;
+    }
+
+    .products-box-section article .common-btn {
+        margin-left: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 23px;
+        padding: 10px 20px;
+    }
+
+    .products-full-box-section.products-box-section article .full-box-sec {
+        padding: 0;
+    }
+
+    .residential-Polystyrene-steel-garage-door-section h2 {
+        font-size: 46px;
+        line-height: 57px;
+    }
+
+    .residential-garage-door-openers-section .left-side {
+        padding-right: 30px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .residential-garage-door-openers-section .common-btn {
+        margin-top: 20px;
+    }
+
+    .residential-garage-door-openers-section h2 {
+        padding: 0 70px;
+    }
+
+    .last-product-section {
+        padding-bottom: 60px !important;
+    }
+
+
+    /* ========== Contact page ======== */
+
+    .contact-page-banner-section h2::after {
+        margin: 20px 0;
+    }
+
+    .contact-page-banner-section {
+        padding: 50px 0;
+    }
+
+    .contact-page-banner-section p {
+        padding-right: 0;
+    }
+
+    .contact-page-banner-section .contact-info-section h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .contact-page-banner-section .contact-info-section h2::after {
+        margin: 10px 0;
+        width: 90px;
+    }
+
+    .contact-page-banner-section .contact-info-section h3 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+
+    .contact-page-banner-section .contact-info-section .location-info ul li {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section {
+        padding-left: 0;
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul li {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul {
+        padding-top: 30px;
+    }
+
+    .contact-page-banner-section .right-side,
+    .contact-page-banner-section .left-side {
+        width: 50%;
+    }
+
+    .contact-page-banner-section .right-side .inner-sec {
+        padding: 50px 20px;
+    }
+
+    .contact-page-banner-section .right-side h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-banner-section .right-side .form-btn button {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    .contact-page-banner-section .contact-info-section {
+        margin-top: 40px;
+    }
+
+    /* ========== About page ======== */
+    .our-team-and-culture-section p {
+        padding: 0 12px;
+    }
+
+    .our-team-and-culture-section .common-btn {
+        padding: 10px 25px;
+        line-height: 28px;
+    }
+
+    .our-team-and-culture-section h2::after {
+        margin-bottom: 30px;
+    }
+
+    .about-page-banner-section {
+        padding: 100px 0;
+    }
+
+    .mission-and-values-section p {
+        padding: 0 40px;
+    }
+
+    .our-history-section h3 {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .our-history-section .left-side {
+        padding-right: 12px;
+    }
+
+    .our-history-section h2::after {
+        margin-left: 0;
+    }
+
+
+    /* ========== Product page ======== */
+    .product-page-banner-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+
+    .product-page-banner-section h4:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .product-page-banner-section p {
+        line-height: 20px;
+    }
+
+    .product-page-product-item-section .product-nav-tab li a {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 10px;
+    }
+
+    .product-page-product-item-section .product-nav-tab li a::after {
+        background-size: 15px;
+    }
+
+    .product-page-product-item-section .right-side {
+        padding-left: 20px;
+    }
+
+    .product-page-product-item-section .left-side {
+        padding-right: 12px;
+        top: 100px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2::after {
+        margin: 15px 0 30px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .product-page-product-item-section h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .product-page-product-item-section .productdetails table tr td {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product-page-product-item-section .warranty-content h2 {
+        font-size: 26px;
+    }
+
+    .product-page-product-item-section h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .product-page-product-item-section .image-and-title .col-2 {
+        width: 25%;
+        margin-bottom: 20px;
+    }
+
+    .product-page-product-item-section .inner-row {
+        margin-top: 20px;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .product-features-options-section p {
+        padding: 0px 10px 30px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        padding: 30px 15px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.058em;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 30%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        width: 70%;
+        margin-left: 15px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        padding-top: 10px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 15px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 15px;
+    }
+
+    .product-features-options-section .product-features-options-boxes {
+        padding-top: 40px;
+    }
+
+    .sandk-inner-common h2 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .banner-img {
+        height: 450px !important;
+    }
+
+    /* ============== Navigation ====================== */
+    .header .navigation .dropdown .dropdown-menu li a {
+        font-size: 10px;
+        line-height: 16px;
+        padding: 5px 10px;
+    }
+
+    .header .navigation .sub-dropdown .dropdown-sub-a::after {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .header .navigation .sub-inner-dropdown .dropdown-sub-a::after {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .header .navigation .sub-inner-to-inner-dropdown .dropdown-sub-a::after {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+
+    /* ============== Home page ====================== */
+
+    .header .header-menu a.header-design-center {
+        padding: 8px 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .header .header-right-side a.tel {
+        font-size: 21px;
+        padding-left: 26px;
+        background-size: 24px;
+        background-position: 0 5px;
+    }
+
+    .header .header-right-side p {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .header .header-menu nav.navigation li a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .header .header-menu nav.navigation li {
+        margin: 0 5px;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .banner .left-side h4 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .banner .left-side h1 br {
+        display: none;
+    }
+
+    .banner .left-side h1 {
+        font-size: 72px;
+        line-height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .banner .left-side p {
+        font-size: 20px;
+        line-height: 27px;
+        padding-right: 0;
+    }
+
+    .banner .right-side,
+    .banner .left-side {
+        width: 50%;
+    }
+
+    .banner .right-side .inner-sec {
+        padding: 40px 20px;
+    }
+
+    .banner .right-side h2 {
+        font-size: 38px;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+
+    .banner .right-side .inner-sec form .form-group input,
+    .banner .right-side .inner-sec form .form-group textarea {
+        padding: 5px 10px;
+    }
+
+    .banner .right-side .inner-sec form .form-group {
+        margin-bottom: 10px;
+    }
+
+    .banner .right-side .form-btn button {
+        padding: 8px 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    // .banner .row { align-items: self-start; }
+    // .banner .left-side{padding-top: 80px;}
+    .year-of-excilence .right-side h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .year-of-excilence .right-side h2 span {
+        font-size: 42px;
+    }
+
+    .year-of-excilence .right-side p {
+        padding-right: 0;
+    }
+
+    .year-of-excilence .right-side {
+        padding-left: 25px;
+    }
+
+    .year-of-excilence .right-side h2::after {
+        margin: 10px 0 30px;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li {
+        width: 23.9% !important;
+        padding: 10px;
+        font-size: 20px;
+        background-size: 50px;
+        padding-left: 37px;
+        margin-right: 10px;
+        line-height: 30px;
+        background-position: 0;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li::after {
+        left: 19px;
+        border-bottom: 84px solid #F1F1F1;
+    }
+
+    .year-of-excilence .center-side-list {
+        margin-top: 30px;
+    }
+
+    .sandk-common p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .sandk-common h2 {
+        font-size: 58px;
+        line-height: 68px;
+    }
+
+    .sandk-common h2::after {
+        margin: 20px auto 50px;
+    }
+
+    .common-btn .hover-icon {
+        width: 30px;
+    }
+
+    .common-btn .normal-icon {
+        width: 30px;
+    }
+
+    .common-btn {
+        font-size: 26px;
+        line-height: 32px;
+        padding: 15px 30px;
+    }
+
+    .sandk-common-padding {
+        padding: 100px 0;
+    }
+
+    .garage-door-maintenance-sec h3 {
+        font-size: 42px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .garage-door-maintenance-sec h5 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .garage-door-maintenance-sec .left-side-tab-items a.each-offer-item h4 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    .garage-door-maintenance-sec .left-side-tab-items a.each-offer-item {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .garage-door-maintenance-sec .common-btn {
+        margin-top: 20px;
+    }
+
+    .common-problems-sec::before {
+        margin: 0px auto 60px;
+    }
+
+    .common-problems-sec {
+        padding-top: 0;
+    }
+
+    .common-problems-sec .right-side h2::after {
+        margin: 20px 0 30px;
+    }
+
+    .common-problems-sec .row {
+        align-items: self-start !important;
+    }
+
+    .common-problems-sec .right-side {
+        padding-left: 20px;
+    }
+
+    .common-problems-sec .right-side li {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+        background-size: 12px;
+    }
+
+    .common-problems-sec .right-side p {
+        letter-spacing: -0.12px;
+        line-height: 24px;
+    }
+
+    .common-problems-sec .right-side .problem-list {
+        margin-bottom: 10px;
+    }
+
+    .fix-it-yourself-sec p {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .fix-it-yourself-sec .common-btn {
+        padding: 15px 30px;
+        line-height: 32px;
+    }
+
+    .new-garage-door-sec .box-sec article {
+        padding: 20px 10px;
+    }
+
+    .new-garage-door-sec .box-sec ul {
+        column-count: 1;
+        margin-bottom: 30px;
+    }
+
+    .new-garage-door-sec .box-sec h3 {
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0;
+    }
+
+    .new-garage-door-sec .box-sec h4 {
+        font-size: 18px;
+        line-height: 17px;
+    }
+
+    .new-garage-door-sec .box-sec article p {
+        font-size: 16px;
+        line-height: 20px
+    }
+
+    .new-garage-door-sec .box-sec ul li {
+        font-size: 14px;
+    }
+
+    .design-center-sec h3::after {
+        margin: 20px auto 30px auto;
+    }
+
+    .design-center-sec h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .design-center-sec p {
+        margin-bottom: 30px;
+    }
+
+    .get-free-quote-sec h3 {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 30px;
+    }
+
+    .get-free-quote-sec .common-btn {
+        padding: 15px 30px;
+        line-height: 32px;
+    }
+
+    .get-free-quote-sec h2::after {
+        margin-bottom: 30px;
+    }
+
+    .testimonial-sec .client-comment p {
+        font-size: 34px;
+        line-height: 42px;
+        padding: 0 50px;
+    }
+
+    .testimonial-sec .client-comment img {
+        margin-bottom: 20px;
+        width: 30%;
+    }
+
+    .testimonial-sec .client-details .name-first-letter {
+        width: 70px;
+        height: 70px;
+        font-size: 46px;
+    }
+
+    .testimonial-sec .client-details h4 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .area-we-cover-sec .right-side ul li {
+        width: 33.33%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        padding: 0 0 20px 0;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button.collapsed {
+        background-size: 20px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        background-size: 20px;
+    }
+
+    .faq-sec .right-faq-sec {
+        padding-left: 30px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .diffrent-brand-sec {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .diffrent-brand-sec figure {
+        width: 10%;
+    }
+
+    .footer-sec ul li {
+        font-size: 16px;
+    }
+
+    .footer-sec h3 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .footer-sec .footer-first-sec p {
+        font-size: 17px;
+        line-height: 22px;
+        padding-right: 0px;
+    }
+
+    .footer-sec .footer-first-sec .social ul li {
+        margin-right: 12px;
+    }
+
+    .footer-sec .footer-third-sec ul li:nth-child(3) {
+        background-position: 0 7px;
+    }
+
+    .footer-sec .footer-third-sec ul li:nth-child(2) {
+        background-position: 0 4px;
+    }
+
+    .footer-sec {
+        padding: 80px 0;
+    }
+
+    /* ============== Residential page ====================== */
+
+    .inner-residential-commercial-banner-section {
+        padding: 50px 0 60px 0;
+    }
+
+    .inner-residential-commercial-banner-section h2 {
+        font-size: 52px !important;
+        line-height: 60px !important;
+    }
+
+    .inner-residential-commercial-banner-section h2::after {
+        margin: 30px auto 0 auto !important;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-inner img {
+        width: 100%;
+        /* height: 29vh;*/
+        object-fit: cover;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev {
+        left: 1%;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-next {
+        right: 1%;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h4 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 5px;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev img,
+    .inner-residential-commercial-slider-section .carousel-control-next img {
+        width: 60%;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content .common-btn {
+        font-size: 20px;
+        line-height: 23px;
+        padding: 10px 20px;
+    }
+
+    .products-headings-section p {
+        margin-bottom: 40px;
+        padding: 0 0px;
+    }
+
+    .products-box-section article h3 {
+        padding: 0 15px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .products-box-section article p {
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .products-box-section article ul li {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        background-size: 8px;
+    }
+
+    .products-box-section article ul {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .products-box-section:nth-child(odd) {
+        padding-right: 20px;
+    }
+
+    .products-box-section:nth-child(even) {
+        padding-left: 20px;
+    }
+
+    .inner-product-boxes-section.sandk-common-padding {
+        padding: 60px 0 0;
+    }
+
+    .products-box-section article .common-btn {
+        margin-left: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 23px;
+        padding: 10px 20px;
+    }
+
+    .products-full-box-section.products-box-section article .full-box-sec {
+        padding: 0;
+    }
+
+    .residential-Polystyrene-steel-garage-door-section h2 {
+        font-size: 46px;
+        line-height: 57px;
+    }
+
+    .residential-garage-door-openers-section .left-side {
+        padding-right: 30px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .residential-garage-door-openers-section .common-btn {
+        margin-top: 20px;
+    }
+
+    .residential-garage-door-openers-section h2 {
+        padding: 0 70px;
+    }
+
+    .last-product-section {
+        padding-bottom: 60px !important;
+    }
+
+    .aspen-series-heading p {
+        padding: 0 3px;
+    }
+
+
+    /* ========== Contact page ======== */
+
+    .contact-page-banner-section h2::after {
+        margin: 20px 0;
+    }
+
+    .contact-page-banner-section {
+        padding: 50px 0;
+    }
+
+    .contact-page-banner-section p {
+        padding-right: 0;
+    }
+
+    .contact-page-banner-section .contact-info-section h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .contact-page-banner-section .contact-info-section h2::after {
+        margin: 10px 0;
+        width: 90px;
+    }
+
+    .contact-page-banner-section .contact-info-section h3 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+
+    .contact-page-banner-section .contact-info-section .location-info ul li {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section {
+        padding-left: 0;
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul li {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul {
+        padding-top: 30px;
+    }
+
+    .contact-page-banner-section .right-side,
+    .contact-page-banner-section .left-side {
+        width: 50%;
+    }
+
+    .contact-page-banner-section .right-side .inner-sec {
+        padding: 50px 20px;
+    }
+
+    .contact-page-banner-section .right-side h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-banner-section .right-side .form-btn button {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    .contact-page-banner-section .contact-info-section {
+        margin-top: 40px;
+    }
+
+
+
+    /* ========== About page ======== */
+    .our-team-and-culture-section p {
+        padding: 0 12px;
+    }
+
+    .our-team-and-culture-section .common-btn {
+        padding: 10px 25px;
+        line-height: 28px;
+    }
+
+    .our-team-and-culture-section h2::after {
+        margin-bottom: 30px;
+    }
+
+    .about-page-banner-section {
+        padding: 100px 0;
+    }
+
+    .mission-and-values-section p {
+        padding: 0 40px;
+    }
+
+    .our-history-section h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .our-history-section .left-side {
+        padding-right: 12px;
+    }
+
+    .our-history-section h2::after {
+        margin-left: 0;
+    }
+
+    .our-history-section p {
+        margin-bottom: 50px;
+    }
+
+    /* ========== Product page ======== */
+    .product-page-banner-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 38px;
+        line-height: 46px;
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section h4:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .product-page-banner-section p {
+        line-height: 24px;
+    }
+
+    .product-page-product-item-section .product-nav-tab li a {
+        font-size: 28px;
+        line-height: 38px;
+        padding: 15px 20px;
+    }
+
+    .product-page-product-item-section .product-nav-tab li a::after {
+        background-size: 20px;
+    }
+
+    .product-page-product-item-section .right-side {
+        padding-left: 50px;
+    }
+
+    .product-page-product-item-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .product-page-product-item-section h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .product-page-product-item-section .productdetails table tr td {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product-page-product-item-section .warranty-content h2 {
+        font-size: 34px;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        padding: 30px 15px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: -0.058em;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 30%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2::after {
+        margin: 25px 0 40px;
+    }
+
+    .product-page-product-item-section h3 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        padding-top: 10px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 20px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 20px;
+    }
+
+    .product-page-product-item-section .image-and-title .col-2 {
+        width: 25%;
+    }
+
+    .sandk-inner-common h2 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+
+    /* ============== Navigation ====================== */
+    .header .navigation .dropdown .dropdown-menu li a {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 6px 10px;
+    }
+
+    /* ============== Home page ====================== */
+    .sandk-common-padding {
+        padding: 80px 0;
+    }
+
+    .sandk-common p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .sandk-common h2 {
+        font-size: 67px;
+        line-height: 80px;
+    }
+
+    .sandk-common h2::after {
+        margin: 30px auto 50px auto;
+    }
+
+    .common-btn img {
+        width: 38px;
+    }
+
+    .common-btn {
+        font-size: 27px;
+    }
+
+    .header .header-menu a.header-design-center {
+        padding: 8px 10px;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .header .header-right-side a.tel {
+        font-size: 24px;
+        padding-left: 40px;
+        background-size: 30px;
+        background-position: 0 5px;
+    }
+
+    .header .header-right-side p {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .header .header-menu nav.navigation li a {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .header .header-menu nav.navigation li {
+        margin: 0 7px;
+    }
+
+    .banner .left-side h4 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .banner .left-side h1 {
+        font-size: 85px;
+        line-height: 89px;
+        margin-bottom: 30px;
+    }
+
+    .banner .right-side .inner-sec {
+        padding: 40px 15px 40px 15px;
+    }
+
+    .banner .right-side h2 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+
+    .banner .right-side .form-btn button {
+        padding: 20px 0;
+        font-size: 28px;
+        line-height: 29px;
+        margin-top: 5px;
+    }
+
+    .banner .banner-img {
+        height: 580px !important;
+        object-fit: cover;
+    }
+
+    .banner .left-side p {
+        font-size: 25px;
+        line-height: 34px;
+        padding-right: 90px;
+    }
+
+    .year-of-excilence .right-side h2 {
+        font-size: 73px;
+        line-height: 76px;
+    }
+
+    .year-of-excilence .right-side h2 span {
+        font-size: 52px;
+    }
+
+    .year-of-excilence .right-side h2::after {
+        margin: 20px 0 40px 0;
+    }
+
+    .year-of-excilence .right-side p {
+        padding-right: 10px;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li::after {
+        width: 89%;
+        border-bottom: 106px solid #F1F1F1;
+        left: 31px;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li:nth-child(1) {
+        width: 25.3%;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li {
+        width: 23.5%;
+        padding: 20px 15px 20px 81px;
+        margin-right: 15px;
+        font-size: 25px;
+        line-height: 33px;
+        background-size: 70px;
+        background-position: 0 21px;
+    }
+
+    .year-of-excilence .center-side-list {
+        margin-top: 60px;
+    }
+
+    .year-of-excilence {
+        padding: 100px 0 80px 0;
+    }
+
+    .garage-door-maintenance-sec .left-side-tab-items a.each-offer-item {
+        padding: 8px 15px 13px 15px;
+        margin-bottom: 12px;
+    }
+
+    .garage-door-maintenance-sec .left-side-tab-items a.each-offer-item h4 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .garage-door-maintenance-sec h3 {
+        font-size: 47px;
+        line-height: 50px;
+        margin-bottom: 12px;
+    }
+
+    .garage-door-maintenance-sec h5 {
+        font-size: 34px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+
+    .garage-door-maintenance-sec .common-btn {
+        margin-top: 30px;
+    }
+
+    .common-problems-sec::before {
+        margin: 0px auto 80px auto;
+    }
+
+    .common-problems-sec .right-side h2::after {
+        margin: 30px 0 50px 0;
+    }
+
+    .common-problems-sec .right-side {
+        padding-left: 40px;
+    }
+
+    .common-problems-sec .right-side li {
+        font-size: 20px;
+        line-height: 27px;
+        padding-bottom: 15px;
+    }
+
+    .common-problems-sec .right-side p {
+        letter-spacing: -0.1px;
+        line-height: 25px;
+    }
+
+    .fix-it-yourself-sec p {
+        padding: 0 130px;
+    }
+
+    .new-garage-door-sec .box-sec article {
+        padding: 30px 15px;
+    }
+
+    .new-garage-door-sec .box-sec h3 {
+        font-size: 41px;
+        line-height: 47px;
+    }
+
+    .new-garage-door-sec .box-sec h4 {
+        font-size: 30px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+
+    .new-garage-door-sec .box-sec ul {
+        column-count: 1;
+        margin-bottom: 40px;
+    }
+
+    .new-garage-door-sec .box-sec ul li {
+        margin-bottom: 10px;
+    }
+
+    .design-center-sec h3 {
+        font-size: 35px;
+        line-height: 43px;
+    }
+
+    .design-center-sec h3::after {
+        margin: 30px auto 40px auto;
+    }
+
+    .get-free-quote-sec h3 {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .photo-gallery-sec figure .plus-img {
+        width: 70px;
+    }
+
+    .photo-gallery-sec .view-gallery-btn {
+        margin-top: 40px;
+    }
+
+    .testimonial-sec .client-comment p {
+        font-size: 37px;
+        line-height: 49px;
+    }
+
+    .testimonial-sec .client-details h4 {
+        font-size: 47px;
+        line-height: 65px;
+    }
+
+    .testimonial-sec .client-details .name-first-letter {
+        width: 80px;
+        height: 80px;
+        font-size: 52px;
+    }
+
+    .area-we-cover-sec .right-side ul li {
+        font-size: 16px;
+        line-height: 28px;
+        background-size: 9px;
+        background-position: 0px 2px;
+    }
+
+    .area-we-cover-sec .left-side {
+        padding: 0 30px;
+    }
+
+    .faq-sec .right-faq-sec {
+        padding-left: 40px;
+    }
+
+    .faq-sec {
+        padding-bottom: 0px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0;
+        background-size: 33px;
+    }
+
+    .diffrent-brand-sec {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .footer-sec ul li {
+        font-size: 19px;
+    }
+
+    .footer-sec h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .footer-sec .footer-first-sec p {
+        font-size: 20px;
+        line-height: 26px;
+        padding-right: 10px;
+    }
+
+    .select-door-popup .modal-dialog {
+        max-width: 90% !important;
+    }
+
+    .modal.select-door-popup.show {
+        top: 6px;
+    }
+
+    .select-door-popup .modal-header {
+        padding: 20px 0;
+    }
+
+    .select-door-popup h2 {
+        font-size: 49px;
+        line-height: 42px;
+    }
+
+    .select-door-popup .modal-header .btn-close {
+        top: 28px;
+    }
+
+    .select-door-popup .each-product h3 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .select-door-popup .each-product h4 {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .select-door-popup .common-btn {
+        font-size: 25px;
+        line-height: 23px;
+    }
+
+    .select-door-popup .each-product ul li {
+        font-size: 17px;
+        line-height: 16px;
+        margin-bottom: 13px;
+    }
+
+    .select-door-popup .each-product ul {
+        margin-bottom: 15px;
+    }
+
+    .select-door-popup .modal-body {
+        padding: 30px 30px;
+    }
+
+    /* ============== Residential page ====================== */
+    .sandk-inner-common h2 {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .sandk-inner-common h2::after {
+        margin: 25px auto 50px auto;
+    }
+
+    .sandk-inner-common p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .inner-residential-commercial-banner-section {
+        padding: 50px 0 80px 0;
+    }
+
+    .inner-residential-commercial-banner-section h2 {
+        font-size: 70px !important;
+        line-height: 80px !important;
+    }
+
+    .inner-residential-commercial-banner-section h2::after {
+        margin: 30px auto 0 auto !important;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev {
+        left: 1%;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-next {
+        right: 1%;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 40px;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h4 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .products-headings-section p {
+        margin-bottom: 40px;
+        padding: 0 0px;
+    }
+
+    .products-box-section article h3 {
+        padding: 0 15px;
+        font-size: 32px;
+        line-height: 46px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .products-box-section article ul li {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        background-size: 8px;
+    }
+
+    .products-box-section article ul {
+        padding: 0 15px;
+    }
+
+    .products-box-section article p {
+        padding: 0 15px;
+    }
+
+    .products-box-section article .common-btn {
+        margin-left: 15px;
+        margin-top: 40px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    .residential-garage-door-openers-section .common-btn {
+        margin-top: 30px;
+    }
+
+    .last-product-section {
+        padding-bottom: 80px;
+    }
+
+    /* ========================== Contact page ======================== */
+
+    .contact-page-banner-section .contact-info-section .hours-section {
+        padding-left: 70px;
+        width: 50%;
+    }
+
+    .contact-page-banner-section .right-side .inner-sec {
+        padding: 75px 30px;
+    }
+
+    .contact-page-banner-section .right-side h2 {
+        font-size: 44px;
+        line-height: 60px;
+        margin-bottom: 35px;
+    }
+
+    .contact-page-banner-section h2::after {
+        margin: 30px 0;
+    }
+
+    .contact-page-banner-section .contact-info-section h2 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .contact-page-banner-section .contact-info-section h2::after {
+        margin: 20px 0;
+    }
+
+    .contact-page-banner-section .contact-info-section h3 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .contact-page-banner-section .contact-info-section .location-info ul li {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul li {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .residential-Polystyrene-steel-garage-door-section .products-full-box-section.products-box-section article .full-box-sec {
+        width: 46%;
+    }
+
+    .residential-Polystyrene-steel-garage-door-section .products-full-box-section.products-box-section article img {
+        width: 54%;
+    }
+
+    /* ============== About page ====================== */
+
+    .our-team-and-culture-section p {
+        padding: 0 160px;
+    }
+
+    .our-history-section .left-side {
+        padding-right: 0;
+    }
+
+    .our-history-section h3 {
+        font-size: 44px;
+        line-height: 55px;
+    }
+
+    /* ========== Product page ======== */
+
+    .product-page-banner-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 46px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section h4:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .product-page-banner-section p {
+        line-height: 28px;
+    }
+
+    .product-page-product-item-section .product-nav-tab li a {
+        font-size: 36px;
+        line-height: 46px;
+        padding: 15px 20px;
+    }
+
+    .product-page-product-item-section .left-side {
+        padding-right: 15px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .product-page-product-item-section h4 {
+        font-size: 20px;
+    }
+
+    .product-page-product-item-section .productdetails table tr td {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product-page-product-item-section .warranty-content h2 {
+        font-size: 40px;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        padding: 40px 26px 40px 32px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 31px;
+        line-height: 34px;
+        letter-spacing: -0.058em;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 30%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        width: 70%;
+    }
+
+    .product-page-product-item-section .product-heading-content h2::after {
+        margin: 25px 0 40px;
+    }
+
+    .product-page-product-item-section h3 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        padding-top: 10px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 26px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 26px;
+    }
+
+
+
+
+}
+
+
+@media all and (min-width: 1500px) and (max-width: 1797px) {
+
+    .our-history-section .left-side {
+        padding-right: 20px;
+    }
+
+    /* ============== Navigation ====================== */
+    .header .navigation .dropdown .dropdown-menu li a {
+        font-size: 14px !important;
+        line-height: 18px;
+        padding: 8px 10px;
+    }
+
+    /* ============== Home page ====================== */
+    .sandk-common-padding {
+        padding: 100px 0;
+    }
+
+    .sandk-common p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .sandk-common h2 {
+        font-size: 65px;
+        line-height: 73px;
+    }
+
+    .sandk-common h2::after {
+        margin: 30px auto 60px auto;
+    }
+
+    .common-btn img {
+        width: 37px;
+    }
+
+    .common-btn {
+        font-size: 27px;
+        line-height: 28px;
+        padding: 18px 40px;
+    }
+
+    .sandk-inner-common h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .sandk-inner-common p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .header .header-logo {
+        width: 10%;
+    }
+
+    .header .header-right-side {
+        width: 20%;
+    }
+
+    .header .header-menu nav.navigation li a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .header .header-menu nav.navigation li {
+        margin: 0 12px;
+    }
+
+    .header .header-menu a.header-design-center {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header .header-right-side a.tel {
+        font-size: 26px;
+        line-height: 38px;
+        background-position: 0 5px;
+        padding-left: 41px;
+        background-size: 31px;
+    }
+
+    .header .header-right-side p {
+        font-size: 35px;
+        line-height: 29px;
+    }
+
+    .banner .right-side .inner-sec {
+        padding: 70px 30px 40px 30px;
+    }
+
+    .banner .right-side h2 {
+        font-size: 55px;
+        line-height: 68px;
+        margin-bottom: 40px;
+    }
+
+    .banner .left-side h4 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .banner .left-side h1 {
+        font-size: 97px;
+        line-height: 100px;
+        margin-bottom: 30px;
+    }
+
+    .banner .right-side .form-btn button {
+        padding: 18px 0;
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    .banner .left-side p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .banner-img {
+        height: 620px !important;
+        object-fit: cover;
+    }
+
+    .garage-door-maintenance-sec .left-side-tab-items a.each-offer-item {
+        padding: 8px 15px 13px 15px;
+        margin-bottom: 12px;
+    }
+
+    .garage-door-maintenance-sec .left-side-tab-items a.each-offer-item h4 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .garage-door-maintenance-sec h3 {
+        font-size: 50px;
+        line-height: 56px;
+        margin-bottom: 12px;
+    }
+
+    .garage-door-maintenance-sec h5 {
+        font-size: 35px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+
+    .garage-door-maintenance-sec .common-btn {
+        margin-top: 30px;
+    }
+
+    .common-problems-sec {
+        padding-top: 0;
+    }
+
+    .common-problems-sec::before {
+        height: 2px;
+        margin: 0px auto 100px auto;
+    }
+
+    .common-problems-sec .right-side {
+        padding-left: 50px;
+    }
+
+    .common-problems-sec .right-side h2::after {
+        margin: 30px 0 50px 0;
+    }
+
+    .common-problems-sec .right-side li {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        background-size: 17px;
+        padding-bottom: 17px;
+        background-position: 0 6px;
+        padding-left: 30px;
+    }
+
+    .fix-it-yourself-sec .common-btn {
+        padding: 18px 60px;
+        line-height: 44px;
+    }
+
+    .new-garage-door-sec .box-sec article {
+        padding: 30px 15px;
+    }
+
+    .new-garage-door-sec .box-sec h3 {
+        font-size: 49px;
+        line-height: 53px;
+    }
+
+    .new-garage-door-sec .box-sec h4 {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 35px;
+    }
+
+    .new-garage-door-sec .box-sec article p {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .new-garage-door-sec .box-sec ul li {
+        font-size: 15px;
+        background-position: 0 5px;
+        padding-left: 18px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .new-garage-door-sec .box-sec ul {
+        margin-bottom: 40px;
+    }
+
+    .fix-it-yourself-sec .common-btn.second-btn img {
+        margin-bottom: 5px;
+    }
+
+    .testimonial-sec .client-details h4 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .testimonial-sec .client-details .name-first-letter {
+        width: 80px;
+        height: 80px;
+        font-size: 59px;
+        font-weight: 600;
+        line-height: 39px;
+    }
+
+    .testimonial-sec .client-comment p {
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 58px;
+    }
+
+    .testimonial-sec .client-comment img {
+        margin-bottom: 45px;
+        width: 400px;
+    }
+
+    .design-center-sec h3::after {
+        margin: 30px auto 50px auto;
+    }
+
+    .design-center-sec h3 {
+        font-size: 40px;
+        line-height: 59px;
+    }
+
+    .design-center-sec p {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .get-free-quote-sec h3 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .get-free-quote-sec .common-btn {
+        padding: 16px 55px;
+        line-height: 46px;
+    }
+
+    .get-free-quote-sec .common-btn.second-btn img {
+        margin-bottom: 5px;
+    }
+
+    .year-of-excilence .right-side h2 {
+        font-size: 90px;
+        line-height: 88px;
+    }
+
+    .year-of-excilence .right-side h2 span {
+        font-size: 67px;
+    }
+
+    .year-of-excilence .right-side h2::after {
+        margin: 20px 0 40px 0;
+    }
+
+    .year-of-excilence .right-side p {
+        padding-right: 10px;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li::after {
+        width: 89%;
+        border-bottom: 131px solid #F1F1F1;
+        left: 37px;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li:nth-child(1) {
+        width: 25.2%;
+    }
+
+    .year-of-excilence .center-side-list ul.with-icon-list li {
+        width: 23.8%;
+        padding: 25px 15px 25px 95px;
+        margin-right: 12px;
+        font-size: 31px;
+        line-height: 39px;
+        background-size: 82px;
+        background-position: 0 26px;
+    }
+
+    .photo-gallery-sec figure .plus-img {
+        width: 80px;
+    }
+
+    .area-we-cover-sec .left-side {
+        padding-right: 40px;
+    }
+
+    .area-we-cover-sec .right-side ul li {
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+        background-size: 8px;
+        background-position: 0px 4px;
+        padding: 0 0 13px 15px;
+    }
+
+    .faq-sec .right-faq-sec {
+        padding-left: 35px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        margin-top: 15px;
+        padding: 0 0 18px 0;
+        font-size: 25px;
+        line-height: 31px;
+        background-position-y: 6px;
+        background-size: 35px;
+    }
+
+    .faq-sec .right-faq-sec .card-body {
+        padding: 15px 0 10px 0;
+    }
+
+    .diffrent-brand-sec {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-sec .footer-first-sec p {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 29px;
+        padding-right: 0px;
+        margin-bottom: 25px;
+    }
+
+    .footer-sec h3 {
+        font-size: 35px;
+        line-height: 46px;
+        margin-bottom: 25px;
+    }
+
+    .footer-sec ul li {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .footer-sec .footer-third-sec ul li:nth-child(1) {
+        background-position: 0 5px;
+    }
+
+    .footer-sec .footer-third-sec ul li:nth-child(2) {
+        background-position: 0 7px;
+    }
+
+    .footer-sec .footer-third-sec ul li:nth-child(3) {
+        background-position: 0 11px;
+        background-size: 16px;
+    }
+
+    .footer-sec .footer-second-sec {
+        padding-left: 80px;
+    }
+
+    .select-door-popup .modal-header {
+        padding: 25px 0;
+    }
+
+    .select-door-popup h2 {
+        font-size: 55px;
+        line-height: 48px;
+    }
+
+    .select-door-popup .modal-dialog {
+        max-width: 86% !important;
+    }
+
+    .select-door-popup .modal-body {
+        padding: 35px 30px;
+    }
+
+    .select-door-popup .each-product .inner-content {
+        padding: 0 20px;
+    }
+
+    .select-door-popup .each-product h3 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .select-door-popup .each-product h4 {
+        font-size: 27px;
+        line-height: 31px;
+    }
+
+    .select-door-popup .each-product ul {
+        margin-bottom: 15px;
+    }
+
+    .select-door-popup .each-product ul li {
+        background-position: 0 6px;
+        margin-bottom: 15px;
+    }
+
+    .select-door-popup .common-btn {
+        font-size: 26px;
+        line-height: 26px;
+        width: 248px;
+        padding: 17px 35px;
+        text-align: center;
+    }
+
+    .select-door-popup .modal-header .btn-close {
+        top: 38px;
+    }
+
+    /* ============== Residential page ====================== */
+    .last-product-section {
+        padding-bottom: 100px !important;
+    }
+
+    .products-headings-section p {
+        padding: 0 20px;
+    }
+
+    .inner-residential-commercial-banner-section {
+        padding: 70px 0 100px 0;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev {
+        left: 2%;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-next {
+        right: 2%;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 54px;
+        line-height: 70px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        font-size: 42px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .products-box-section article p {
+        padding: 0 25px;
+        letter-spacing: 0;
+    }
+
+    .products-box-section article ul {
+        padding: 0 25px;
+    }
+
+    .products-box-section article h3 {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 0 25px;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h4 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .last-product-section {
+        padding-bottom: 100px;
+    }
+
+    .products-box-section article .common-btn {
+        margin-left: 25px;
+    }
+
+    .inner-residential-commercial-banner-section h2::after {
+        margin: 30px auto 0 auto !important;
+    }
+
+    /* ===================== Contact page ===================== */
+
+    .contact-page-banner-section .contact-info-section .hours-section {
+        padding-left: 70px;
+        width: 50%;
+    }
+
+    .contact-page-banner-section .right-side .inner-sec {
+        padding: 75px 30px;
+    }
+
+    .contact-page-banner-section .right-side h2 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 35px;
+    }
+
+    .contact-page-banner-section h2::after {
+        margin: 30px 0;
+    }
+
+    .contact-page-banner-section .contact-info-section h2 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .contact-page-banner-section .contact-info-section h2::after {
+        margin: 20px 0;
+    }
+
+    .contact-page-banner-section .contact-info-section h3 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .contact-page-banner-section .contact-info-section .location-info ul li {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul li {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    /* ========== About page ======== */
+    .our-team-and-culture-section p {
+        padding: 0 192px;
+    }
+
+    .our-team-and-culture-section .common-btn {
+        padding: 16px 55px;
+        line-height: 46px;
+    }
+
+    .our-team-and-culture-section h2::after {
+        margin-bottom: 5px;
+    }
+
+    .mission-and-values-section p {
+        padding: 0 100px;
+    }
+
+    .our-history-section h3 {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    /* ========== Product page ======== */
+
+
+
+
+
+}
+
+@media (min-width: 280px) and (max-width: 330px) {
+
+    .common-btn {
+        font-size: 25px;
+    }
+
+    .common-btn img {
+        width: 34px;
+    }
+
+    .sandk-common h2 {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    .sandk-common p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .banner .left-side h4 {
+        font-size: 27px;
+    }
+
+    .banner .left-side h1 {
+        font-size: 45px;
+        line-height: 54px;
+    }
+
+    .banner .left-side p {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    .banner .right-side h2 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .banner .right-side .form-btn button {
+        padding: 16px 0;
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .year-of-excilence .right-side h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .year-of-excilence .right-side h2 span {
+        font-size: 32px;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec h3 {
+        font-size: 35px;
+        line-height: 33px;
+    }
+
+    .year-of-excilence .center-side-list.mobile ul li {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        margin-bottom: 15px;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul li {
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 15px;
+        background-position: 0 3px;
+    }
+
+    .common-problems-sec .right-side p {
+        line-height: 26px;
+    }
+
+    .fix-it-yourself-sec .common-btn {
+        padding: 15px 0;
+        line-height: 35px;
+    }
+
+    .new-garage-door-sec .box-sec h3 {
+        font-size: 34px;
+        line-height: 32px;
+    }
+
+    .new-garage-door-sec .box-sec h4 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .design-center-sec p {
+        font-size: 16px;
+    }
+
+    .area-we-cover-sec .right-side ul {
+        padding-left: 13px;
+    }
+
+    .fix-it-yourself-sec h2 {
+        padding: 0 15px;
+    }
+
+    .select-door-popup h2 {
+        font-size: 33px;
+        line-height: 47px;
+    }
+
+    .select-door-popup .each-product h3 {
+        font-size: 35px;
+        line-height: 32px;
+    }
+
+    .select-door-popup .each-product h4 {
+        font-size: 20px;
+    }
+
+    .contact-page-banner-section p {
+        padding: 0px 0px 50px;
+    }
+
+    .contact-page-banner-section .right-side h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .inner-residential-commercial-banner-section h2 {
+        font-size: 35px !important;
+        line-height: 46px !important;
+        margin-bottom: 0;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .advantage-series-sec.last-product-section h2 {
+        font-size: 34px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        padding: 0 0;
+    }
+
+    /* ========== Product page ======== */
+
+}
+
+@media (min-width:428px) and (max-width:440px) {
+
+    .residential-banner-section .slider-content h1 {
+        font-size: 39px;
+        line-height: 49px;
+    }
+
+    .residential-product-boxes-section h2 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .aspen-residential.residential-product-boxes-section h2 {
+        font-size: 34px;
+        letter-spacing: -0.4px;
+    }
+
+    .advantage-series-sec.last-product-section h2 {
+        font-size: 35px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        padding: 0 50px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+
+    /* ================================================== Header & footer CSS ================================================== */
+
+
+    .footer-sec ul li {
+        font-size: 19px;
+    }
+
+    .footer-sec h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .footer-sec .footer-first-sec p {
+        font-size: 20px;
+        line-height: 26px;
+        padding-right: 10px;
+    }
+
+    .header .header-menu a.header-design-center {
+        padding: 8px 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .header .header-right-side a.tel {
+        font-size: 24px;
+        padding-left: 40px;
+        background-size: 30px;
+        background-position: 0 5px;
+    }
+
+    .header .header-right-side p {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .header .header-menu nav.navigation li a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .header .header-menu nav.navigation li {
+        margin: 0 6px;
+    }
+
+    .sandk-inner-common h2 {
+        font-size: 42px !important;
+        line-height: 55px !important;
+    }
+
+    .sandk-inner-common h2::after {
+        margin: 30px auto 50px;
+    }
+
+    .sandk-common h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .sandk-common h2::after {
+        margin: 30px auto 50px;
+    }
+
+    .sandk-common p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .common-btn {
+        font-size: 25px;
+        line-height: 29px;
+        padding: 15px 30px;
+    }
+
+
+    /* ================================================== Product page responsive css ================================================== */
+
+    .product-page-banner-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 46px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section h4:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .product-page-banner-section p {
+        line-height: 28px;
+    }
+
+    .product-page-product-item-section .product-nav-tab li a {
+        font-size: 36px;
+        line-height: 46px;
+        padding: 15px 20px;
+    }
+
+    .product-page-product-item-section .left-side {
+        padding-right: 15px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .product-page-product-item-section h4 {
+        font-size: 20px;
+    }
+
+    .product-page-product-item-section .productdetails table tr td {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product-page-product-item-section .warranty-content h2 {
+        font-size: 40px;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        padding: 40px 26px 40px 32px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 31px;
+        line-height: 34px;
+        letter-spacing: -0.058em;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 30%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        width: 70%;
+    }
+
+    .product-page-product-item-section .product-heading-content h2::after {
+        margin: 25px 0 40px;
+    }
+
+    .product-page-product-item-section h3 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        padding-top: 10px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 26px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 26px;
+    }
+
+}
+
+@media (min-width: 1399px) and (max-width: 1598px) {
+
+    /* ================================================== Header & footer CSS ================================================== */
+
+    .footer-sec h3 {
+        font-size: 35px;
+        line-height: 46px;
+        margin-bottom: 25px;
+    }
+
+    .header .header-menu nav.navigation li a {
+        font-size: 17px !important;
+    }
+
+    .header .header-menu nav.navigation li {
+        margin: 0 8px !important;
+    }
+
+    .header .header-right-side a.tel {
+        font-size: 25px !important;
+    }
+
+
+    /* ================================================== Product page responsive css ================================================== */
+
+    .product-page-product-item-section .right-side {
+        padding-left: 60px;
+    }
+
+    .product-page-product-item-section .left-side {
+        padding-right: 30px;
+    }
+
+    .product-page-banner-section .left-side {
+        padding-right: 30px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 54px;
+        line-height: 65px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .product-page-banner-section h4:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    .product-page-banner-section h4 {
+        margin-bottom: 10px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 54px;
+        line-height: 68px;
+    }
+
+    .product-page-product-item-section .warranty-content h2 {
+        font-size: 51px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2::after {
+        margin: 30px 0 50px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .product-page-product-item-section .product-nav-tab li a {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .product-page-product-item-section p {
+        font-size: 20px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 32px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 32px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 38%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        width: 62%;
+        margin-left: 16px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        padding: 50px 25px 50px 30px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 36px;
+        letter-spacing: -0.058em;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .product-features-options-section .product-features-options-boxes {
+        padding-top: 45px;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+
+}
+
+@media (min-width: 1399px) and (max-width: 1500px) {
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 52px;
+        line-height: 60px;
+        margin-bottom: 40px
+    }
+
+    .products-box-section article h3 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .residential-Polystyrene-steel-garage-door-section h2 {
+        letter-spacing: 0.008em;
+    }
+
+
+    /* ================================================== Product page responsive css ================================================== */
+
+    .product-page-banner-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 50px;
+        line-height: 64px;
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .product-page-banner-section p {
+        line-height: 32px;
+    }
+
+    .product-page-product-item-section .product-nav-tab li a {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .product-page-product-item-section .left-side {
+        padding-right: 15px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .product-page-product-item-section h4 {
+        font-size: 22px;
+    }
+
+    .product-page-product-item-section .productdetails table tr td {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .product-page-product-item-section .warranty-content h2 {
+        font-size: 45px;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        padding: 40px 20px 40px 32px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 35%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        width: 65%;
+    }
+
+
+}
+
+@media (min-width: 1599px) and (max-width: 1799px) {
+    /* ================================================== Product page responsive css ================================================== */
+
+    .product-page-banner-section .left-side {
+        padding-right: 40px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 21px;
+    }
+
+    .product-page-product-item-section .warranty-content h2 {
+        font-size: 55px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 36px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 36px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 38%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        width: 62%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        padding: 50px 21px 50px 30px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 39px;
+        letter-spacing: -0.058em;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 54px;
+        line-height: 68px;
+    }
+
+}
+
+@media (min-width:576px) and (max-width: 767.98px) {
+    /* ============== Navigation ====================== */
+
+    .header .navigation .dropdown .dropdown-menu {
+        position: relative;
+        display: none !important;
+    }
+
+    .header .navigation .dropdown:hover .dropdown-menu {
+        display: block !important;
+        position: relative !important;
+        margin: 0 !important;
+        top: 0 !important;
+        transform: unset !important;
+        inset: unset !important;
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 20px !important;
+    }
+
+    .header .navigation .dropdown .dropdown-menu.show {
+        display: block !important;
+        position: relative !important;
+        margin: 0 !important;
+        top: 0 !important;
+        transform: unset !important;
+        inset: unset !important;
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 20px !important;
+    }
+
+    .header .navigation .sub-dropdown:hover .sub-dropdown-menu {
+        display: block !important;
+        margin: 0;
+        border-top: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 0;
+    }
+
+    .header .navigation .sub-dropdown .sub-dropdown-menu {
+        display: block !important;
+        margin: 0;
+        border-top: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-menu li {
+        border-bottom: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-menu.show {
+        padding: 0;
+        border-radius: 0;
+        border: 0;
+        border-top: 3px solid #F2A900;
+    }
+
+    .header .navigation .dropdown:hover .dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-dropdown:hover .dropdown-menu.sub-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-inner-dropdown:hover .dropdown-menu.sub-inner-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-inner-to-inner-dropdown:hover .dropdown-menu.sub-inner-to-inner-dropdown-menu {
+        display: block !important;
+    }
+
+    .header .navigation .sub-dropdown .dropdown-menu.sub-dropdown-menu {
+        display: none !important;
+        margin-top: 0 !important;
+    }
+
+    .header .navigation .sub-inner-dropdown .dropdown-menu.sub-inner-dropdown-menu {
+        display: none !important;
+    }
+
+    .header .navigation .sub-inner-to-inner-dropdown .dropdown-menu.sub-inner-to-inner-dropdown-menu {
+        display: none !important;
+    }
+
+    .header .navigation .dropdown .dropdown-a::after {
+        padding-left: 0;
+        content: '\f054';
+        font-family: "FontAwesome";
+        margin-left: 20px;
+        display: block !important;
+        width: 0;
+        padding-right: 8px;
+        font-size: 14px;
+        line-height: 0;
+        padding-top: 0;
+    }
+
+    .header .navigation .dropdown .dropdown-a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .header-menu-mobile {
+        overflow: scroll !important;
+    }
+
+    .header .header-menu nav.navigation {
+        display: block !important;
+    }
+
+    .mobile-btn {
+        position: unset !important;
+        margin-bottom: 30px;
+    }
+
+    .header .navigation .sub-dropdown .sub-dropdown-menu {
+        border-top: 0 !important;
+    }
+
+    .header .navigation .dropdown .dropdown-a.show::after {
+        transform: rotate(90deg);
+    }
+
+
+    /* ============== Home page ====================== */
+
+    .mobile-toggle-sec {
+        display: flex;
+    }
+
+    .header .menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .navbar-toggler img {
+        width: 39px;
+        height: 39px;
+        margin-left: 20px;
+    }
+
+    .header .header-menu-mobile {
+        padding-left: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding-top: 130px;
+        transform: translateX(-101%);
+        transition: all .5s ease;
+        width: 100%;
+        z-index: 99;
+        overflow: hidden;
+    }
+
+    .header .header-menu-mobile.show {
+        transition: all .5s ease;
+        transform: translateX(0);
+        top: 0;
+    }
+
+    .header .header-right-side {
+        display: none;
+    }
+
+    .header .header-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1111;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .header nav.navigation {
+        display: block;
+    }
+
+    .header .header-menu-mobile nav.navigation ul {
+        width: 100%;
+        text-align: left;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .header-menu-mobile nav.navigation li {
+        padding: 0;
+        border-bottom: 1px solid #acabad;
+        margin: 0;
+    }
+
+    .header .header-menu-mobile nav.navigation li a {
+        display: block;
+        padding: 15px;
+    }
+
+    .header .header-menu-mobile a.header-design-center {
+        display: none;
+    }
+
+    .header .header-menu-mobile nav.navigation li::after {
+        display: none;
+    }
+
+    .header .header-menu-mobile nav.navigation li a {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+
+    .mobile-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 111111;
+        margin-top: 40px !important;
+        bottom: 40px;
+    }
+
+    .mobile-btn .header-bottom-btn {
+        padding: 8px 12px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        color: #002855;
+        text-transform: uppercase;
+        border: 2px solid #F2A900;
+        border-radius: 7px;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .sandk-common h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .sandk-common h2::after {
+        display: none;
+    }
+
+    .sandk-common-padding {
+        padding: 50px 0;
+    }
+
+    .sandk-common p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .common-btn {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+        padding: 15px 0;
+        justify-content: center;
+    }
+
+    .common-btn img {
+        width: 38px;
+    }
+
+    .banner .right-side {
+        width: 100%;
+    }
+
+    .banner .left-side {
+        width: 100%;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-image: url(../images/home-mobile-banner-image.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner .left-side h1 {
+        font-size: 50px;
+        line-height: 62px;
+        margin-bottom: 5px;
+    }
+
+    .banner .left-side h4 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .banner .banner-content {
+        position: unset;
+    }
+
+    .banner .left-side p {
+        font-size: 24px;
+        line-height: 32px;
+        padding-right: 0;
+    }
+
+    .banner .right-side .inner-sec {
+        padding: 35px 12px;
+    }
+
+    .banner .right-side h2 {
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .banner .right-side .form-btn button {
+        padding: 20px 0;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .banner .right-side .inner-sec form .form-group {
+        margin-bottom: 10px;
+    }
+
+    .year-of-excilence {
+        padding: 50px 0 50px 0;
+    }
+
+    .year-of-excilence .right-side {
+        padding-left: 12px;
+    }
+
+    .year-of-excilence .right-side h2 {
+        font-size: 70px;
+        line-height: 68px;
+        text-align: center;
+    }
+
+    .year-of-excilence .right-side h2 span {
+        font-size: 35px;
+    }
+
+    .year-of-excilence .right-side h2::after {
+        margin: 5px auto 30px auto;
+        width: 190px;
+    }
+
+    .year-of-excilence .right-side p {
+        padding-right: 0;
+    }
+
+    .year-of-excilence .center-side-list.mobile {
+        display: block;
+    }
+
+    .year-of-excilence .center-side-list.desktop {
+        display: none;
+    }
+
+    .year-of-excilence .center-side-list.mobile ul li {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 18px;
+        background-image: url(../images/red-check-Icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 3px;
+        padding-left: 28px;
+        color: #333333;
+    }
+
+    .year-of-excilence .center-side-list {
+        margin-top: 45px;
+    }
+
+    .year-of-excilence .need-new-garage-door.mobile {
+        opacity: 1;
+        background: none;
+        width: auto;
+        height: auto;
+    }
+
+    .year-of-excilence .need-new-garage-door {
+        opacity: 0;
+        display: none;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec .text-sec {
+        position: absolute;
+        top: 13px;
+        right: 0;
+        left: 69px;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec img {
+        width: 160px;
+    }
+
+    .year-of-excilence .need-new-garage-door .inner-sec .text-sec h3 {
+        font-size: 13px;
+    }
+
+    .garage-door-maintenance-sec .desktop-garage-door-maintenance-sec {
+        display: none;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec {
+        display: block;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec h3 {
+        font-size: 40px;
+        line-height: 41px;
+        margin-bottom: 12px;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec h5 {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+
+    .garage-door-maintenance-sec .heading-sec {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul li {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 15px;
+        background-image: url(../images/mobile-triangle-list-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+        background-size: 9px;
+        padding-left: 18px;
+        color: #333333;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .garage-door-maintenance-sec .mobile-garage-door-maintenance-sec ul {
+        padding-top: 30px;
+        border-top: 2px solid #111111;
+    }
+
+    .common-problems-sec {
+        padding-top: 0;
+    }
+
+    .common-problems-sec::before {
+        width: 90%;
+        height: 2px;
+        margin: 0px auto 50px auto;
+    }
+
+    .fix-it-yourself-sec p {
+        margin-bottom: 35px;
+        padding: 0 0px;
+    }
+
+    .fix-it-yourself-sec .common-btn {
+        padding: 15px 0;
+        line-height: 46px;
+    }
+
+    .fix-it-yourself-sec .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .fix-it-yourself-sec h2 {
+        padding: 0 25px;
+    }
+
+    .common-problems-sec .right-side {
+        padding-left: 12px;
+    }
+
+    .common-problems-sec .left-side {
+        display: none;
+    }
+
+    .common-problems-sec .right-side h2 {
+        text-align: center;
+    }
+
+    .common-problems-sec .right-side li {
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 15px;
+    }
+
+    .new-garage-door-sec .box-sec .heading {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .new-garage-door-sec .box-sec h3 {
+        font-size: 40px;
+        line-height: 38px;
+        margin-bottom: 10px;
+        letter-spacing: 0
+    }
+
+    .new-garage-door-sec .box-sec h4 {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    .new-garage-door-sec .box-sec article {
+        padding: 0px 0px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #D7D7D7;
+    }
+
+    .new-garage-door-sec .box-sec {
+        padding: 0 12px;
+    }
+
+    .new-garage-door-sec .box-sec article:hover {
+        background: none;
+    }
+
+    .new-garage-door-sec .box-sec article p {
+        letter-spacing: 0;
+    }
+
+    .new-garage-door-sec .box-sec ul li {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .new-garage-door-sec .box-sec ul {
+        column-count: 1;
+        margin-bottom: 20px;
+    }
+
+    .new-garage-door-sec .box-sec article .common-btn {
+        width: 100%;
+    }
+
+    .new-garage-door-sec .box-sec:last-child article {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .get-free-quote-sec h3 {
+        font-size: 30px;
+        line-height: 38px;
+        padding: 0 30px;
+    }
+
+    .get-free-quote-sec .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .get-free-quote-sec .common-btn {
+        padding: 15px 0;
+        line-height: 37px;
+    }
+
+    .get-free-quote-sec .background-image {
+        display: none;
+    }
+
+    .get-free-quote-sec .get-quote-content-sec {
+        position: unset;
+        transform: unset;
+    }
+
+    .get-free-quote-sec {
+        background-image: url(../images/get-a-free-quote-bg-image.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: unset;
+        padding: 50px 0;
+    }
+
+    .get-free-quote-sec h2 {
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .get-free-quote-sec h3::after {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 2px;
+        margin: 20px auto 30px auto;
+        background-color: #fff;
+    }
+
+    .design-center-sec .right-side {
+        display: none;
+    }
+
+    .design-center-sec h2 {
+        margin-bottom: 7px;
+    }
+
+    .design-center-sec h3 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    .design-center-sec h3::after {
+        display: none;
+    }
+
+    .design-center-sec p {
+        margin-bottom: 35px;
+    }
+
+    .faq-sec .left-side-image {
+        display: none;
+    }
+
+    .faq-sec .right-faq-sec {
+        padding-left: 12px;
+    }
+
+    .faq-sec {
+        padding-bottom: 0px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button.collapsed {
+        background-image: url(../images/faq-mobile-right-arrow.png);
+        background-position-y: 1px;
+    }
+
+    .faq-sec .right-faq-sec .accordion-item .accordion-button {
+        background-image: url(../images/faq-mobile-down-arrow.png);
+        background-position-y: 4px;
+    }
+
+    .select-door-popup .modal-dialog {
+        max-width: 94% !important;
+    }
+
+    .select-door-popup h2 {
+        font-size: 38px;
+        line-height: 52px;
+    }
+
+    .select-door-popup .modal-header {
+        padding: 20px 0;
+    }
+
+    .select-door-popup .modal-body {
+        padding: 20px 12px;
+    }
+
+    .select-door-popup .each-product .inner-content {
+        padding: 0 0px;
+        border: none;
+    }
+
+    .select-door-popup .each-product .heading-sec {
+        border-left: 3px solid #000866;
+        border-radius: 0px 0px 0px 0px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .select-door-popup .each-product h3 {
+        font-size: 37px;
+        line-height: 33px;
+        margin-bottom: 5px;
+        letter-spacing: 0;
+    }
+
+    .select-door-popup .each-product h4 {
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    .select-door-popup .each-product article {
+        padding: 0px 0px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #D7D7D7;
+    }
+
+    .select-door-popup .each-product ul li {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 16px;
+        margin-bottom: 17px;
+        background-position: 0 4px;
+        padding-left: 20px;
+    }
+
+    .modal.select-door-popup.show {
+        cursor: unset !important;
+        top: 20px;
+    }
+
+    .select-door-popup .common-btn {
+        margin-top: auto;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        width: 100%;
+    }
+
+    .select-door-popup .each-product ul {
+        margin-bottom: 10px;
+    }
+
+    .select-door-popup .each-product {
+        border-bottom: 1px solid #D7D7D7;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .select-door-popup .each-product:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+    }
+
+    .select-door-popup .modal-header .btn-close {
+        top: 7px;
+        right: 9px;
+    }
+
+    .select-door-popup .modal-header .btn-close img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .testimonial-sec .client-comment p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 35px;
+        padding: 0 0;
+    }
+
+    .testimonial-sec .carousel-control-next,
+    .testimonial-sec .carousel-control-prev {
+        display: none;
+    }
+
+    .testimonial-sec .client-details h4 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-top: 15px;
+    }
+
+    .testimonial-sec .carousel-indicators {
+        display: block;
+        margin: 10px 0 0 0;
+        position: unset;
+    }
+
+    .testimonial-sec .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #000866;
+    }
+
+    .testimonial-sec .client-comment img {
+        margin-bottom: 30px;
+        width: 275px;
+    }
+
+    .testimonial-sec .client-details .name-first-letter {
+        width: 45px;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .testimonial-sec .client-details {
+        margin-top: 30px;
+    }
+
+    .area-we-cover-sec .right-side ul li {
+        width: 50%;
+        font-size: 18px;
+        line-height: 22px;
+        background-size: 8px;
+        padding: 0 15px 13px 15px;
+    }
+
+    .area-we-cover-sec .right-side ul li:last-child {
+        width: 50%;
+    }
+
+    .area-we-cover-sec .left-side {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .area-we-cover-sec .left-side img {
+        width: 240px;
+    }
+
+    .diffrent-brand-sec {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .diffrent-brand-sec .logo-inline-image {
+        display: none;
+    }
+
+    .diffrent-brand-sec .logo-mobile-images {
+        display: block;
+    }
+
+    .diffrent-brand-sec .logo-mobile-images.owl-carousel .owl-item img {
+        width: auto !important;
+        margin: 0 auto !important;
+    }
+
+    .diffrent-brand-sec .owl-theme .owl-dots .owl-dot.active span,
+    .diffrent-brand-sec .owl-theme .owl-dots .owl-dot:hover span {
+        background: #000866 !important;
+    }
+
+    .diffrent-brand-sec .owl-theme .owl-controls {
+        margin-top: 25px;
+    }
+
+    .area-we-cover-sec .right-side ul {
+        padding-left: 25px;
+    }
+
+    .photo-gallery-sec.mobile {
+        display: block;
+    }
+
+    .photo-gallery-sec.desktop {
+        display: none;
+    }
+
+    .photo-gallery-sec figure a:hover .plus-img {
+        width: 50px;
+    }
+
+    .photo-gallery-sec .view-gallery-btn {
+        margin-top: 30px;
+    }
+
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 4px;
+        margin: 0px 4px;
+    }
+
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot.active span,
+    .photo-gallery-sec.mobile .owl-theme .owl-dots .owl-dot:hover span {
+        background: #000866 !important;
+    }
+
+    .photo-gallery-sec figure a:hover .plus-img {
+        opacity: 0;
+    }
+
+    .mfp-close {
+        width: 25px !important;
+        height: 25px !important;
+        right: 0px !important;
+        top: 27px;
+        font-size: 37px;
+    }
+
+    .footer-sec .footer-first-sec p {
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-sec {
+        padding: 50px 0;
+    }
+
+    .footer-sec h3 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-sec .footer-second-sec {
+        padding-left: 12px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-sec ul li {
+        font-size: 18px;
+    }
+
+    .copyright-sec p {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    /* ============== Residential page ====================== */
+
+    .inner-residential-commercial-banner-section h2 {
+        font-size: 48px !important;
+        line-height: 54px !important;
+        margin-bottom: 0;
+    }
+
+    .inner-residential-commercial-banner-section {
+        padding: 50px 0;
+        border-top: 1px solid #19398a45;
+    }
+
+    .inner-residential-commercial-banner-section h2::after {
+        margin: 25px auto 0 auto !important;
+    }
+
+    .products-box-section {
+        display: block;
+    }
+
+    .products-box-section article {
+        display: block;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-inner img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content {
+        text-align: center;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+
+    .inner-residential-commercial-slider-section .slider-content h4 {
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+
+    .inner-residential-commercial-slider-section .carousel-control-prev,
+    .inner-residential-commercial-slider-section .carousel-control-next {
+        display: none;
+    }
+
+    .inner-product-boxes-section.sandk-common-padding {
+        padding: 50px 0 0;
+    }
+
+    .products-headings-section p {
+        margin-bottom: 15px;
+        padding: 0 0px;
+    }
+
+    .products-box-section:nth-child(even) {
+        padding-left: 12px;
+    }
+
+    .products-box-section:nth-child(odd) {
+        padding-right: 12px;
+    }
+
+    .products-box-section:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .products-box-section:nth-child(4) {
+        margin-top: 0;
+    }
+
+    .products-box-section {
+        margin-top: 30px !important;
+    }
+
+    .products-box-section article h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .products-box-section article p {
+        padding: 0 15px;
+        margin-bottom: auto;
+        letter-spacing: 0;
+    }
+
+    .products-box-section article ul {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .products-box-section article ul li {
+        font-size: 13px;
+        line-height: 18px;
+        background-size: 8px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .products-box-section article .common-btn {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .products-box-section article .learn-more-btn-sec {
+        margin: 0 15px;
+    }
+
+    .products-box-section article ul li {
+        background-position: left 5px !important;
+    }
+
+    .products-full-box-section.products-box-section article {
+        flex-direction: column-reverse;
+    }
+
+    .products-full-box-section.products-box-section article img {
+        width: 100%;
+    }
+
+    .products-full-box-section.products-box-section article .full-box-sec {
+        padding: 0;
+        width: 100%;
+    }
+
+    .row-reverse .products-full-box-section.products-box-section article {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .advantage-series-sec.last-product-section h2 {
+        font-size: 39px;
+    }
+
+    .residential-garage-door-openers-section .left-side {
+        padding-right: 12px;
+    }
+
+    .residential-garage-door-openers-section h3 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        padding: 0 30px;
+        margin-top: 30px;
+    }
+
+    .residential-garage-door-openers-section p {
+        padding: 0 12px;
+    }
+
+    .residential-garage-door-openers-section .common-btn {
+        margin-top: 30px;
+    }
+
+    .residential-garage-door-openers-section {
+        text-align: center;
+    }
+
+    .last-product-section {
+        padding-bottom: 50px;
+    }
+
+    /* ============== Contact page ====================== */
+
+    .contact-page-banner-section .left-side {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .contact-page-banner-section .contact-info-section {
+        display: none;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section {
+        display: block;
+        padding: 0 12px;
+        margin-top: 30px;
+    }
+
+    .contact-page-banner-section .right-side {
+        padding: 0 0 50px;
+        width: 100%;
+    }
+
+    .contact-page-banner-section p {
+        padding: 0px 12px 50px;
+    }
+
+    .contact-page-banner-section h2 {
+        text-align: center;
+    }
+
+    .contact-page-banner-section h2::after {
+        margin: 20px auto;
+    }
+
+    .contact-page-banner-section .right-side .inner-sec {
+        padding: 50px 20px;
+    }
+
+    .contact-page-banner-section .right-side h2 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    .contact-page-banner-section .right-side .form-btn button {
+        padding: 15px 20px;
+        font-size: 16px;
+        line-height: 20px !important;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section h2 {
+        font-size: 36px;
+        line-height: 46px;
+        color: #002855;
+        text-align: left;
+    }
+
+    .contact-page-banner-section .contact-info-section.mobile-contact-info-section h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: #002855;
+        margin: 10px 0;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .contact-page-banner-section .contact-info-section h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .contact-page-banner-section .contact-info-section .location-info ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .contact-page-banner-section .contact-info-section .hours-section ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    /* ========== About page ======== */
+    .our-team-and-culture-section p {
+        padding: 0;
+    }
+
+    .our-team-and-culture-section .common-btn.second-btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .our-team-and-culture-section .common-btn {
+        padding: 15px 0;
+        line-height: 37px;
+    }
+
+    .our-team-and-culture-section .background-image {
+        display: none;
+    }
+
+    .our-team-and-culture-section .our-team-and-culture-sec {
+        position: unset;
+        transform: unset;
+    }
+
+    .our-team-and-culture-section {
+        background-image: url(../images/residential-images/our-team-and-culture.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: unset;
+        padding: 50px 0;
+    }
+
+    .our-team-and-culture-section h2 {
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .about-page-banner-section {
+        padding: 60px 0;
+    }
+
+    .mission-and-values-section p {
+        padding: 0 10px;
+    }
+
+    .our-history-section h2 {
+        text-align: center;
+    }
+
+    .our-history-section h3 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .our-history-section .left-side {
+        padding-right: 12px;
+        text-align: center;
+    }
+
+    .our-history-section p {
+        margin-bottom: 40px;
+    }
+
+    /* ========== Product page ======== */
+
+    .product-page-banner-section .right-side {
+        display: none;
+    }
+
+    .product-page-banner-section .mobile-banner-image {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section {
+        text-align: center;
+    }
+
+    .product-page-banner-section .left-side {
+        padding-right: 12px;
+    }
+
+    .product-page-banner-section h1 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .product-page-banner-section h4 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .product-page-banner-section h4:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .product-page-banner-section .common-btn {
+        margin-top: 30px;
+    }
+
+    .product-page-product-item-section .desktop-product-sec {
+        display: none;
+    }
+
+    .product-page-product-item-section .mobile-product-sec {
+        display: flex !important;
+    }
+
+    .product-page-product-item-section h3 {
+        margin-bottom: 0;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item {
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button {
+        background: transparent;
+        border: 0;
+        box-shadow: unset;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        padding: 20px 12px;
+        margin-bottom: 0;
+        border-radius: 0;
+        color: #002855;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button::after {
+        content: "\f107";
+        font-family: 'FontAwesome';
+        background-image: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed::after {
+        content: "\f107";
+        font-family: 'FontAwesome';
+        background-image: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed {
+        color: #111;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button::before {
+        content: '';
+        height: 60%;
+        width: 5px;
+        background-color: #002855;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-button.collapsed::before {
+        background-color: #111;
+    }
+
+    .product-page-product-item-section .mobile-product-sec .accordion-item .accordion-body {
+        padding: 20px 0 30px;
+    }
+
+
+
+    .product-features-options-section p {
+        padding: 0px 10px 30px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .product-features-options-section .product-features-options-boxes article img {
+        width: 50%;
+    }
+
+    .product-features-options-section .product-features-options-boxes article div {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(odd) {
+        padding-right: 12px;
+    }
+
+    .product-features-options-section .product-features-options-boxes:nth-child(even) {
+        padding-left: 12px;
+    }
+
+    .product-features-options-section .product-features-options-boxes {
+        padding-top: 30px !important;
+    }
+
+    .product-features-options-section .product-features-options-boxes article h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .product-features-options-section .product-features-options-boxes article p {
+        text-align: center;
+        padding: 10px 0 0;
+    }
+
+    .product-features-options-section h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .product-page-product-item-section .product-heading-content h2::after {
+        margin: 10px 0 30px;
+        width: 100px;
+    }
+
+    .product-page-product-item-section h3 {
+        font-size: 25px;
+        line-height: 33px;
+        padding-bottom: 20px;
+    }
+
+    .product-page-product-item-section .image-and-title article {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .product-page-product-item-section .image-and-title h5 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+
+    .product-page-product-item-section h4 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    .product-page-product-item-section .accordion-header {
+        padding: 0;
+    }
+
+    .product-page-product-item-section .productdetails table tr td {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+}

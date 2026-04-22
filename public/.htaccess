@@ -1,0 +1,33 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+    RewriteRule ^(.*)$ https://hamzahk15.sg-host.com/%1 [R=301,L]
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php(/[^\s]*)? [NC]
+    RewriteRule ^index\.php(/.*)?$ %1 [R=301,L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+
+    # Redirect Trailing Slashes If Not A Folder...
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteCond %{REQUEST_URI} (.+)/$
+    # RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+    
+    # add trailing slash
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^.*[^/]$ /$0/ [L,R=301]
+    
+</IfModule>

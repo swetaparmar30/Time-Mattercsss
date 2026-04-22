@@ -1,0 +1,186 @@
+/* Page Specific Styles for About Us */
+
+
+/* Who We Are Section */
+.who-we-are-sec .row{justify-content: center;}
+.who-we-are-sec p { margin-bottom: 20px; color: #000000CC;} 
+.who-we-are-sec p:last-of-type{margin: 0;}
+.who-we-are-sec p b{color: #000;font-weight: 500;}
+.who-we-are-sec .left-side{padding-right: 120px;}
+.who-we-are-sec .image-side img {border-radius: 20px;}
+
+/* How We Deliver Section */
+.how-we-deliver-sec { background: linear-gradient(180deg, rgba(184, 153, 95, 0.1) 0%, rgba(184, 153, 95, 0.1) 100%);}
+.how-we-deliver-sec .row.first-row, .culture-values-sec .row.first-row,
+.our-specialists-sec .row.first-row{margin-bottom: 50px;}
+
+/* Culture & Values Section */
+.culture-values-sec .image-side img{width: 100%;border-radius: 20px;}
+.culture-values-sec .image-side{ position: relative;overflow: hidden; } 
+.culture-values-sec .image-side .quote-box {position:absolute;background: #fff; padding: 25px; border-radius: 12px; max-width: 740px;bottom: 15px; left: 0; right: 0;margin-inline:auto } 
+.culture-values-sec .image-side .quote-box p {color: #333333;margin: 0;font-weight: 500; }
+
+.culture-values-sec.why-choose-sec .right-side{padding-right: 12px;padding-left: 60px;}
+.culture-values-sec.why-choose-sec .right-side .quote-box{display: none;}
+.culture-values-sec .right-side .quote-box p {color: #333333;margin: 0;font-weight: 500; }
+
+
+/* Leadership Section */
+.leadership-sec { background-color: #FBFBFB; } 
+.leadership-grid { gap: 0 40px; display: grid; grid-template-columns: 1fr 1fr;} 
+.leader-card { background: #fff; padding: 60px; border-radius: 20px; height: 100%; } 
+.leader-info { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; } 
+
+.leader-meta h3 { font-size: 24px; font-weight: 600; margin-bottom: 10px;color: #284883;font-family: 'Montserrat',sans-serif;line-height: normal; } 
+.leader-meta p { font-size: var(--fs-md); color: #B89B5F; font-weight: 400;list-style: normal;color: #333333CC; } 
+
+
+/* Specialists Section */
+.our-specialists-sec { background-color: #F8F6F2;padding-bottom: 380px; } 
+.our-specialists-sec .section-subtext { max-width: 800px; margin: 0 auto 60px; } 
+.our-specialists-sec .specialist-item { padding: 0 20px;text-align: left !important;border-left: 3px solid #B89B5F;padding-left: 24px;padding-right: 0; } 
+.our-specialists-sec .specialist-item h4 { font-family: 'Raleway'; font-weight: 600; font-style: SemiBold; font-size: 24px; line-height: normal; letter-spacing: 0px; vertical-align: middle;margin-bottom: 20px; } 
+.our-specialists-sec .specialist-item p {color: #333333CC;font-size: var(--fs-md);line-height: var(--lh-sm);}
+.our-specialists-sec .row.specialists-grid {display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 40px;}
+
+
+.why-timematters-cta.blue-oragnization-work-box{margin-top: -380px;padding-top: 120px;position: relative;    background: transparent;padding-bottom: 0;}
+.why-timematters-cta.blue-oragnization-work-box p{max-width: 900px; margin-inline: auto; text-wrap-style: pretty;}
+
+
+/* Media Queries */
+
+@media (min-width: 1401px) and (max-width: 1800px) {
+
+    .who-we-are-sec .left-side{padding-right: 80px;}
+    .culture-values-sec .image-side img { width: 100%; border-radius: 16px; height: 720px;object-fit: cover; }
+    .culture-values-sec.why-choose-sec .right-side{padding-left: 40px;}
+    .culture-values-sec .image-side .quote-box p{font-size: 16px;}
+    .culture-values-sec .image-side .quote-box{max-width: 600px;padding: 20px;}
+    .our-specialists-sec .row.specialists-grid{max-width: 1200px;margin-inline: auto;}
+
+    .leader-meta h3{font-size: 22px;}
+    .leader-card{padding: 50px;}
+    .our-specialists-sec .specialist-item h4{font-size: 22px;margin-bottom: 10px;}
+    .our-specialists-sec .specialist-item{padding-left: 20px;padding-right: 0;}
+
+    .our-specialists-sec{padding-bottom: 320px;}
+    .why-timematters-cta.blue-oragnization-work-box{padding-top: 100px;margin-top: -320px;}
+    .why-timematters-cta.blue-oragnization-work-box p{max-width: 800px;}
+ 
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+
+    .who-we-are-sec .left-side{padding-right: 50px;}
+    .culture-values-sec .image-side img { width: 100%; border-radius: 16px; height: 620px;object-fit: cover; }
+    .culture-values-sec.why-choose-sec .right-side{padding-left: 40px;}
+
+    .leader-meta h3{font-size: 22px;}
+    .our-specialists-sec .specialist-item h4{font-size: 22px;margin-bottom: 10px;}
+    .our-specialists-sec .specialist-item{padding-left: 20px;padding-right: 0;}
+    .our-specialists-sec .row.specialists-grid{max-width: 1080px;margin-inline: auto;}
+    .culture-values-sec .image-side .quote-box{padding: 20px;max-width: 520px;}
+    .culture-values-sec .image-side .quote-box p{font-size: 14px;line-height: normal;}
+
+    .our-specialists-sec{padding-bottom: 320px;}
+    .why-timematters-cta.blue-oragnization-work-box{padding-top: 100px;margin-top: -320px;}
+    .why-timematters-cta.blue-oragnization-work-box p{max-width: 800px;}
+
+    .leader-card{padding: 30px;border-radius: 16px;}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    .who-we-are-sec .left-side{padding-right: 50px;}
+
+
+    .culture-values-sec .image-side .quote-box{padding: 20px;max-width: 420px;border-radius: 10px;}
+    .culture-values-sec .image-side img { width: 100%; border-radius: 20px; height: 650px; object-fit: cover; }
+    .culture-values-sec.why-choose-sec .right-side{padding-left: 30px;}
+
+    .leadership-grid{gap: 30px;}
+    .leader-card{padding: 30px;border-radius: 14px;}
+    .leader-meta h3{font-size: 20px;}
+    .leader-meta p{font-size: 15px;}
+  
+    .our-specialists-sec .specialist-item h4{font-size: 19px;margin-bottom: 15px;}
+    .our-specialists-sec .specialist-item{padding-left: 20px;}
+
+
+    .our-specialists-sec{padding-bottom: 300px;}
+    .why-timematters-cta.blue-oragnization-work-box{padding-top: 80px;margin-top: -300px;}
+    .why-timematters-cta.blue-oragnization-work-box p{max-width: 700px;}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+   .who-we-are-sec h2{text-align: center;} 
+  .who-we-are-sec p{margin-bottom: 15px;}
+  .who-we-are-sec img{width: 100%;}
+  .who-we-are-sec .left-side { padding-right: 12px; }
+
+  .culture-values-sec.why-choose-sec .right-side{padding: 0 12px;}
+
+
+  .leader-info img{width: 60px;height: 60px;}   
+  .leader-meta p{font-size: 15px;}
+  .leadership-grid{gap: 30px;} 
+  .leader-meta h3 { font-size: 18px; font-weight: 600; margin-bottom: 5px;}
+  .leader-card{padding: 25px;border-radius: 14px;}
+
+  .our-specialists-sec .row.specialists-grid{grid-template-columns: 1fr;gap: 30px;}
+  .our-specialists-sec{padding-bottom: 240px;}
+
+  .why-timematters-cta.blue-oragnization-work-box { margin-top: -240px; padding-top: 60px}
+
+.our-specialists-sec .specialist-item h4{font-size: 22px;line-height: normal;margin-bottom: 10px;}
+.our-specialists-sec .specialist-item{padding-left: 18px;}
+
+
+.how-we-deliver-sec .row.first-row p, 
+.culture-values-sec .row.first-row p, 
+.our-specialists-sec .row.first-row p{max-width: 600px;margin-inline: auto;}
+.culture-values-sec.why-choose-sec .right-side .quote-box{display: block;margin-top: 30px;text-align: center;}
+}
+
+@media (max-width: 767.98px) {
+
+   .who-we-are-sec  h2{text-align: center;} 
+  .who-we-are-sec p{margin-bottom: 15px;}
+
+
+  .leader-info img{width: 60px;height: 60px;}   
+  .leadership-grid{grid-template-columns: 1fr ;row-gap: 30px;}  
+  .leader-meta h3 { font-size: 18px; font-weight: 600; margin-bottom: 5px;}
+  .leader-card{padding: 25px;border-radius: 14px;}
+
+  
+
+    .how-we-deliver-sec .row.first-row, .culture-values-sec .row.first-row, .our-specialists-sec .row.first-row{margin-bottom: 30px;}
+
+  .our-specialists-sec .row.specialists-grid{grid-template-columns: 1fr;}
+  .our-specialists-sec{padding-bottom: 50px;}
+  .why-timematters-cta.blue-oragnization-work-box{margin-top: 0;padding: 50px 20px;position: unset;background: url(../images/why-organization-work-img.webp)}
+    .our-specialists-sec .specialist-item h4{font-size: 20px;line-height: normal;margin-bottom: 10px;}
+    .our-specialists-sec .specialist-item{padding-left: 18px;}
+ 
+.culture-values-sec.why-choose-sec .right-side .quote-box{display: block;margin-top: 30px;text-align: center}
+
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}

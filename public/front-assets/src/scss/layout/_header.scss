@@ -1,0 +1,86 @@
+.header{padding: 30px 0;
+    .row{align-items: end;}
+    .header-menu{font-family: 'Helvetica';}
+    .header-logo{    width: 9%;}
+    .header-menu{ width: 70%;
+        nav.navigation{
+            display: flex; justify-content: end;align-items: center;
+            ul{
+                text-align: right;
+                margin-right: 15px;
+            }
+            li{
+                display: inline-block;
+                margin: 0 14px;
+                text-transform: uppercase;
+                position: relative;
+    
+                a{
+                    color: #333333;
+                    font-size: 23px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    letter-spacing: -0.3px;
+    
+                    &:hover{color: #002855;}
+                }
+
+                &:first-child{margin-left: 0;}
+
+                &::after{content: ''; background-color: #002855; display: block; height: 2px; width: 0%; transition: width 0.5s ease-in-out; margin: 0 auto; position: absolute; bottom: -4px; left: 0; right: 0; margin-top: 3px;}
+                &:hover::after{width: 75%;}
+            }
+        }
+
+        a.header-design-center{padding: 8px 12px; font-size: 24px; line-height: 29px; font-weight: 500; color: #002855; text-transform: uppercase; border: 2px solid #F2A900; border-radius: 7px;}
+
+    }
+    .header-right-side{width: 21%; text-align: right;
+        a.tel{font-size: 35px; font-weight: 700; color: #002855;background-image: url(../images/header-call-icon.webp); background-repeat: no-repeat; background-position: 0 8px; display: inline-block; padding-left: 50px;}
+        p{font-size: 40px; color: #333333; line-height: 33px; margin-bottom: 12px;}
+    
+    }
+
+    
+}
+
+.mobile-header {
+    display: none;
+}
+
+.header.desk-header.sticky{position: sticky;top: 0; background-color: #fff; z-index: 999; box-shadow: 0px 0px 16px 0px #0000000F;}
+.mobile-btn{display: none;}
+.mobile-toggle-sec{display: none;}
+
+
+/* Navigation CSS */
+
+.header .navigation .dropdown:hover .dropdown-menu{display: block; margin: 0; text-align: left; width: max-content; padding: 0; border-radius: 0; border: 0; box-shadow: -1px 1px 10px #ddd;  border-top: 3px solid #F2A900; margin-top: 10px;}
+.header .navigation .dropdown .dropdown-a{cursor: pointer;}
+.header .navigation .dropdown .dropdown-menu li{display: block; width: 100%; margin: 0; padding: 0;}
+.header .navigation .dropdown .dropdown-menu li a{display: block; width: 100%; font-size: 16px; line-height: 20px; padding: 10px 15px;}
+.header .header-menu nav.navigation .dropdown li::after{display: none;}
+.header .navigation ul li{padding: 10px 0;}
+.header .navigation .dropdown .dropdown-menu li a:hover{background-color: #F2A900;}
+
+.header .navigation .sub-dropdown .sub-dropdown-menu{display: none !important; margin-top: 0 !important;}
+.header .navigation .sub-dropdown:hover .sub-dropdown-menu{display: block !important; margin: 0; border-top: 0; top: 0; left: 100%; right: auto; }
+.header .navigation .sub-dropdown .dropdown-sub-a::after{padding-left: 0; content: '\f054'; font-family: "FontAwesome";margin-left: 20px; display: block !important; width: 0; padding-right: 8px;font-size: 14px; line-height: 0; padding-top: 0;}
+.header .navigation .sub-dropdown .dropdown-sub-a{display: flex !important; align-items: center; justify-content: space-between;}
+
+.header .navigation .sub-inner-dropdown .sub-inner-dropdown-menu{display: none !important;}
+.header .navigation .sub-inner-dropdown:hover .sub-inner-dropdown-menu{display: block !important;top: 0; left: 100%; right: auto;margin: 0; border-top: 0;}
+.header .navigation .sub-inner-dropdown .dropdown-sub-a::after{padding-left: 0; content: '\f054'; font-family: "FontAwesome";margin-left: 20px; display: block !important; width: 0; padding-right: 8px;font-size: 14px; line-height: 0; padding-top: 0;}
+.header .navigation .sub-inner-dropdown .dropdown-sub-a{display: flex !important; align-items: center; justify-content: space-between;}
+
+.header .navigation .sub-inner-to-inner-dropdown .sub-inner-to-inner-dropdown-menu{display: none !important;}
+.header .navigation .sub-inner-to-inner-dropdown:hover .sub-inner-to-inner-dropdown-menu{display: block !important;top: 0; left: 100%; right: auto; margin: 0; border-top: 0;}
+.header .navigation .sub-inner-to-inner-dropdown .dropdown-sub-a::after{padding-left: 0; content: '\f054'; font-family: "FontAwesome";margin-left: 20px; display: block !important; width: 0; padding-right: 8px;font-size: 14px; line-height: 0; padding-top: 0;}
+.header .navigation .sub-inner-to-inner-dropdown .dropdown-sub-a{display: flex !important; align-items: center; justify-content: space-between;}
+
+.header .navigation .sub-dropdown .dropdown-menu.show{position: absolute !important; inset: unset; margin: 0px !important; transform: unset !important; top: 0 !important; left: 100% !important; right: auto !important;}
+.header .navigation .dropdown .dropdown-menu{margin-top: 10px !important;}
+.header .navigation .dropdown .dropdown-menu.sub-dropdown-menu, .header .navigation .dropdown .dropdown-menu.sub-inner-dropdown-menu, .header .navigation .dropdown .dropdown-menu.sub-inner-to-inner-dropdown-menu{margin-top: 0 !important;}
+
+
+.header .navigation ul li .dropdown-menu li:hover{background-color: #F2A900;}

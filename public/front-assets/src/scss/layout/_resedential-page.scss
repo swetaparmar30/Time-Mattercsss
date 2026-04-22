@@ -1,0 +1,122 @@
+.inner-residential-commercial-banner-section{
+
+    padding: 90px 0 120px 0;
+
+    h2{
+        font-size: 83px;
+
+        &::after{
+            margin: 40px auto 0 auto;
+        }
+    }
+}
+
+.inner-residential-commercial-slider-section{
+    position: relative;
+
+    .slider-content{
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);width: 100%;
+
+        h4{
+            font-size: 45px; font-weight: 700; line-height: 56px; color: #fff;margin-bottom: 15px;
+        }
+
+        h1{
+            font-size: 60px; font-weight: 700; line-height: 75px; color: #fff; margin-bottom: 60px;
+        }
+
+        .common-btn{
+            &:hover{background: transparent; border: 1px solid #fff; color: #fff;}
+        }
+    }
+
+    .carousel-inner{
+        img{
+            width: 100%;
+        }
+    }
+
+    .carousel-control-prev { left: 3%; width: auto; }
+    .carousel-control-next { right: 3%; width: auto; }
+}
+
+.inner-product-boxes-section{
+    padding: 120px 0 0;
+}
+
+.residential-Polystyrene-steel-garage-door-section h2{letter-spacing: -0.015em;}
+
+.products-full-box-section.products-box-section{
+    article{
+        flex-direction: row; flex-wrap: wrap;
+
+        .full-box-sec{padding: 10px;width: 50%;}
+        img{width: 50%;object-fit: cover;}
+    }
+
+}
+.last-product-section{padding-bottom: 120px;}
+
+
+.residential-garage-door-openers-section{
+    .left-side{padding-right: 48px;}
+    h3{font-size: 45px; font-weight: 700; line-height: 56px;margin-bottom: 30px;color: #002855; }
+    .common-btn{margin-top: 50px;}
+}
+
+.products-headings-section{
+    p{
+        margin-bottom: 50px;
+        padding: 0 140px;
+    }
+}
+
+.products-box-section{
+    display: flex;
+    article{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 16px 0px #0000000F;
+        border: 1px solid #0028554D;
+
+
+
+        .common-btn{width: max-content; margin-top: 52px; margin-left: 30px; margin-bottom: 30px; }
+        
+        h3{
+            font-size: 45px; font-weight: 700; line-height: 56px; color: #002855; margin-top: 30px; margin-bottom: 30px;padding: 0 30px;
+            a{color: #002855;}
+        }
+        p{
+            padding: 0 30px;display: block; margin-bottom: auto;     letter-spacing: 0.02em;
+        }
+        ul{
+            padding: 0 30px; margin-top: 30px;
+
+            li{
+                font-size: 17px; font-weight: 700; line-height: 21px; color: #333333; margin-bottom: 15px;
+                background-image: url(../images/residential-images/products-list-icon.png); background-repeat: no-repeat; background-position: left center; padding-left: 20px;
+
+                &:last-of-type{margin-bottom: 0;}
+            }
+        }
+        
+    }
+
+    &:nth-child(3){
+        margin-top: 60px;
+    }
+    &:nth-child(4){
+        margin-top: 60px;
+    }
+    &:nth-child(even){
+        padding-left: 30px;
+    }
+    &:nth-child(odd){
+        padding-right: 30px;
+    }
+}
+
+.inner-product-category-section .product-row{margin-top: 30px;}

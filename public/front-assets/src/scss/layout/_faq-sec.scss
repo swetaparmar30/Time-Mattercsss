@@ -1,0 +1,52 @@
+.faq-sec{
+    padding-bottom: 0px;
+
+.right-faq-sec{
+    padding-left: 50px;
+
+    .accordion-item{
+        border: none;
+
+        &:nth-child(1) .accordion-button{
+            padding-top: 0;
+            margin-top: 0px;
+        }
+
+        .accordion-button{
+            border-radius: unset;
+            margin-top: 20px;
+            padding: 0 0 20px 0;
+            font-size: 27px;
+            font-weight: 400;
+            line-height: 33px;
+            color: #002855;
+            letter-spacing: 0.48px;
+            box-shadow: unset;
+            border-bottom: 1px solid #002855;
+            background-color: transparent;
+            background-image: url(../images/up-arrow.webp);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position-y: 4px;
+
+
+            &::after{
+                background: none;
+                
+            }
+        }
+
+        .accordion-button.collapsed{
+            border-bottom: 1px solid #607A9D99;
+            color: #333;
+            background-image: url(../images/dwon-arrow.webp);
+        }
+       
+    }
+    .card-body{
+        padding: 20px 0 10px 0;
+
+    }
+}
+
+}

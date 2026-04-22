@@ -1,0 +1,9 @@
+.design-center-sec{
+    background-color: #F1F1F1;
+    .left-side{text-align: center;}
+    h3{font-size: 45px; color: #333333; line-height: 55px; font-weight: 400;text-align: center;text-transform: capitalize;}
+    h2{margin-bottom: 7px;}
+    h2::after{display: none;}
+    h3::after{content: ''; display: block; width: 200px; height: 2px; background-color: #002855; margin: 40px auto 60px auto;}
+    p{text-align: center; margin-bottom: 50px;}
+}

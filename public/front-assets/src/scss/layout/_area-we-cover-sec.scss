@@ -1,0 +1,9 @@
+.area-we-cover-sec{
+    padding: 60px 0;
+    background: linear-gradient(90deg, #002855 0%, #0F3173 100%);
+    h2{color: #fff;}
+    h2::after{background-color: #fff;}
+    .right-side ul{display: flex; flex-wrap: wrap; padding-left: 0px;}
+    .right-side ul li { margin: 0; font-size: 24px; line-height: 30px; font-weight: 400; color: #fff; background-image: url(../images/area-we-cover-list-icon.webp); background-repeat: no-repeat; background-position: 0px 1px; padding: 0 0 15px 17px; display: inline-block; width: 24%; }
+    .right-side ul li:last-child{width: 28%; }
+}

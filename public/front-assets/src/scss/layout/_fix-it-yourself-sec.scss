@@ -1,0 +1,12 @@
+.fix-it-yourself-sec{
+    background: linear-gradient(90deg, #002855 18.2%, #0F3173 208.07%);
+    text-align: center;
+    h2{    color: #fff;}
+    h2::after{    background-color: #fff;}
+    .common-btn{padding: 20px 70px;    line-height: 45px;}
+    .common-btn.first-btn:hover{color: #002855;    border: 1px solid #002855;background-color: #fff;}
+    .common-btn.second-btn{color: #002855;    border: 1px solid #002855;    margin-left: 25px;}
+    .common-btn.second-btn::before{    background-color: #fff;}
+    .common-btn.second-btn:hover{    border: 1px solid #F2A900;    background-color: #F2A900;    color: #fff;}
+    p{color: #fff;margin-bottom: 50px;padding: 0 190px; line-height: 34px;}
+}

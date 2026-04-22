@@ -1,0 +1,15 @@
+.get-free-quote-sec{
+    position: relative;
+    .get-quote-content-sec{
+        position: absolute; top: 50%; left: 0; right: 0; transform: translate(0px, -50%); text-align: center;
+    }
+
+    h2{    color: #fff;}
+    h2::after{    background-color: #fff;margin-bottom: 40px;}
+    h3{font-size: 45px; line-height: 56px; font-weight: 700;color: #fff; text-transform: capitalize;margin-bottom: 50px;}
+    .common-btn{padding: 20px 70px;    line-height: 45px;}
+    .common-btn.first-btn:hover{color: #002855;    border: 1px solid #002855;background-color: #fff;}
+    .common-btn.second-btn{color: #002855;    border: 1px solid #002855;    margin-left: 25px;}
+    .common-btn.second-btn::before{    background-color: #fff;}
+    .common-btn.second-btn:hover{    border: 1px solid #F2A900;    background-color: #F2A900;    color: #fff;}
+}

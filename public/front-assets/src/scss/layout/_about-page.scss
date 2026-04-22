@@ -1,0 +1,53 @@
+.about-page-banner-section{
+    padding: 176px 0;
+    background-image: url(../images/residential-images/about-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2{color: #fff; margin-bottom: 25px;
+        &::after{display: none;}
+    }
+    p{
+        font-size: 28px;
+        line-height: 36px;
+        color: #fff;
+    }
+}
+
+.mission-and-values-section{
+    .common-btn{margin-top: 50px;}
+
+    p{    padding: 0 140px;}
+}
+
+.our-team-and-culture-section{
+    position: relative;
+    .our-team-and-culture-sec{
+        position: absolute; top: 50%; left: 0; right: 0; transform: translate(0px, -50%); text-align: center;
+    }
+
+    h2{    color: #fff;}
+    h2::after{    background-color: #fff;margin-bottom: 40px;}
+    p{font-size: 22px; line-height: 27px; font-weight: 400;color: #fff; margin-bottom: 50px;    padding: 0 360px;}
+    .common-btn{padding: 20px 70px;    line-height: 45px;}
+    .common-btn.first-btn:hover{color: #002855;    border: 1px solid #002855;background-color: #fff;}
+    .common-btn.second-btn{color: #002855;    border: 1px solid #002855;    margin-left: 25px;}
+    .common-btn.second-btn::before{    background-color: #fff;}
+    .common-btn.second-btn:hover{    border: 1px solid #F2A900;    background-color: #F2A900;    color: #fff;}
+}
+
+
+.our-history-section{
+    h2{
+        text-align: left;
+
+        &::after{margin-left: 0; margin-bottom: 50px;}
+    }
+
+    h3{font-size: 60px; line-height: 75px; font-weight: 700; color: #333333; margin-bottom: 30px;
+        span{color: #002855;}
+    }
+    p{font-weight: 700; margin-bottom: 78px;}
+    .left-side{    padding-right: 30px;}
+    .right-side{padding-left: 50px;}
+}

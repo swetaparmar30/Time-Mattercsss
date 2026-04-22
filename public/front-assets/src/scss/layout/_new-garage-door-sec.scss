@@ -1,0 +1,17 @@
+.new-garage-door-sec{
+    .box-sec{display: flex;padding: 0;}
+    .box-sec figure{margin-bottom: 30px;}
+    .box-sec article{padding: 40px 25px;display: flex;flex-direction: column;}
+    .box-sec article:hover{background-color: #F1F1F1;}
+    .box-sec article p{font-size: 18px;line-height: 23px;    margin-bottom: 30px;    letter-spacing: -0.4px;}
+    .box-sec article .common-btn{margin-top: auto;width: max-content;}
+    .box-sec ul li { font-size: 16px; font-weight: 700; line-height: 20px; margin-bottom: 15px; background-image: url(../images/list-new-door-icon.webp); background-repeat: no-repeat; background-position: 0 6px; padding-left: 20px; letter-spacing: -0.7px;}
+    .box-sec ul li a{color: #333333;}
+    .box-sec ul li a:hover{color: #002855;}
+    .box-sec ul{column-count: 2;    margin-bottom: 50px;}
+    .box-sec h3{font-size: 55px; line-height: 58px; font-weight: 700; color: #002855; text-transform: capitalize; margin-bottom: 10px; letter-spacing: -3.3px;}
+    .box-sec h4{font-size: 40px; line-height: 47px; letter-spacing: -0.7px; font-weight: 400; color: #333333; text-transform: capitalize; margin-bottom: 40px;}
+
+
+    .mobile-garage-door-sec{display: none;}
+}

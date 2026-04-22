@@ -1,0 +1,83 @@
+[14-Feb-2026 12:09:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/vendor/composer/../symfony/deprecation-contracts/function.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/vendor/composer/autoload_real.php:55
+Stack trace:
+#0 /home/customer/www/clarkandsonsdoors.com/public_html/vendor/composer/autoload_real.php(38): composerRequire71118a8cd03c739b000af5ff3ca1a601('6e3fae29631ef28...', '/home/customer/...')
+#1 /home/customer/www/clarkandsonsdoors.com/public_html/vendor/autoload.php(25): ComposerAutoloaderInit71118a8cd03c739b000af5ff3ca1a601::getLoader()
+#2 /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php(34): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/vendor/composer/autoload_real.php on line 55
+[14-Feb-2026 12:12:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[14-Feb-2026 12:12:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[14-Feb-2026 12:12:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[14-Feb-2026 12:13:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[14-Feb-2026 12:13:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[14-Feb-2026 12:13:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[16-Feb-2026 07:15:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/clarkandsonsdoors.com/public_html/public/../vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/clarkandsonsdoors.com/public_html/public/index.php on line 34
+[07-Apr-2026 06:34:15 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.3.0". You are running 8.2.30. in /home/customer/www/hamzahk15.sg-host.com/public_html/vendor/composer/platform_check.php on line 22
+[09-Apr-2026 13:33:31 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Backend\InquiryController as InquiryController because the name is already in use in /home/customer/www/hamzahk15.sg-host.com/public_html/routes/web.php on line 33
+[09-Apr-2026 13:33:42 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Backend\InquiryController as InquiryController because the name is already in use in /home/customer/www/hamzahk15.sg-host.com/public_html/routes/web.php on line 33
+[09-Apr-2026 13:33:43 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Backend\InquiryController as InquiryController because the name is already in use in /home/customer/www/hamzahk15.sg-host.com/public_html/routes/web.php on line 33

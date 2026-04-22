@@ -1,0 +1,53 @@
+.year-of-excilence{
+    padding: 100px 0 80px 0;
+    position: relative;
+
+    .right-side{padding-left: 35px;
+    h2{font-size: 93px; line-height: 93px; font-weight: 700; color: #333333; text-transform: capitalize;text-align: left;}
+    h2 span{color: #002855;font-size: 70px;display: block;}
+    h2::after { content: ''; display: block; width: 200px; height: 2px;background-color: #002855;margin: 30px 0 50px 0; }
+    p{padding-right: 30px;}
+    }
+
+    .need-new-garage-door { background-image: url(../images/full-open-door.webp); width: 180px; height: 70px; transition: background-image 0.5s ease; background-repeat: no-repeat; }
+.need-new-garage-door { position: fixed; right: 0; bottom: 70px; z-index: 1111; }
+.need-new-garage-door:hover { animation: openDoor 1700ms forwards; }
+.need-new-garage-door .inner-sec {position: relative;}
+.need-new-garage-door .inner-sec .text-sec { position: absolute; top: 17px; right: 0; left: 78px; }
+.need-new-garage-door .inner-sec .text-sec h3 { font-size: 14px; font-weight: 700; line-height: 16px; color: #fff; text-transform: capitalize; }
+
+.center-side-list{margin-top: 80px;
+
+    ul.with-icon-list {position: relative; display: flex; flex-wrap: wrap; z-index: 11; }
+    ul.with-icon-list li{width: 23.5%; padding: 30px 20px 30px 110px; margin-right: 20px;position: relative;text-transform: capitalize; background-repeat: no-repeat; background-position: 0 36px; display: flex; align-items: center; justify-content: center;font-size: 40px; font-weight: 700; line-height: 50px;color: #333333;}
+    ul.with-icon-list li:last-child{margin-right: 0;}
+    ul.with-icon-list li::after {content: ''; width: 89%; height: calc(100%); border-bottom: 146px solid #F1F1F1; bottom: 0; right: 0; left: 45px; top: 0; position: absolute; display: block; overflow: hidden; z-index: -1;}
+    ul.with-icon-list li:nth-child(1){background-image: url(../images/Experience-icon.webp);width: 25%;}
+    ul.with-icon-list li:nth-child(2){background-image: url(../images/Insured-icon.webp);}
+    ul.with-icon-list li:nth-child(3){background-image: url(../images/Pricing-icon.webp);}
+    ul.with-icon-list li:nth-child(4){background-image: url(../images/Owner-icon.webp);}
+}
+
+.center-side-list.mobile{display: none;}
+
+}
+
+.need-new-garage-door.mobile{display: none; opacity: 0;}
+
+@keyframes openDoor {
+    0% {
+      background-image: url('../images/full-open-door.webp'); /* Start with closed door image */
+    }
+    25% {
+      background-image: url('../images/open-door-frame-2.webp'); /* Halfway open door image */
+    }
+    50% {
+      background-image: url('../images/open-door-frame-3.webp'); /* Fully open door image */
+    }
+    75% {
+      background-image: url('../images/open-door-frame-4.webp'); /* Fully open door image */
+    }
+    100% {
+      background-image: url('../images/full-close-door.webp'); /* Fully open door image */
+    }
+  }
