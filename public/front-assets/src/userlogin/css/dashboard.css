@@ -1,0 +1,148 @@
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border: 1px solid #e6e8ec;
+  border-radius: 12px;
+  padding: 22px 18px;
+}
+
+.dashboard-card .card-icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #284884;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+}
+
+.dashboard-card .top-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.dashboard-card h2 {
+  margin: 0 0 8px;
+  font-family: "Raleway", "Segoe UI", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.dashboard-card h3 {
+  margin: 0 0 10px;
+  font-family: "Raleway", "Segoe UI", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.dashboard-card p {
+  /* color: #61656f; */
+  margin-bottom: 20px;
+  color: #333333CC;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.view-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #284884;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 4px;
+}
+
+.view-more-link .view-more-badge {
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.view-more-link .view-more-badge::before,
+.view-more-link .view-more-badge::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.view-more-link .view-more-badge::after {
+  background: #b2b8c2;
+}
+
+.view-more-link .view-more-badge::before {
+  background: #284884;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease;
+}
+
+.view-more-link .btn-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #284884;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.view-more-link .btn-circle img {
+  width: 14px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.view-more-link:hover .view-more-badge::before {
+  transform: scaleX(1);
+}
+
+.view-more-link:hover .btn-circle {
+  background: #1f3868;
+}
+
+@media (max-width: 1199.98px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-card {
+    padding: 18px 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .dashboard-card p {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .view-more-link {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .view-more-link .btn-circle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .view-more-link .btn-circle img {
+    width: 12px;
+    height: 9px;
+  }
+}

@@ -45,7 +45,12 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:admin')->except('logout');
+    }
+
+    protected function guard()
+    {
+        return Auth::guard('admin');
     }
 
     public function index() {
@@ -64,7 +69,7 @@ class LoginController extends Controller
         $credentialsuser['email'] = $credentials['email'];
         $credentialsuser['password'] = $credentials['password'];
 
-            if (Auth::attempt($credentials) ) {
+            if (Auth::guard('admin')->attempt($credentials) ) {
                 if(isset($request->remember_me) && !empty($request->remember_me)){
                     setcookie('email',$request->email,time()+432000);
                     setcookie('password',$request->password,time()+432000);
@@ -81,14 +86,14 @@ class LoginController extends Controller
             }
     }
     // public function userLogout() {
-    //     auth()->logout();
+    //     auth()->logout();    
     //     return redirect('admin/login');
     // }
     public function logout(Request $request)
-        {
-            $this->performLogout($request);
-            return redirect('admin/login');
-        }
+    {
+        Auth::guard('admin')->logout();
+        return redirect('admin/login');
+    }
     public function send_link_reset_view()
     {
         return view('auth.reset_pass_link');

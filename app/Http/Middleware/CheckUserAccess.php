@@ -17,14 +17,17 @@ class CheckUserAccess
         {
             $user = \App\Models\User::where('email', $request->email)->first();
 
-            if ($user && in_array($user->role, [
-                'Independent Contractor',
-                'Temporary Employee',
-                'Vendor'
-            ])) {
-                return back()->withErrors([
-                    'email' => 'You are not allowed to login here.',
-                ]);
+            if ($user) {
+                $role = strtolower(str_replace(' ', '-', $user->role));
+                if (in_array($role, [
+                    'independent-contractor',
+                    'temporary-employee',
+                    'vendor'
+                ])) {
+                    return back()->withErrors([
+                        'email' => 'You are not allowed to login here.',
+                    ]);
+                }
             }
 
             return $next($request);

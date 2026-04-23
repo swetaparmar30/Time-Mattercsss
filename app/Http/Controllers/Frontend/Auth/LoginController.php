@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
+use App\Http\Requests\LoginRequest;
 
 class LoginController extends Controller
 {
@@ -16,7 +17,7 @@ class LoginController extends Controller
  * This prevents redirecting to admin/login
  */
     protected $redirectTo = '/dashboard';
-
+    
     /**
      * Show Login Page
      */
@@ -28,20 +29,15 @@ class LoginController extends Controller
     /**
      * Handle Login Request
      */
-    public function login(Request $request): RedirectResponse
+    public function login(LoginRequest $request): RedirectResponse
     {
-     
-        $request->validate([
-            'email'    => ['required', 'email'],
-            'password' => ['required'],
-        ]);
+        if (Auth::guard('web')->attempt($request->only('email', 'password'), $request->boolean('remember'))) {
+            
+            $request->session()->regenerate();
 
-        if (Auth::attempt($request->only('email', 'password'), $request->boolean('remember'))) {
-
-            $user = Auth::user();
-
-            // Block login if admin has not approved the account yet
-            if ($user->status == 0) {
+            $user = Auth::guard('web')->user();
+            
+             if ($user->status == 0) {
                 Auth::logout();
 
                 return back()
@@ -49,7 +45,6 @@ class LoginController extends Controller
                        ->withInput($request->only('email'));
             }
 
-            $request->session()->regenerate();
 
             // Redirect to Role-based Dashboard
             return $this->redirectToDashboard($user);
@@ -66,14 +61,16 @@ class LoginController extends Controller
      */
     protected function redirectToDashboard(User $user): RedirectResponse
     {
-        return match ($user->role) {
-            'Independent Contractor' => redirect()->route('frontend.independent-contractor.dashboard')
+        $role = strtolower(str_replace(' ', '-', $user->role));
+        
+        return match ($role) {
+            'independent-contractor' => redirect()->route('frontend.independent-contractor.dashboard')
                                         ->with('success', 'Welcome Independent Contractor!'),
 
-            'Temporary Employee'     => redirect()->route('frontend.temporary-employee.dashboard')
+            'temporary-employee'     => redirect()->route('frontend.temporary-employee.dashboard')
                                         ->with('success', 'Welcome Temporary Employee!'),
                                         
-            'Vendor'                 => redirect()->route('frontend.vendor.dashboard')
+            'vendor'                 => redirect()->route('frontend.vendor.dashboard')
                                         ->with('success', 'Welcome Vendor!'),
 
             default => redirect()->route('dashboard')
@@ -86,11 +83,9 @@ class LoginController extends Controller
      */
     public function logout(Request $request): RedirectResponse
     {
-        Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
+        Auth::guard('web')->logout();
 
         return redirect()->route('frontend.login')
-                         ->with('success', 'Logged out successfully.');
+                         ->with('success', 'You have been logged out successfully.');
     }
 }

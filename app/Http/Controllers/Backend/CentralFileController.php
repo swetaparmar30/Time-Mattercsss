@@ -128,4 +128,43 @@ class CentralFileController extends Controller
         }
         return redirect()->route('centralfile.index')->with('error', 'File not found.');
     }
+
+     public function download($id)
+    {
+        $file = CentralFile::findOrFail($id);
+
+        $path = public_path('uploads/' . $file->file_path);
+
+        if (!file_exists($path)) {
+            abort(404);
+        }
+
+        // Get extension from file_path
+        $extension = pathinfo($file->file_path, PATHINFO_EXTENSION);
+
+        // Append extension to name if not already present
+        $filename = $file->name . '.' . $extension;
+
+        return response()->download($path, $filename);
+    }
+    
+    public function preview($id)
+    {
+        $file = CentralFile::findOrFail($id);
+
+        $path = public_path('uploads/' . $file->file_path);
+
+        if (!file_exists($path)) {
+            abort(404);
+        }
+
+        // Get file mime type
+        $mime = mime_content_type($path);
+
+        // Return file inline (open in browser instead of download)
+        return response()->file($path, [
+            'Content-Type' => $mime,
+            'Content-Disposition' => 'inline; filename="' . basename($path) . '"'
+        ]);
+    }
 }

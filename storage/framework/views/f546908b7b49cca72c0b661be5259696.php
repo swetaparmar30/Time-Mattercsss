@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <link rel="stylesheet" href="https://hamzahk15.sg-host.com/front-assets/src/css/admin-dashboard.css">
-    <link rel="stylesheet" href="https://hamzahk15.sg-host.com/front-assets/src/css/login.css">
+    <link rel="stylesheet" href="<?php echo e(asset('front-assets/src/css/admin-dashboard.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('front-assets/src/css/login.css')); ?>">
   </head>
   <body class="auth-page login-page">
     <main class="auth-card">
@@ -113,14 +113,15 @@ unset($__errorArgs, $__bag); ?>
           <p class="auth-subtitle">Enter your email to receive a reset link</p>
         </header>
 
-        <form class="auth-form" action="#" method="post" novalidate>
+        <form class="auth-form" action="<?php echo e(route('frontend.password.email')); ?>" method="POST">
+          <?php echo csrf_field(); ?>
           <div class="form-field">
             <label class="form-label" for="reset-email">Email</label>
             <input
               class="form-control"
               type="email"
               id="reset-email"
-              name="resetEmail"
+              name="email"
               placeholder="Enter your mail address"
               autocomplete="email"
               required
@@ -167,6 +168,13 @@ unset($__errorArgs, $__bag); ?>
     <script>
         $(function () {
             toastr.success("<?php echo e(session('success')); ?>");
+        });
+    </script>
+    <?php endif; ?>
+    <?php if(session('error')): ?>
+    <script>
+        $(function () {
+            toastr.error("<?php echo e(session('error')); ?>");
         });
     </script>
     <?php endif; ?>

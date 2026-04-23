@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Frontend\Auth;
 
-use App\Http\Controllers\Controller;           
+use App\Http\Controllers\Controller;           // ← This is the correct import
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
+use App\Http\Requests\RegisterUserRequest;
 
 class RegisterController extends Controller
 {
@@ -19,27 +20,18 @@ class RegisterController extends Controller
    
     }
 
-    public function store(Request $request)
+    public function store(RegisterUserRequest $request): RedirectResponse
     {
-        $request->validate([
-            'first_name'   => ['required', 'string', 'max:255'],
-            'last_name'    => ['required', 'string', 'max:255'],
-            'email'        => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'phone'        => ['required', 'string', 'max:20'],        
-            'name'      => ['nullable', 'string', 'max:255'],
-            'role'         => ['required', 'string', 'in:Independent Contractor,Temporary Employee,Vendor'], // Updated
-            'password'     => ['required', 'confirmed', Password::defaults()],
-        ]);
-        
+        $validated = $request->validated();
+
         $user = User::create([
-            'first_name' => $request->first_name,
-            'last_name'  => $request->last_name,
-            // 'name'       => trim($request->first_name . ' ' . $request->last_name), // fill the 'name' column
-            'email'      => $request->email,
-            'phone'      => $request->phone,
-            'name'       => $request->name,
-            'role'       => $request->role,
-            'password'   => Hash::make($request->password),
+            'first_name' => $validated['first_name'],
+            'last_name'  => $validated['last_name'],
+            'email'      => $validated['email'],
+            'phone'      => $validated['phone'],
+            'name'       => $validated['name'],
+            'role'       => $validated['role'],
+            'password'   => Hash::make($validated['password']),
             'status'     => 0,
         ]);
 

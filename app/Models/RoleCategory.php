@@ -12,4 +12,9 @@ class RoleCategory extends Model
     protected $table = 'role_category';
     
     protected $fillable = ['name', 'title', 'description', 'image', 'button_url', 'status','button_text'];
+
+    public function roleCategories()
+    {
+        return $this->belongsToMany(CentralFile::class, 'file_role_category', 'role_category_id', 'file_id');
+    }
 }

@@ -129,4 +129,14 @@ class RoleCategoryController extends Controller
         }
         return response()->json(['status' => 0, 'message' => 'Record not found.']);
     }
+
+     // for frontend 
+    
+    public function show($id)
+    {
+        $category = RoleCategory::findOrFail($id);
+        $files = $category->roleCategories()->where('status', 1)->get();
+        
+        return view('user-layout.layout.category-detail', compact('category', 'files'));
+    }
 }

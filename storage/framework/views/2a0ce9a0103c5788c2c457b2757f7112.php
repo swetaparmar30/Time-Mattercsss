@@ -6,36 +6,24 @@
     <title>Register | TimeMatters</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    >
-    <link rel="stylesheet" href="/front-assets/src/css/admin-dashboard.css">
-    <link rel="stylesheet" href="/front-assets/src/css/registration.css">
-    <style>
-  
-      .invalid-feedback {
-          color: #dc3545;
-          font-size: 13px;
-          margin-top: 4px;
-          display: block;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo e(asset('front-assets/src/css/admin-dashboard.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('front-assets/src/css/registration.css')); ?>">
   </head>
-  <body class="auth-page registration-page">
-    <main class="auth-card">
-      <img
-        class="auth-logo"
-        src="/front-assets/src/images/Time-matters-header-logo.webp"
-        alt="TimeMatters logo"
-        width="350"
-        height="84"
-      >
+    <body class="auth-page registration-page">
+        <main class="auth-card">
+            <img
+                class="auth-logo"
+                src="/front-assets/src/images/Time-matters-header-logo.webp"
+                alt="TimeMatters logo"
+                width="350"
+                height="84"
+            >
 
-      <header class="auth-header">
-        <h1 class="auth-title">Create Your Account</h1>
-        <p class="auth-subtitle">Fill in your details to get started</p>
-      </header>
+            <header class="auth-header">
+                <h1 class="auth-title">Create Your Account</h1>
+                <p class="auth-subtitle">Fill in your details to get started</p>
+            </header>
 
             <form method="POST" action="<?php echo e(route('frontend.register.store')); ?>">
                 <?php echo csrf_field(); ?>
@@ -112,7 +100,7 @@ unset($__errorArgs, $__bag); ?>
 
                     <div class="form-field">
                         <label class="form-label" for="phone-number">Phone Number</label>
-                        <input type="tel" name="phone" class="form-control <?php $__errorArgs = ['phone'];
+                        <input type="number" name="phone" class="form-control <?php $__errorArgs = ['phone'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -143,7 +131,7 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" 
-                        placeholder="" value="<?php echo e(old('name')); ?>">
+                        placeholder="Enter your company name" value="<?php echo e(old('name')); ?>">
                       <?php $__errorArgs = ['name'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -167,9 +155,9 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" >
                         <option value="">Select your role</option>
-                        <option value="Independent Contractor" <?php echo e(old('role') == 'Independent Contractor' ? 'selected' : ''); ?>>Independent Contractor </option>
-                        <option value="Temporary Employee" <?php echo e(old('role') == 'Temporary Employee' ? 'selected' : ''); ?>> Temporary Employee </option>
-                        <option value="Vendor" <?php echo e(old('role') == 'Vendor' ? 'selected' : ''); ?>> Vendor </option>
+                        <option value="independent-contractor" <?php echo e(old('role') == 'independent-contractor' ? 'selected' : ''); ?>>Independent Contractor </option>
+                        <option value="temporary-employee" <?php echo e(old('role') == 'temporary-employee' ? 'selected' : ''); ?>> Temporary Employee </option>
+                        <option value="vendor" <?php echo e(old('role') == 'vendor' ? 'selected' : ''); ?>> Vendor </option>
                       </select>
                       <?php $__errorArgs = ['role'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -244,6 +232,6 @@ unset($__errorArgs, $__bag); ?>
                 Already have an account?
                 <a class="auth-link" href="<?php echo e(route('frontend.login') ?? '#'); ?>"><strong>Login</strong></a>
             </p>
-          </main>
-  </body>
-</html><?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/frontend/auth/register.blade.php ENDPATH**/ ?>
+        </main>
+    </body>
+  </html><?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/frontend/auth/register.blade.php ENDPATH**/ ?>
