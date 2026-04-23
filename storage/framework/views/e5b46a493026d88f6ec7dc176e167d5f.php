@@ -7,9 +7,11 @@
   ?>
   <div class="portal-header-inner">
     <div class="portal-header-left">
-      <div class="portal-logo-wrap">
-        <img src="<?php echo e(asset('front-assets/src/userlogin/images/Time-matters-header-logo.webp')); ?>" alt="TimeMatters logo">
-      </div>
+      <a href="">
+        <div class="portal-logo-wrap">
+          <img src="<?php echo e(asset('front-assets/src/userlogin/images/Time-matters-header-logo.webp')); ?>" alt="TimeMatters logo">
+        </div>
+      </a>
       <span class="portal-header-divider" aria-hidden="true"></span>
       <span class="portal-title"> <?php echo e(ucwords(str_replace('-', ' ', $userRole))); ?></span>
     </div>
@@ -20,7 +22,11 @@
         <input type="search" placeholder="Search">
       </label>
       <div class="portal-user">
-        <img class="avatar" src="<?php echo e(asset('front-assets/src/userlogin/dashbord/default-user.png')); ?>    " alt="User avatar">
+        <?php if(auth()->user()->image): ?>
+          <img class="avatar" src="<?php echo e(asset('uploads/profile/' . auth()->user()->image)); ?>" alt="User avatar" style="object-fit: cover;">
+        <?php else: ?>
+          <img class="avatar" src="<?php echo e(asset('front-assets/src/userlogin/dashbord/default-user.png')); ?>" alt="User avatar">
+        <?php endif; ?>
         <div class="portal-user-info">
           <strong><?php echo e(auth()->user()->first_name); ?> <?php echo e(auth()->user()->last_name); ?></strong>
           
@@ -37,10 +43,14 @@
   <div class="profile-popup-card" role="dialog" aria-modal="true" aria-labelledby="profilePopupTitle">
     <button class="profile-popup-close" id="profilePopupClose" type="button" aria-label="Close profile menu">&times;</button>
     <p class="profile-popup-role" id="profilePopupTitle"><?php echo e(ucwords(str_replace('-', ' ', $userRole))); ?></p>
-    <img class="profile-popup-avatar" src="<?php echo e(asset('front-assets/src/userlogin/dashbord/default-user.png')); ?>" alt="User avatar">
+    <?php if(auth()->user()->image): ?>
+      <img class="profile-popup-avatar" src="<?php echo e(asset('uploads/profile/' . auth()->user()->image)); ?>" alt="User avatar" style="object-fit: cover;">
+    <?php else: ?>
+      <img class="profile-popup-avatar" src="<?php echo e(asset('front-assets/src/userlogin/dashbord/default-user.png')); ?>" alt="User avatar">
+    <?php endif; ?>
     <p class="profile-popup-greeting" id="profilePopupGreeting">Hi, <?php echo e(auth()->user()->first_name); ?> <?php echo e(auth()->user()->last_name); ?></p>
     <div class="profile-popup-actions">
-      
+      <a href="<?php echo e(route('frontend.profile')); ?>" class="profile-popup-action">Manage profile</a> 
       <a href="#" class="profile-popup-action" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log out</a>
       <form id="logout-form" action="<?php echo e(route('frontend.logout')); ?>" method="POST" style="display: none;">
         <?php echo csrf_field(); ?>

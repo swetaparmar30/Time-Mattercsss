@@ -40,6 +40,8 @@ use App\Http\Controllers\Backend\SitemapController;
 use App\Http\Controllers\Frontend\Auth\RegisterController as FrontendRegisterController;
 use App\Http\Controllers\Frontend\Auth\LoginController as FrontendLoginController;
 use App\Http\Controllers\Frontend\DashboardController;
+use App\Http\Controllers\Frontend\UserProfileController;
+use App\Http\Controllers\Frontend\SearchController;
 use App\Http\Controllers\Backend\RoleCategoryController;
 
 /*
@@ -111,16 +113,10 @@ Route::post('/password/reset', [App\Http\Controllers\Frontend\Auth\ForgotPasswor
 // ====================== PROTECTED DASHBOARD ROUTES ======================
 Route::middleware('auth')->group(function () {
 
-    // Independent Contractor Dashboard
-    // Route::get('/independent-contractor/dashboard', function () {
-    // return view('frontend.independent-contractor.dashboard');
-    // })->name('frontend.independent-contractor.dashboard')
-    //   ->middleware('role:independent-contractor');   // Only allow this role
-
-    Route::get('/independent-contractor/dashboard', function () {
+    Route::get('/users/dashboard', function () {
     return view('user-layout.layout.dashboard');
-    })->name('frontend.independent-contractor.dashboard')
-      ->middleware('role:independent-contractor');   // Only allow this role
+    })->name('frontend.independent-contractor.dashboard');
+     
 
     // Category Detail Page
     Route::get('/category/{id}', [RoleCategoryController::class, 'show'])->name('category.show');
@@ -132,17 +128,15 @@ Route::middleware('auth')->group(function () {
     
     // Temporary Employee Dashboard
     Route::get('/temporary-employee/dashboard', function () {
-        return view('frontend.temporary-employee.dashboard');
-    })->name('frontend.temporary-employee.dashboard')
-      ->middleware('role:temporary-employee');      // Only allow this role
-    // Route::get('/temporary-employee/dashboard', [DashboardController::class, 'index'])->name('frontend.temporary-employee.dashboard')->middleware('role:temporary-employee');
-    // Route::get('/temporary-employee/onboarding', [DashboardController::class, 'onboarding'])->name('frontend.temporary-employee.onboarding')->middleware('role:temporary-employee');
+        return view('user-layout.layout.dashboard');
+    })->name('frontend.temporary-employee.dashboard');
+      
 
     // Vendor Dashboard
     Route::get('/vendor/dashboard', function () {
-        return view('frontend.vendor.dashboard');
-    })->name('frontend.vendor.dashboard')
-      ->middleware('role:vendor');      // Only allow this role
+        return view('user-layout.layout.dashboard');
+    })->name('frontend.vendor.dashboard');
+      
       
     // Smart Default Dashboard (Auto Redirect based on role)
     Route::get('/dashboard', function () {
@@ -151,28 +145,23 @@ Route::middleware('auth')->group(function () {
         if ($user->role === 'independent-contractor') {
             return redirect()->route('frontend.independent-contractor.dashboard');
         } elseif ($user->role === 'temporary-employee') {
-            return redirect()->route('frontend.temporary-employee.dashboard');
+            return redirect()->route('frontend.independent-contractor.dashboard');
         }
         elseif ($user->role === 'vendor') {
-            return redirect()->route('frontend.vendor.dashboard');
+            return redirect()->route('frontend.independent-contractor.dashboard');
         }
 
         // Fallback if role doesn't match
         return redirect()->route('dashboard')->with('error', 'Access denied.');
     })->name('dashboard');
-    
+
+    // Profile Routes
+    Route::get('/profile', [UserProfileController::class, 'index'])->name('frontend.profile');
+    Route::post('/profile', [UserProfileController::class, 'update'])->name('frontend.profile.update');
+
+    // Search Route
+    Route::get('/search', [SearchController::class, 'search'])->name('frontend.search');
 });
-
-//dashb
-
-// Route::get('/independent-contractor/dashboard', function () {
-//     return view('frontend.independent-contractor.dashboard');
-// })->name('frontend.independent-contractor.dashboard');
-
-
-// Route::get('/temporary-employee/dashboard', function () {
-//     return view('frontend.temporary-employee.dashboard');
-// })->name('frontend.temporary-employee.dashboard');
 
 Route::prefix('admin')->group(function () {
 
