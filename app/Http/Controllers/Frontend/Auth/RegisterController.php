@@ -11,6 +11,10 @@ use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
 use App\Http\Requests\RegisterUserRequest;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\UserPendingApprovalMail;
+use App\Mail\AdminNewUserMail;
+use App\Models\Setting;
 
 class RegisterController extends Controller
 {
@@ -35,23 +39,44 @@ class RegisterController extends Controller
             'status'     => 0,
         ]);
 
+        // Send email to the user
+        try {
+            Mail::to($user->email)->send(new UserPendingApprovalMail($user));
+        } catch (\Exception $e) {
+            \Log::error("User registration email failed: " . $e->getMessage());
+        }
+
+        // Small delay to avoid Mailtrap rate limit (5 emails / 10 seconds on free plan)
+        sleep(2);
+
+        // Send email to the admin
+        $adminEmail = config('mail.admin_email');
+
+        if (!$adminEmail) {
+            $setting = Setting::first();
+            $adminEmail = $setting->email ?? null;
+        }
+
+        if (!$adminEmail) {
+            $admin = User::where('role', 'administrator')->first();
+            $adminEmail = $admin->email ?? null;
+        }
+
+        if ($adminEmail) {
+            \Log::info("Attempting to send admin registration notification to: " . $adminEmail);
+            try {
+                Mail::to($adminEmail)->send(new AdminNewUserMail($user));
+            } catch (\Exception $e) {
+                \Log::error("Admin registration notification failed: " . $e->getMessage());
+            }
+        }
+
         // Auth::login($user);
 
         // // Role-based dashboard redirect
         // return $this->redirectToDashboard($user);
         return redirect()->route('frontend.login')
-                         ->with('success', 'Registration successful! Please login with your email and password.');
+                         ->with('success', 'Registration successful! Your account is pending admin approval. Please wait for activation.');
     }
 
-    
-
-    // protected function redirectToDashboard(User $user): RedirectResponse
-    // {
-    //     return match ($user->role) {
-    //         'Independent Contractor' => redirect()->route('independent-contractor.dashboard'),
-    //         'Temporary Employee'     => redirect()->route('temporary-employee.dashboard'),
-    //         'Vendor'                 => redirect()->route('vendor.dashboard'),
-    //         default => redirect()->route('dashboard'),
-    //     };
-    // }
 }

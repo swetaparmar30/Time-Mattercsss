@@ -4,11 +4,7 @@
 <div class="profile-page-wrapper" style="background-color: #f8fafc; width: 100%; padding: 40px 30px;">
     <div class="profile-content-area" style="max-width: 1100px; margin: 0 auto;">
             
-            @if(session('success'))
-                <div class="alert alert-success" style="background: #dcfce7; color: #166534; padding: 16px 24px; border-radius: 12px; margin-bottom: 24px; border: 1px solid #bbf7d0; font-weight: 500;">
-                    {{ session('success') }}
-                </div>
-            @endif
+
 
             <form action="{{ route('frontend.profile.update') }}" method="POST" enctype="multipart/form-data">
                 @csrf
@@ -48,19 +44,6 @@
                                     <label style="display: block; font-size: 14px; font-weight: 600; color: #64748b; margin-bottom: 10px;">Phone number</label>
                                     <input type="text" name="phone" value="{{ old('phone', $user->phone) }}" style="width: 100%; padding: 14px 18px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 16px; color: #1e293b; background: #f8fafc; outline: none;" placeholder="+1 (555) 000-0000">
                                 </div>
-                                <div class="form-group">
-                                    <label style="display: block; font-size: 14px; font-weight: 600; color: #64748b; margin-bottom: 10px;">Language</label>
-                                    <div style="position: relative;">
-                                        <select name="language" style="width: 100%; padding: 14px 18px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 16px; color: #1e293b; background: #f8fafc; outline: none; appearance: none; cursor: pointer;">
-                                            <option value="en">English</option>
-                                            <option value="es">Spanish</option>
-                                            <option value="fr">French</option>
-                                        </select>
-                                        <div style="position: absolute; right: 18px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #64748b;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -79,6 +62,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
                                 </label>
                                 <input type="file" name="image" id="image" style="display: none;" onchange="previewImage(this)">
+                                
                             </div>
                         </div>
                     </div>

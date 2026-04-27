@@ -39,9 +39,18 @@ class LoginController extends Controller
             
              if ($user->status == 0) {
                 Auth::logout();
-
                 return back()
                        ->withErrors(['email' => 'Your account is pending admin approval. Please wait for activation.'])
+                       ->withInput($request->only('email'));
+            } elseif ($user->status == 2) {
+                Auth::logout();
+                return back()
+                       ->withErrors(['email' => 'Your account has been rejected by admin.'])
+                       ->withInput($request->only('email'));
+            } elseif ($user->status == 3) {
+                Auth::logout();
+                return back()
+                       ->withErrors(['email' => 'Your account is currently inactive. Please contact admin.'])
                        ->withInput($request->only('email'));
             }
 
@@ -67,10 +76,10 @@ class LoginController extends Controller
             'independent-contractor' => redirect()->route('frontend.independent-contractor.dashboard')
                                         ->with('success', 'Welcome Independent Contractor!'),
 
-            'temporary-employee'     => redirect()->route('frontend.temporary-employee.dashboard')
+            'temporary-employee'     => redirect()->route('frontend.independent-contractor.dashboard')
                                         ->with('success', 'Welcome Temporary Employee!'),
                                         
-            'vendor'                 => redirect()->route('frontend.vendor.dashboard')
+            'vendor'                 => redirect()->route('frontend.independent-contractor.dashboard')
                                         ->with('success', 'Welcome Vendor!'),
 
             default => redirect()->route('dashboard')

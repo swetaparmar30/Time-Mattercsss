@@ -19,15 +19,6 @@ class SearchController extends Controller
             return redirect()->back();
         }
 
-        // Search in Role Categories filtered by user role
-        $categories = RoleCategory::where('name', $userRole)
-            ->where('status', 1)
-            ->where(function($q) use ($query) {
-                $q->where('title', 'LIKE', "%{$query}%")
-                  ->orWhere('description', 'LIKE', "%{$query}%");
-            })
-            ->get();
-
         // Search in Central Files that belong to categories accessible by this user role
         $files = CentralFile::where('status', 1)
             ->where('name', 'LIKE', "%{$query}%")
@@ -36,6 +27,28 @@ class SearchController extends Controller
             })
             ->get();
 
-        return view('user-layout.search-results', compact('categories', 'files', 'query'));
+        return view('user-layout.search-results', compact('files', 'query'));
+    }
+
+    public function quickSearch(Request $request)
+    {
+        $query = $request->input('query');
+        $userRole = Auth::user()->role;
+
+        if (empty($query) || strlen($query) < 2) {
+            return response()->json(['files' => []]);
+        }
+
+        $files = CentralFile::where('status', 1)
+            ->where('name', 'LIKE', "%{$query}%")
+            ->whereHas('roleCategories', function($q) use ($userRole) {
+                $q->where('name', $userRole)->where('status', 1);
+            })
+            ->limit(10)
+            ->get(['id', 'name']);
+
+        return response()->json([
+            'files' => $files
+        ]);
     }
 }

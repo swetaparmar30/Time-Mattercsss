@@ -1,1 +1,0 @@
-<?php /**PATH /home/customer/www/hamzahk15.sg-host.com/public_html/resources/views/frontend/resources.blade.php ENDPATH**/ ?>

@@ -10,7 +10,9 @@
 .checkbox-input {
     margin-right: 10px; 
 }
-
+.table-btn1{
+    border-radius:15px;
+}
 </style>
 <div class="pcoded-wrapper">
     <div class="pcoded-content">
@@ -111,7 +113,7 @@
                                         <th scope="col">User</th>
                                         <th scope="col">E-Mail</th>
                                         <th scope="col">Role</th>
-                                        <th scope="col">Status</th>
+                                        <th scope="col">Approve/Decline</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
@@ -196,18 +198,20 @@ $(document).ready(function() {
             },
             {
                 data: 'status',
-                name: 'Status'
+                name: 'Status',
+                className: 'text-center'
             },
             {
                 data: 'action',
-                name: 'Action'
+                name: 'Action',
+                className: 'text-center'
             }
         ]
     });
-   $(document).on('click', '#is_status', function() {
+   $(document).on('click', '.is_status', function() {
            var id = $(this).attr("data-id");
            var isChecked = $(this).is(':checked');
-           var status = isChecked ? 1 : 0;
+           var status = isChecked ? 1 : 3;
            $.ajax({
                url: "<?php echo e(route('user.change_status')); ?>",
                type: 'post',
@@ -219,12 +223,55 @@ $(document).ready(function() {
                success: function(response) {
                    if (response.status == 1) {
                        toastr.success(response.message);
+                       table.ajax.reload();
                    } else {
                        toastr.error(response.message);
                    }
                }
            });
        });
+
+    $(document).on('click', '.approve-user', function() {
+        var id = $(this).attr("data-id");
+        $.ajax({
+            url: "<?php echo e(route('user.change_status')); ?>",
+            type: 'post',
+            data: {
+                _token: token,
+                id: id,
+                status: 1
+            },
+            success: function(response) {
+                if (response.status == 1) {
+                    toastr.success(response.message);
+                    table.ajax.reload();
+                } else {
+                    toastr.error(response.message);
+                }
+            }
+        });
+    });
+
+    $(document).on('click', '.decline-user', function() {
+        var id = $(this).attr("data-id");
+        $.ajax({
+            url: "<?php echo e(route('user.change_status')); ?>",
+            type: 'post',
+            data: {
+                _token: token,
+                id: id,
+                status: 2
+            },
+            success: function(response) {
+                if (response.status == 1) {
+                    toastr.success(response.message);
+                    table.ajax.reload();
+                } else {
+                    toastr.error(response.message);
+                }
+            }
+        });
+    });
  
 })
 </script>

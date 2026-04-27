@@ -18,7 +18,11 @@
 }
 
 .registration-page .auth-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
+  gap: 6px;
 }
 
 .auth-footer-text{
@@ -238,3 +242,10 @@
   }
 }
 
+.invalid-feedback.terms-text {
+    display: block;
+    color: #dc3545;
+    font-weight: 500;
+    font-size: 17px;
+    padding-top: 6px;
+}

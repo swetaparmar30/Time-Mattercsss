@@ -40,9 +40,9 @@ use App\Http\Controllers\Backend\SitemapController;
 use App\Http\Controllers\Frontend\Auth\RegisterController as FrontendRegisterController;
 use App\Http\Controllers\Frontend\Auth\LoginController as FrontendLoginController;
 use App\Http\Controllers\Frontend\DashboardController;
+use App\Http\Controllers\Backend\RoleCategoryController;
 use App\Http\Controllers\Frontend\UserProfileController;
 use App\Http\Controllers\Frontend\SearchController;
-use App\Http\Controllers\Backend\RoleCategoryController;
 
 /*
 
@@ -113,38 +113,43 @@ Route::post('/password/reset', [App\Http\Controllers\Frontend\Auth\ForgotPasswor
 // ====================== PROTECTED DASHBOARD ROUTES ======================
 Route::middleware('auth')->group(function () {
 
-    Route::get('/users/dashboard', function () {
-    return view('user-layout.layout.dashboard');
-    })->name('frontend.independent-contractor.dashboard');
-     
-
     // Category Detail Page
     Route::get('/category/{id}', [RoleCategoryController::class, 'show'])->name('category.show');
     Route::get('/file/download/{id}', [App\Http\Controllers\Backend\CentralFileController::class, 'download'])->name('file.download');
     Route::get('/file/preview/{id}', [App\Http\Controllers\Backend\CentralFileController::class, 'preview'])
     ->name('central.file.preview');
 
+       // Profile Routes
+    Route::get('/profile', [UserProfileController::class, 'index'])->name('frontend.profile');
+    Route::post('/profile', [UserProfileController::class, 'update'])->name('frontend.profile.update');
 
+    // Search Route
+    Route::get('/search', [SearchController::class, 'search'])->name('frontend.search');
+    Route::get('/quick-search', [SearchController::class, 'quickSearch'])->name('frontend.quick-search');
     
     // Temporary Employee Dashboard
     Route::get('/temporary-employee/dashboard', function () {
-        return view('user-layout.layout.dashboard');
+        return view('frontend.temporary-employee.dashboard');
     })->name('frontend.temporary-employee.dashboard');
-      
+    
+    // Independent Contractor Dashboard
+     Route::get('/users/dashboard', function () {
+    return view('user-layout.layout.dashboard');
+    })->name('frontend.independent-contractor.dashboard');
+
 
     // Vendor Dashboard
     Route::get('/vendor/dashboard', function () {
         return view('user-layout.layout.dashboard');
     })->name('frontend.vendor.dashboard');
-      
-      
-    // Smart Default Dashboard (Auto Redirect based on role)
+    
     Route::get('/dashboard', function () {
         $user = auth()->user();
 
         if ($user->role === 'independent-contractor') {
             return redirect()->route('frontend.independent-contractor.dashboard');
-        } elseif ($user->role === 'temporary-employee') {
+        } 
+        elseif ($user->role === 'temporary-employee') {
             return redirect()->route('frontend.independent-contractor.dashboard');
         }
         elseif ($user->role === 'vendor') {
@@ -155,12 +160,6 @@ Route::middleware('auth')->group(function () {
         return redirect()->route('dashboard')->with('error', 'Access denied.');
     })->name('dashboard');
 
-    // Profile Routes
-    Route::get('/profile', [UserProfileController::class, 'index'])->name('frontend.profile');
-    Route::post('/profile', [UserProfileController::class, 'update'])->name('frontend.profile.update');
-
-    // Search Route
-    Route::get('/search', [SearchController::class, 'search'])->name('frontend.search');
 });
 
 Route::prefix('admin')->group(function () {

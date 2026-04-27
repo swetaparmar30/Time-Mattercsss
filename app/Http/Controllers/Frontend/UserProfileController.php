@@ -42,7 +42,13 @@ class UserProfileController extends Controller
 
             $image = $request->file('image');
             $imageName = time() . '.' . $image->extension();
-            $image->move(public_path('uploads/profile'), $imageName);
+            
+            $destPath = public_path('uploads/profile');
+            if (!file_exists($destPath)) {
+                mkdir($destPath, 0777, true);
+            }
+            
+            $image->move($destPath, $imageName);
             $user->image = $imageName;
         }
 
@@ -52,6 +58,6 @@ class UserProfileController extends Controller
 
         $user->save();
 
-        return redirect()->back()->with('success', 'Profile updated successfully.');
+        return redirect()->route('frontend.independent-contractor.dashboard')->with('success', 'Profile updated successfully.');
     }
 }

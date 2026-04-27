@@ -213,17 +213,44 @@ unset($__errorArgs, $__bag); ?>
                     </div>
                 </div>
 
-                <div class="auth-options">
-                    <label class="checkbox-group">
-                        <input type="checkbox" id="terms-accepted" name="termsAccepted" <?php echo e(old('termsAccepted') ? 'checked' : ''); ?> >
-                        <span>
-                            I agree to
-                            <a class="auth-link" href="#" target="_blank" rel="noopener noreferrer">
-                                Terms &amp; Privacy Policy
-                            </a>
-                        </span>
-                    </label>
-                </div>
+               <div class="auth-options">
+                  <div class="checkbox-group">
+                      <input 
+                          type="checkbox" 
+                          id="terms-accepted" 
+                          name="termsAccepted"
+                          class="<?php $__errorArgs = ['termsAccepted'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
+                          <?php echo e(old('termsAccepted') ? 'checked' : ''); ?>
+
+                      >
+
+                      <label for="terms-accepted">
+                          I agree to
+                          <a class="auth-link" href="#">Terms & Privacy Policy</a>
+                      </label>
+                  </div>
+
+                  <?php $__errorArgs = ['termsAccepted'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                      <div class="invalid-feedback terms-text">
+                          <?php echo e($message); ?>
+
+                      </div>
+                  <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+              </div>
 
                 <button class="btn-primary" type="submit">Register</button>
             </form>
@@ -234,4 +261,5 @@ unset($__errorArgs, $__bag); ?>
             </p>
         </main>
     </body>
-  </html><?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/frontend/auth/register.blade.php ENDPATH**/ ?>
+  </html>
+  <?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/frontend/auth/register.blade.php ENDPATH**/ ?>

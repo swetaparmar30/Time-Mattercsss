@@ -115,17 +115,28 @@
                     </div>
                 </div>
 
-                <div class="auth-options">
-                    <label class="checkbox-group">
-                        <input type="checkbox" id="terms-accepted" name="termsAccepted" {{ old('termsAccepted') ? 'checked' : '' }} >
-                        <span>
-                            I agree to
-                            <a class="auth-link" href="#" target="_blank" rel="noopener noreferrer">
-                                Terms &amp; Privacy Policy
-                            </a>
-                        </span>
-                    </label>
-                </div>
+               <div class="auth-options">
+                  <div class="checkbox-group">
+                      <input 
+                          type="checkbox" 
+                          id="terms-accepted" 
+                          name="termsAccepted"
+                          class="@error('termsAccepted') is-invalid @enderror"
+                          {{ old('termsAccepted') ? 'checked' : '' }}
+                      >
+
+                      <label for="terms-accepted">
+                          I agree to
+                          <a class="auth-link" href="#">Terms & Privacy Policy</a>
+                      </label>
+                  </div>
+
+                  @error('termsAccepted')
+                      <div class="invalid-feedback terms-text">
+                          {{ $message }}
+                      </div>
+                  @enderror
+              </div>
 
                 <button class="btn-primary" type="submit">Register</button>
             </form>
@@ -137,3 +148,4 @@
         </main>
     </body>
   </html>
+  
