@@ -2,7 +2,7 @@
   use App\Models\RoleCategory;
   $userRole = auth()->user()->role;
   $currentRoute = request()->route()->getName();
-  $currentId = request()->route('id');
+  $currentSlug = request()->route('slug');
 @endphp
 
 @if($currentRoute === 'frontend.profile')
@@ -35,16 +35,16 @@
   <nav class="portal-nav" aria-label="Primary navigation">
     @php
       $currentRoute = request()->route()->getName();
-      $currentId = request()->route('id');
-    @endphp
+      $currentSlug = request()->route('slug');
+@endphp
     <a href="{{ route('frontend.independent-contractor.dashboard') }}" data-nav="" 
     class="{{ $currentRoute === 'frontend.independent-contractor.dashboard' ? 'active' : '' }}">
         <img src="{{ asset('front-assets/src/userlogin/dashbord/Dashboard-black-icon.png') }}" alt="">Dashboard
     </a>
     @if($roleCategories->count() > 0)
       @foreach($roleCategories as $category)
-        <a href="{{ route('category.show', $category->id) }}" data-nav="{{ strtolower(str_replace(' ', '-', $category->title)) }}" 
-           class="{{ ($currentRoute === 'category.show' && $currentId == $category->id) ? 'active' : '' }}">
+        <a href="{{ route('category.show', $category->slug) }}" data-nav="{{ strtolower(str_replace(' ', '-', $category->title)) }}" 
+           class="{{ ($currentRoute === 'category.show' && $currentSlug == $category->slug) ? 'active' : '' }}">
           @if(isset($category->image) && $category->image != '')
             <img src="{{ asset('uploads/' . $category->image) }}" alt="{{ $category->title }}">
           @else

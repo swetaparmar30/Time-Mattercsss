@@ -44,7 +44,7 @@
                 <h3>{{ $category->title }}</h3>
                 <p>{!! $category->description !!}</p>
                 <a class="view-more-link cmn-btn light-wht-btn" 
-                    href="{{ route('category.show', $category->id) }}">
+                    href="{{ route('category.show', $category->slug) }}">
                     {{-- {{ $category->button_text ?? 'View More' }}  --}}
                     <span class="view-more-badge">View More</span>
                     <span class="btn-circle">

@@ -2,7 +2,7 @@
   use App\Models\RoleCategory;
   $userRole = auth()->user()->role;
   $currentRoute = request()->route()->getName();
-  $currentId = request()->route('id');
+  $currentSlug = request()->route('slug');
 ?>
 
 <?php if($currentRoute === 'frontend.profile'): ?>
@@ -35,16 +35,16 @@
   <nav class="portal-nav" aria-label="Primary navigation">
     <?php
       $currentRoute = request()->route()->getName();
-      $currentId = request()->route('id');
-    ?>
+      $currentSlug = request()->route('slug');
+?>
     <a href="<?php echo e(route('frontend.independent-contractor.dashboard')); ?>" data-nav="" 
     class="<?php echo e($currentRoute === 'frontend.independent-contractor.dashboard' ? 'active' : ''); ?>">
         <img src="<?php echo e(asset('front-assets/src/userlogin/dashbord/Dashboard-black-icon.png')); ?>" alt="">Dashboard
     </a>
     <?php if($roleCategories->count() > 0): ?>
       <?php $__currentLoopData = $roleCategories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-        <a href="<?php echo e(route('category.show', $category->id)); ?>" data-nav="<?php echo e(strtolower(str_replace(' ', '-', $category->title))); ?>" 
-           class="<?php echo e(($currentRoute === 'category.show' && $currentId == $category->id) ? 'active' : ''); ?>">
+        <a href="<?php echo e(route('category.show', $category->slug)); ?>" data-nav="<?php echo e(strtolower(str_replace(' ', '-', $category->title))); ?>" 
+           class="<?php echo e(($currentRoute === 'category.show' && $currentSlug == $category->slug) ? 'active' : ''); ?>">
           <?php if(isset($category->image) && $category->image != ''): ?>
             <img src="<?php echo e(asset('uploads/' . $category->image)); ?>" alt="<?php echo e($category->title); ?>">
           <?php else: ?>

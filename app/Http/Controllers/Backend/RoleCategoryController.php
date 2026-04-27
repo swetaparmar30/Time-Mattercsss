@@ -135,9 +135,9 @@ class RoleCategoryController extends Controller
 
      // for frontend 
     
-    public function show($id)
+    public function show($slug)
     {
-        $category = RoleCategory::findOrFail($id);
+        $category = RoleCategory::where('slug', $slug)->firstOrFail();
         $files = $category->roleCategories()->where('status', 1)->get();
         
         return view('user-layout.layout.category-detail', compact('category', 'files'));

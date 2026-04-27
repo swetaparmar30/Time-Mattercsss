@@ -114,7 +114,7 @@ Route::post('/password/reset', [App\Http\Controllers\Frontend\Auth\ForgotPasswor
 Route::middleware('auth')->group(function () {
 
     // Category Detail Page
-    Route::get('/category/{id}', [RoleCategoryController::class, 'show'])->name('category.show');
+    Route::get('/category/{slug}', [RoleCategoryController::class, 'show'])->name('category.show');
     Route::get('/file/download/{id}', [App\Http\Controllers\Backend\CentralFileController::class, 'download'])->name('file.download');
     Route::get('/file/preview/{id}', [App\Http\Controllers\Backend\CentralFileController::class, 'preview'])
     ->name('central.file.preview');

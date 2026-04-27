@@ -46,7 +46,7 @@
                 <h3><?php echo e($category->title); ?></h3>
                 <p><?php echo $category->description; ?></p>
                 <a class="view-more-link cmn-btn light-wht-btn" 
-                    href="<?php echo e(route('category.show', $category->id)); ?>">
+                    href="<?php echo e(route('category.show', $category->slug)); ?>">
                     
                     <span class="view-more-badge">View More</span>
                     <span class="btn-circle">
