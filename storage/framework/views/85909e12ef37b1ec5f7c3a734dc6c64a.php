@@ -123,13 +123,13 @@
     <div class="email-wrapper">
         <div class="email-container">
             <div class="header">
-                <img src="<?php echo e(asset('front-assets/src/images/Time-matters-header-logo.webp')); ?>" alt="Time Master Logo">
+                <img src="<?php echo e(asset('front-assets/src/images/Time-matters-header-logo.webp')); ?>" alt="Time Matters Logo">
             </div>
             <div class="content">
                 <?php echo $__env->yieldContent('content'); ?>
             </div>
             <div class="footer">
-                &copy; <?php echo e(date('Y')); ?> Time Master. All rights reserved.<br>
+                &copy; <?php echo e(date('Y')); ?> Time Matters. All rights reserved.<br>
                 This is an automated message, please do not reply directly to this email.
             </div>
         </div>

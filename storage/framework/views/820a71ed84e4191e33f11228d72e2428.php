@@ -1,23 +1,21 @@
-@extends('layouts.backend.index')
-
-@section('main_content')
+<?php $__env->startSection('main_content'); ?>
     <div class="pcoded-wrapper">
         <div class="pcoded-content">
             <div class="pcoded-inner-content">
                 <div class="main-body">
                     <div class="page-wrapper">
 
-                        <form action="{{ route('role-category.store') }}" method="POST" data-parsley-validate=""
+                        <form action="<?php echo e(route('role-category.store')); ?>" method="POST" data-parsley-validate=""
                             enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="role_category_id" value="{{ $role_category->id ?? '' }}">
+                            <?php echo csrf_field(); ?>
+                            <input type="hidden" name="role_category_id" value="<?php echo e($role_category->id ?? ''); ?>">
 
                             <div class="row">
 
                                 <!-- Left Form -->
                                 <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 add-article form-main-sec">
                                     <div class="card Recent-Users">
-                                        <h5>{{ isset($role_category) ? 'Edit Role Category' : 'Add Role Category' }}</h5>
+                                        <h5><?php echo e(isset($role_category) ? 'Edit Role Category' : 'Add Role Category'); ?></h5>
 
                                         <div class="card-block px-0 py-3">
 
@@ -28,16 +26,16 @@
                                                             style="color: red;margin: 0;">*</span></label>
                                                 </div>
                                                 <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                                                    @php
+                                                    <?php
                                                         $selectedName = old('name', $role_category->name ?? '');
-                                                    @endphp
+                                                    ?>
 
                                                     <select class="form-control" name="name">
                                                         <option value="independent-contractor"
-                                                            {{ $selectedName == 'independent-contractor' ? 'selected' : '' }}> Independent Contractor </option>
+                                                            <?php echo e($selectedName == 'independent-contractor' ? 'selected' : ''); ?>> Independent Contractor </option>
                                                         <option value="temporary-employee"
-                                                            {{ $selectedName == 'temporary-employee' ? 'selected' : '' }}> Temporary Employee </option>
-                                                        <option value="vendor" {{ $selectedName == 'vendor' ? 'selected' : '' }}> Vendor </option>
+                                                            <?php echo e($selectedName == 'temporary-employee' ? 'selected' : ''); ?>> Temporary Employee </option>
+                                                        <option value="vendor" <?php echo e($selectedName == 'vendor' ? 'selected' : ''); ?>> Vendor </option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -47,7 +45,7 @@
                                                             style="color:red">*</span></label></div>
                                                 <div class="col-xxl-10">
                                                     <input type="text" class="form-control" name="title"
-                                                        value="{{ old('title', $role_category->title ?? '') }}">
+                                                        value="<?php echo e(old('title', $role_category->title ?? '')); ?>">
                                                 </div>
                                             </div>
 
@@ -56,7 +54,7 @@
                                                             style="color:red">*</span></label></div>
                                                 <div class="col-xxl-10">
                                                     <input type="text" class="form-control" name="slug"
-                                                        value="{{ old('slug', $role_category->slug ?? '') }}">
+                                                        value="<?php echo e(old('slug', $role_category->slug ?? '')); ?>">
                                                 </div>
                                             </div>
 
@@ -65,7 +63,8 @@
                                                             style="color:red">*</span></label></div>
                                                 <div class="col-xxl-10">
                                                     <textarea name="description" class="form-control rich-text-editor">
-                                       {{ old('description', $role_category->description ?? '') }}
+                                       <?php echo e(old('description', $role_category->description ?? '')); ?>
+
                                     </textarea>
                                                 </div>
                                             </div>
@@ -75,7 +74,7 @@
                                                             style="color:red">*</span></label></div>
                                                 <div class="col-xxl-10">
                                                     <input type="text" class="form-control" name="button_text"
-                                                        value="{{ old('button_text', $role_category->button_text ?? '') }}">
+                                                        value="<?php echo e(old('button_text', $role_category->button_text ?? '')); ?>">
                                                 </div>
                                             </div>
 
@@ -83,7 +82,7 @@
                                                 <div class="col-xxl-2 label-sec"><label>Button Url</label></div>
                                                 <div class="col-xxl-10">
                                                     <input type="url" class="form-control" name="button_url"
-                                                        value="{{ old('button_url', $role_category->button_url ?? '') }}">
+                                                        value="<?php echo e(old('button_url', $role_category->button_url ?? '')); ?>">
                                                 </div>
                                             </div>
 
@@ -106,28 +105,28 @@
 
                                                     <div class="upload-img-sec text-center">
                                                         <input type="hidden" name="role_img" id="role_img"
-                                                            value="{{ isset($role_img) && $role_img && $role_img->id ? $role_img->id : '' }}">
+                                                            value="<?php echo e(isset($role_img) && $role_img && $role_img->id ? $role_img->id : ''); ?>">
                                                             
-                                                        @if (isset($role_img) && $role_img && $role_img->name)
+                                                        <?php if(isset($role_img) && $role_img && $role_img->name): ?>
                                                             <div class="image_preview_div" style="position: relative; display: inline-block;">
                                                                 <img id="role_image_avtar"
-                                                                    src="{{ asset('uploads/' . $role_img->name) }}"
+                                                                    src="<?php echo e(asset('uploads/' . $role_img->name)); ?>"
                                                                     style="object-fit: cover; max-width: 200px; max-height: 200px;"
                                                                     class="img-fluid profile-img">
                                                                 <a id="role_image_remove_image" style="position: absolute; top: 0; right: 0;">
                                                                     <i class="fa fa-times" aria-hidden="true"></i>
                                                                 </a>
                                                             </div>
-                                                        @else
+                                                        <?php else: ?>
                                                             <div class="image_preview_div" style="position: relative; display: inline-block;">
-                                                                <img src="{{ asset('assets/images/user/img-demo_1041.jpg') }}" alt="" 
+                                                                <img src="<?php echo e(asset('assets/images/user/img-demo_1041.jpg')); ?>" alt="" 
                                                                     id="role_image_avtar" class="img-fluid profile-img"
                                                                     style="object-fit: cover; max-width: 200px; max-height: 200px;">
                                                                 <a id="role_image_remove_image" style="display: none; position: absolute; top: 0; right: 0;"> 
                                                                     <i class="fa fa-times" aria-hidden="true"></i>
                                                                 </a>
                                                             </div>
-                                                        @endif
+                                                        <?php endif; ?>
                                                         
                                                         <label for="" style="cursor: pointer; display: block; margin-top: 10px;"
                                                             class="choose_file hm-choose-img-title w-100"
@@ -147,9 +146,9 @@
             </div>
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('script')
+<?php $__env->startSection('script'); ?>
     <script>
         $(document).ready(function() {
             $('form').parsley();
@@ -166,7 +165,7 @@
             });
 
             $('#role_image_remove_image').click(function() {
-                $('#role_image_avtar').attr('src', '{{ asset('assets/images/user/img-demo_1041.jpg') }}');
+                $('#role_image_avtar').attr('src', '<?php echo e(asset('assets/images/user/img-demo_1041.jpg')); ?>');
                 $('#role_img').val('');
                 $(this).hide();
             });
@@ -193,4 +192,6 @@
             });
         });
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.backend.index', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/role_category/add.blade.php ENDPATH**/ ?>

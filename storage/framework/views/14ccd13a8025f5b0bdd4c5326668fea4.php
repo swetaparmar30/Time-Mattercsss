@@ -1,5 +1,4 @@
-@extends('layouts.backend.index')
-@section('main_content')
+<?php $__env->startSection('main_content'); ?>
 <div class="pcoded-wrapper">
    <div class="pcoded-content">
       <div class="pcoded-inner-content">
@@ -9,8 +8,8 @@
                   <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      <div class="card Recent-Users mb-4">
                         <div class="card-header">
-                           <h5>Role Category</h5>
-                           <a href="{{ route('role-category.add') }}" class="add-article-btn">Add Role Category</a>
+                           <h5>Garage Services</h5>
+                           <a href="<?php echo e(route('garage-services.add')); ?>" class="add-article-btn">Add Garage Door</a>
                         </div>
                         <div class="card-body">
                            <div class="example">
@@ -20,10 +19,8 @@
                                        <thead>
                                           <tr class="unread">
                                              <th scope="col">#</th>
-                                             <th scope="col">Name</th>
                                              <th scope="col">Title</th>
-                                             <th scope="col">Slug</th>
-                                             <th scope="col">Status</th>
+                                             <th scope="col">Descripion</th>
                                              <th scope="col">Action</th>
                                           </tr>
                                        </thead>
@@ -42,9 +39,8 @@
       </div>
    </div>
 </div>
-@endsection
-
-@section('script')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
 <script>
    $(document).ready(function() {
        var token = $("meta[name='csrf-token']").attr("content");
@@ -61,53 +57,52 @@
            processing: true,
            autoWidth: false,
            columnDefs: [
-               { targets: [0, 3, 4], orderable: false },
-               { width: '5%', targets: 0 },
-               { width: '25%', targets: 1 },
-               { width: '20%', targets: 2 },
-               { width: '20%', targets: 3 },
-               { width: '15%', targets: 4 },
-               { width: '15%', targets: 5 }
+               { 
+                    targets: [0,3],
+                    orderable: false,
+               },
+               {
+                   width: '5%', targets: 0 
+               },
+               {
+                   width: '20%', targets: 1 
+               },
+               {
+                   width: '40%', targets: 2 
+               },
+               {
+                   width: '20%', targets: 3 
+               }
+               
+              
            ],
            ajax: {
-               url: "{{ route('role-category.list') }}",
+               url: admin_url + "list-garage-services",
                type: 'post',
                data: {
                    _token: token,
                },
            },
-           columns: [
-               { data: 'ser_id', name: 'id' },
-               { data: 'name', name: 'name' },
-               { data: 'title', name: 'title' },
-               { data: 'slug', name: 'slug' },
-               { data: 'status', name: 'status' },
-               { data: 'action', name: 'Action' }     
+   
+           columns: [{
+                   data: 'ser_id',
+                   name: 'id'
+               },
+               {
+                   data: 'title',
+                   name: 'title'
+               },
+               {
+                   data: 'description',
+                   name: 'description'
+               },
+               {
+                   data: 'action',
+                   name: 'Action'
+               }    
            ]
        });
-
-        $(document).on('click', '#is_status', function() {
-           var id = $(this).attr("data-id");
-           var isChecked = $(this).is(':checked');
-           var status = isChecked ? 1 : 0;
-           $.ajax({
-               url: "{{ route('role-category.change_status') }}",
-               type: 'post',
-               data: {
-                   _token: token,
-                   id: id,
-                   status: status
-               },
-               success: function(response) {
-                   if (response.status == 1) {
-                       toastr.success(response.message);
-                   } else {
-                       toastr.error(response.message);
-                   }
-               }
-           });
-       });
-   });
+   })
 </script>
 <script>
    $(document).on('click', '.product_delete', function(e) {
@@ -115,7 +110,7 @@
        var deleteUrl = $(this).data('href');
        Swal.fire({
            title: 'Are you sure?',
-           text: 'You are about to delete the Time Service!',
+           text: 'You are about to delete the Garage Door!',
            icon: 'warning',
            showCancelButton: true,
            confirmButtonColor: '#3085d6',
@@ -129,4 +124,5 @@
        });
    });
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.backend.index', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/garage-services/index.blade.php ENDPATH**/ ?>

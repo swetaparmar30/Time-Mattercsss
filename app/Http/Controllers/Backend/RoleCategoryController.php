@@ -8,6 +8,7 @@ use App\Models\RoleCategory;
 use App\Models\MediaImage;
 use Illuminate\Support\Str;
 use Carbon\Carbon;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 
 use Illuminate\Support\Facades\Storage;
 
@@ -37,6 +38,7 @@ class RoleCategoryController extends Controller
 
         $id = $request->role_category_id;
 
+        $slug = SlugService::createSlug(RoleCategory::class, 'slug', $request->name . ' ' . $request->title);
         if ($id) {
             $data = RoleCategory::findOrFail($id);
         } else {
@@ -69,6 +71,7 @@ class RoleCategoryController extends Controller
         $data->description  = $request->description;
         $data->button_text  = $request->button_text;
         $data->button_url   = $request->button_url;
+        $data->slug         = $slug;
         $data->status       = $request->status ?? 1;
         $data->updated_by   = auth()->id();
 

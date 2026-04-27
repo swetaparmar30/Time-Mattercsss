@@ -1,5 +1,4 @@
-@extends('layouts.backend.index')
-@section('main_content')
+<?php $__env->startSection('main_content'); ?>
 <div class="pcoded-wrapper">
    <div class="pcoded-content">
       <div class="pcoded-inner-content">
@@ -10,7 +9,7 @@
                      <div class="card Recent-Users mb-4">
                         <div class="card-header">
                            <h5>Role Category</h5>
-                           <a href="{{ route('role-category.add') }}" class="add-article-btn">Add Role Category</a>
+                           <a href="<?php echo e(route('role-category.add')); ?>" class="add-article-btn">Add Role Category</a>
                         </div>
                         <div class="card-body">
                            <div class="example">
@@ -42,9 +41,9 @@
       </div>
    </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('script')
+<?php $__env->startSection('script'); ?>
 <script>
    $(document).ready(function() {
        var token = $("meta[name='csrf-token']").attr("content");
@@ -70,7 +69,7 @@
                { width: '15%', targets: 5 }
            ],
            ajax: {
-               url: "{{ route('role-category.list') }}",
+               url: "<?php echo e(route('role-category.list')); ?>",
                type: 'post',
                data: {
                    _token: token,
@@ -91,7 +90,7 @@
            var isChecked = $(this).is(':checked');
            var status = isChecked ? 1 : 0;
            $.ajax({
-               url: "{{ route('role-category.change_status') }}",
+               url: "<?php echo e(route('role-category.change_status')); ?>",
                type: 'post',
                data: {
                    _token: token,
@@ -129,4 +128,6 @@
        });
    });
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.backend.index', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/role_category/index.blade.php ENDPATH**/ ?>
