@@ -27,6 +27,7 @@
     {{-- <link rel="stylesheet" href="src/css/dashboard.css"> --}}
     <link rel="stylesheet" href="{{ asset('front-assets/src/userlogin/css/dashboard.css') }}?v=0..1">
     <link rel="stylesheet" href="{{ asset('front-assets/src/userlogin/css/onboarding.css') }}?v=0..1">
+    <link rel="stylesheet" href="{{ asset('front-assets/src/userlogin/css/profile.css') }}?v=0..1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
   </head>
   <body data-page="dashboard">

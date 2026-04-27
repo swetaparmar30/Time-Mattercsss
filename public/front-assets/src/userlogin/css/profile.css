@@ -1,0 +1,97 @@
+.sub-nav-item:hover {
+    background: #f1f5f9;
+    color: #1e293b !important;
+}
+
+input:focus,
+select:focus {
+    border-color: #284884 !important;
+    background: white !important;
+    box-shadow: 0 0 0 4px rgba(40, 72, 132, 0.08);
+}
+
+.profile-page-wrapper {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.profile-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.profile-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+.profile-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+.profile-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .profile-card-body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile-image-section {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .profile-form-grid {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-page-wrapper {
+        padding: 20px 15px !important;
+    }
+
+    .profile-card {
+        padding: 25px;
+    }
+
+    .profile-form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .profile-title {
+        font-size: 22px;
+    }
+
+    #passwordFieldsSection div {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}

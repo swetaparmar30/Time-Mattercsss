@@ -161,10 +161,27 @@ class CentralFileController extends Controller
         // Get file mime type
         $mime = mime_content_type($path);
 
-        // Return file inline (open in browser instead of download)
-        return response()->file($path, [
-            'Content-Type' => $mime,
-            'Content-Disposition' => 'inline; filename="' . basename($path) . '"'
+        $extension = strtolower(pathinfo($path, PATHINFO_EXTENSION));
+        $officeExtensions = ['doc', 'docx', 'xls', 'xlsx', 'csv'];
+        $imagePdfExtensions = ['pdf', 'jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+        if (in_array($extension, $officeExtensions)) {
+            $fileUrl = asset('uploads/' . $file->file_path);
+            // Use Google Docs Viewer for Office/CSV files
+            return redirect('https://docs.google.com/viewer?url=' . urlencode($fileUrl));
+        }
+
+        if (in_array($extension, $imagePdfExtensions)) {
+            // Return file inline (open in browser instead of download)
+            return response()->file($path, [
+                'Content-Type' => $mime,
+                'Content-Disposition' => 'inline; filename="' . basename($path) . '"'
+            ]);
+        }
+
+        // Return file as download if not previewable
+        return response()->download($path, basename($path), [
+            'Content-Type' => $mime
         ]);
     }
 }

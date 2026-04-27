@@ -3,7 +3,7 @@
 <?php $__env->startSection('content'); ?>
     <h1>Registration Update</h1>
     <p>Dear <?php echo e($user->name); ?>,</p>
-    <p>Thank you for your interest in joining <strong>Time Master</strong>.</p>
+    <p>Thank you for your interest in joining <strong>Time Matters</strong>.</p>
     
     <p>After reviewing your application, we regret to inform you that we are unable to approve your account at this time.</p>
     
@@ -15,7 +15,7 @@
     
     <p>We appreciate your interest and wish you the best in your professional endeavors.</p>
     
-    <p>Sincerely,<br>The Time Master Team</p>
+    <p>Sincerely,<br>The Time Matters Team</p>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('emails.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\Time-Mattercsss\resources\views/emails/user_rejected.blade.php ENDPATH**/ ?>
