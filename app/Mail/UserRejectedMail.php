@@ -19,7 +19,8 @@ class UserRejectedMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Time Matters Update Regarding Your Account Registration')
-                    ->view('emails.user_rejected');
+        return $this->subject('Your Account Registration Was Not Approved')
+                    ->view('emails.user_rejected')
+                    ->with(['user' => $this->user]);
     }
 }

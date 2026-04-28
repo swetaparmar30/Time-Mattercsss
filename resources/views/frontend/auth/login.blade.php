@@ -62,7 +62,7 @@
 
           <div class="auth-options">
             <label class="checkbox-group">
-              <input type="checkbox" id="remember-me" name="rememberMe">
+              <input type="checkbox" id="remember-me" name="remember" value="1" {{ old('remember') ? 'checked' : '' }}>
               <span>Remember me</span>
             </label>
             <button type="button" class="auth-link forgot-password forgot-password-toggle" id="open-forgot-password">
